@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:redstone"
+    },
+    {
+      "item": "supreme_mining_dimension:tungsten_ingot"
+    },
+    {
+      "item": "supreme_mining_dimension:false_overworld_dimension"
+    },
+    {
+      "item": "supreme_mining_dimension:platinum_ingot"
+    },
+    {
+      "item": "supreme_mining_dimension:lead_ingot"
+    }
+  ],
+  "result": {
+    "item": "supreme_mining_dimension:strange_forests",
+    "count": 1
+  }
+}

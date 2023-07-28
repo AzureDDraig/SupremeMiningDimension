@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "supreme_mining_dimension:amber_solid",
+  "step": "underground_ores"
+}

@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "supreme_mining_dimension:sculk_caverns",
+    "supreme_mining_dimension:magmatic_caverns",
+    "supreme_mining_dimension:overgrown_caverns",
+    "supreme_mining_dimension:frozen_caverns",
+    "supreme_mining_dimension:surface_mining_dimension",
+    "supreme_mining_dimension:ancient_forest",
+    "supreme_mining_dimension:amber_caverns",
+    "supreme_mining_dimension:glacial_caverns"
+  ]
+}

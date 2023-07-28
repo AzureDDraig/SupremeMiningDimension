@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TTT",
+    "TTT",
+    "TTT"
+  ],
+  "key": {
+    "T": {
+      "item": "supreme_mining_dimension:tungsten_ingot"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:tungsten_block",
+    "count": 1
+  }
+}

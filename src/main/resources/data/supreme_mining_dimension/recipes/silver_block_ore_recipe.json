@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "supreme_mining_dimension:silver_block"
+    }
+  ],
+  "result": {
+    "item": "supreme_mining_dimension:silver_ingot",
+    "count": 9
+  }
+}

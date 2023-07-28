@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "experience": 0.35,
+  "cookingtime": 200,
+  "ingredient": {
+    "item": "supreme_mining_dimension:aluminum_raw"
+  },
+  "result": "supreme_mining_dimension:aluminum_ingot"
+}

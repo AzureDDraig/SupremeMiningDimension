@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "supreme_mining_dimension:ancient_forest",
+  "features": "supreme_mining_dimension:big_as_spruce_tree_on_podzol",
+  "step": "surface_structures"
+}

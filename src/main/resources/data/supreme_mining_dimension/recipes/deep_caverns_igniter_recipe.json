@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "IM",
+    "CI"
+  ],
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "M": {
+      "item": "minecraft:magma_cream"
+    },
+    "C": {
+      "item": "supreme_mining_dimension:caverns"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:deep_caverns",
+    "count": 1
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:stone",
+    "minecraft:grass_block",
+    "minecraft:dirt",
+    "supreme_mining_dimension:amber_solid",
+    "minecraft:deepslate",
+    "minecraft:ice",
+    "minecraft:packed_ice",
+    "minecraft:dripstone_block",
+    "minecraft:moss_block",
+    "minecraft:rooted_dirt",
+    "minecraft:magma_block",
+    "minecraft:amethyst_cluster",
+    "minecraft:amethyst_block",
+    "minecraft:sculk",
+    "minecraft:netherrack",
+    "minecraft:end_stone",
+    "minecraft:coarse_dirt",
+    "minecraft:podzol",
+    "minecraft:mycelium"
+  ]
+}

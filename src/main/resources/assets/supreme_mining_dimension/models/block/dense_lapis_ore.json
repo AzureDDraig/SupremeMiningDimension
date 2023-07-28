@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "supreme_mining_dimension:blocks/denselapisore",
+    "particle": "supreme_mining_dimension:blocks/denselapisore"
+  },
+  "render_type": "solid"
+}

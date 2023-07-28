@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " S ",
+    "SSS",
+    " S "
+  ],
+  "key": {
+    "S": {
+      "tag": "minecraft:stone_bricks"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:stone_outpost_walling",
+    "count": 1
+  }
+}

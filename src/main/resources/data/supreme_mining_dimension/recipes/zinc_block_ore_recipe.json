@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "supreme_mining_dimension:zinc_block"
+    }
+  ],
+  "result": {
+    "item": "supreme_mining_dimension:zinc_ingot",
+    "count": 9
+  }
+}

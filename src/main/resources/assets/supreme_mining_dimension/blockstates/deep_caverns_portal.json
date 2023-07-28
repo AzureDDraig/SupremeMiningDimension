@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "supreme_mining_dimension:block/deep_caverns_portal_ew"
+    },
+    "axis=x": {
+      "model": "supreme_mining_dimension:block/deep_caverns_portal_ns"
+    }
+  }
+}

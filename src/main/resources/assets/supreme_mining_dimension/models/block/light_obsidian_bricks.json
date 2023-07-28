@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "supreme_mining_dimension:blocks/obsidianbricklight",
+    "particle": "supreme_mining_dimension:blocks/obsidianbricklight"
+  },
+  "render_type": "solid"
+}

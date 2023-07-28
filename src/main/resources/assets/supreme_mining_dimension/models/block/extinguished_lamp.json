@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "supreme_mining_dimension:blocks/extinguishedlampother",
+    "up": "supreme_mining_dimension:blocks/extinguishedlampother",
+    "north": "supreme_mining_dimension:blocks/extinguishedlamp",
+    "east": "supreme_mining_dimension:blocks/extinguishedlampother",
+    "south": "supreme_mining_dimension:blocks/extinguishedlampother",
+    "west": "supreme_mining_dimension:blocks/extinguishedlampother",
+    "particle": "supreme_mining_dimension:blocks/extinguishedlampother"
+  },
+  "render_type": "solid"
+}

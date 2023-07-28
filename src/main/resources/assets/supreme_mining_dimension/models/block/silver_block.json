@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "supreme_mining_dimension:blocks/silver_ore_block",
+    "particle": "supreme_mining_dimension:blocks/silver_ore_block"
+  },
+  "render_type": "solid"
+}

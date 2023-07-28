@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TST",
+    " P ",
+    "T T"
+  ],
+  "key": {
+    "T": {
+      "item": "minecraft:torch"
+    },
+    "S": {
+      "item": "supreme_mining_dimension:stone_outpost_walling"
+    },
+    "P": {
+      "item": "supreme_mining_dimension:spruce_outpost_flooring"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:cavern_portal_outpost",
+    "count": 1
+  }
+}

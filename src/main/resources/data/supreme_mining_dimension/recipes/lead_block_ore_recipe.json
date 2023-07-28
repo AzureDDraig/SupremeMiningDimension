@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "supreme_mining_dimension:lead_block"
+    }
+  ],
+  "result": {
+    "item": "supreme_mining_dimension:lead_ingot",
+    "count": 9
+  }
+}

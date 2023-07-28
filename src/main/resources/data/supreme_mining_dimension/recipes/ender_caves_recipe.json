@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:netherrack"
+    },
+    {
+      "item": "minecraft:nether_star"
+    },
+    {
+      "item": "supreme_mining_dimension:nether_island"
+    },
+    {
+      "item": "minecraft:gilded_blackstone"
+    }
+  ],
+  "result": {
+    "item": "supreme_mining_dimension:ender_caves",
+    "count": 1
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "supreme_mining_dimension:blocks/denseandesite",
+    "up": "supreme_mining_dimension:blocks/denseandesite",
+    "north": "supreme_mining_dimension:blocks/denseandesite",
+    "east": "supreme_mining_dimension:blocks/denseandesite",
+    "south": "supreme_mining_dimension:blocks/denseandesite",
+    "west": "supreme_mining_dimension:blocks/denseandesite",
+    "particle": "supreme_mining_dimension:blocks/denseandesite"
+  },
+  "render_type": "solid"
+}

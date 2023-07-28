@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "supreme_mining_dimension:overgrown_caverns",
+  "features": "supreme_mining_dimension:large_bee_nest",
+  "step": "underground_structures"
+}

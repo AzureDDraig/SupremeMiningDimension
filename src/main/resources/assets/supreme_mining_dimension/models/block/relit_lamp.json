@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "supreme_mining_dimension:blocks/relitlamp",
+    "particle": "supreme_mining_dimension:blocks/relitlamp"
+  },
+  "render_type": "solid"
+}
