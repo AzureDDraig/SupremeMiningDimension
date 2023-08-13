@@ -1,0 +1,12 @@
+{
+  "entity.villager.work_music_dealer": {
+    "category": "neutral",
+    "subtitle": "subtitles.entity.villager.work_music_dealer",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:vinyl_scratch",
+        "stream": false
+      }
+    ]
+  }
+}

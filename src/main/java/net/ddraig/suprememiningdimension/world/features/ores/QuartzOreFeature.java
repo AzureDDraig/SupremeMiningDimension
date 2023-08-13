@@ -23,6 +23,7 @@ import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
+import net.ddraig.suprememiningdimension.procedures.QuartzBoolProcedure;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModBlocks;
 
 import java.util.Set;
@@ -36,14 +37,18 @@ public class QuartzOreFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new QuartzOreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("supreme_mining_dimension:quartz_ore", FEATURE,
-				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), SupremeMiningDimensionModBlocks.QUARTZ_ORE.get().defaultBlockState())), 8));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), SupremeMiningDimensionModBlocks.QUARTZ_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.GRANITE.defaultBlockState()), SupremeMiningDimensionModBlocks.QUARTZ_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.DIORITE.defaultBlockState()), SupremeMiningDimensionModBlocks.QUARTZ_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.ANDESITE.defaultBlockState()), SupremeMiningDimensionModBlocks.QUARTZ_ORE.get().defaultBlockState())), 7));
 		PLACED_FEATURE = PlacementUtils.register("supreme_mining_dimension:quartz_ore", CONFIGURED_FEATURE,
 				List.of(CountPlacement.of(9), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(96)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("supreme_mining_dimension:underground_dimension")),
-			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("supreme_mining_dimension:false_overworld_dimension")));
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("supreme_mining_dimension:false_overworld_dimension")), ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("supreme_mining_dimension:caverns")),
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("supreme_mining_dimension:deep_caverns")), ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("supreme_mining_dimension:strange_forests")));
 
 	public QuartzOreFeature() {
 		super(OreConfiguration.CODEC);
@@ -52,6 +57,11 @@ public class QuartzOreFeature extends OreFeature {
 	public boolean place(FeaturePlaceContext<OreConfiguration> context) {
 		WorldGenLevel world = context.level();
 		if (!generate_dimensions.contains(world.getLevel().dimension()))
+			return false;
+		int x = context.origin().getX();
+		int y = context.origin().getY();
+		int z = context.origin().getZ();
+		if (!QuartzBoolProcedure.execute())
 			return false;
 		return super.place(context);
 	}

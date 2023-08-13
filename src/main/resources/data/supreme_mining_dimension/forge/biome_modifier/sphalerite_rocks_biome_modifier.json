@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "supreme_mining_dimension:nether_isles",
+  "features": "supreme_mining_dimension:sphalerite_rocks",
+  "step": "surface_structures"
+}

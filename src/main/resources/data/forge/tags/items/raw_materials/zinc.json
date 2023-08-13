@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "supreme_mining_dimension:sphalerite",
     "supreme_mining_dimension:raw_zinc"
   ]
 }

@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "supreme_mining_dimension:blocks/denseemeraldore",
-    "particle": "supreme_mining_dimension:blocks/denseemeraldore"
+    "all": "supreme_mining_dimension:blocks/ore_dense_emerald",
+    "particle": "supreme_mining_dimension:blocks/ore_dense_emerald"
   },
   "render_type": "solid"
 }

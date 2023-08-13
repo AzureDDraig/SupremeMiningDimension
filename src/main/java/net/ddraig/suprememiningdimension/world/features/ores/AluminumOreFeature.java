@@ -23,6 +23,7 @@ import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
+import net.ddraig.suprememiningdimension.procedures.AluminumOreGenBoolProcedure;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModBlocks;
 
 import java.util.Set;
@@ -36,7 +37,10 @@ public class AluminumOreFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new AluminumOreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("supreme_mining_dimension:aluminum_ore", FEATURE,
-				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), SupremeMiningDimensionModBlocks.ALUMINUM_ORE.get().defaultBlockState())), 6));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), SupremeMiningDimensionModBlocks.ALUMINUM_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.GRANITE.defaultBlockState()), SupremeMiningDimensionModBlocks.ALUMINUM_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.DIORITE.defaultBlockState()), SupremeMiningDimensionModBlocks.ALUMINUM_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.ANDESITE.defaultBlockState()), SupremeMiningDimensionModBlocks.ALUMINUM_ORE.get().defaultBlockState())), 6));
 		PLACED_FEATURE = PlacementUtils.register("supreme_mining_dimension:aluminum_ore", CONFIGURED_FEATURE,
 				List.of(CountPlacement.of(7), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(17), VerticalAnchor.absolute(117)), BiomeFilter.biome()));
 		return FEATURE;
@@ -53,6 +57,11 @@ public class AluminumOreFeature extends OreFeature {
 	public boolean place(FeaturePlaceContext<OreConfiguration> context) {
 		WorldGenLevel world = context.level();
 		if (!generate_dimensions.contains(world.getLevel().dimension()))
+			return false;
+		int x = context.origin().getX();
+		int y = context.origin().getY();
+		int z = context.origin().getZ();
+		if (!AluminumOreGenBoolProcedure.execute())
 			return false;
 		return super.place(context);
 	}

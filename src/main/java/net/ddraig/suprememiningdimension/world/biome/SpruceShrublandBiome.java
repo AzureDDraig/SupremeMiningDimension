@@ -2,8 +2,6 @@
 package net.ddraig.suprememiningdimension.world.biome;
 
 import net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter;
-import net.minecraft.world.level.levelgen.placement.RarityFilter;
-import net.minecraft.world.level.levelgen.placement.NoiseThresholdCountPlacement;
 import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.CountPlacement;
 import net.minecraft.world.level.levelgen.placement.BiomeFilter;
@@ -25,7 +23,6 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
-import net.minecraft.data.worldgen.features.VegetationFeatures;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 
@@ -44,14 +41,9 @@ public class SpruceShrublandBiome {
 										new MegaPineFoliagePlacer(ConstantInt.of(0), ConstantInt.of(0), UniformInt.of(13, 17)), new TwoLayersFeatureSize(1, 1, 2))
 										.decorators(ImmutableList.of(new AlterGroundDecorator(BlockStateProvider.simple(Blocks.PODZOL.defaultBlockState())))).build()),
 						List.of(CountPlacement.of(2), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0), PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING), BiomeFilter.biome())));
-		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacementUtils.register("supreme_mining_dimension:grass_spruce_shrubland", VegetationFeatures.PATCH_GRASS,
-				List.of(NoiseThresholdCountPlacement.of(-0.8D, 5, 2), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP_WORLD_SURFACE, BiomeFilter.biome())));
-		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacementUtils.register("supreme_mining_dimension:flower_spruce_shrubland", VegetationFeatures.FLOWER_DEFAULT,
-				List.of(CountPlacement.of(5), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
-		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacementUtils.register("supreme_mining_dimension:patch_sugar_cane_spruce_shrubland", VegetationFeatures.PATCH_SUGAR_CANE,
-				List.of(RarityFilter.onAverageOnceEvery(3), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
 		BiomeDefaultFeatures.addSwampVegetation(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDesertExtraDecoration(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultExtraVegetation(biomeGenerationSettings);
 		BiomeDefaultFeatures.addMossyStoneBlock(biomeGenerationSettings);

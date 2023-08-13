@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S"
+  ],
+  "key": {
+    "S": {
+      "tag": "storage_blocks/cobalt"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:cobalt_ingot",
+    "count": 9
+  }
+}

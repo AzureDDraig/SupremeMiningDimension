@@ -105,9 +105,9 @@ public class WitheringFireballEntity extends AbstractArrow implements ItemSuppli
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 2f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 0.7000000000000001f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(4.5);
+		entityarrow.setBaseDamage(3.9999999999999996);
 		entityarrow.setKnockback(2);
 		entityarrow.setCritArrow(true);
 		entityarrow.setSecondsOnFire(100);

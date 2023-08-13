@@ -23,6 +23,7 @@ import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
+import net.ddraig.suprememiningdimension.procedures.DenseCoalBoolProcedure;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModBlocks;
 
 import java.util.Set;
@@ -36,11 +37,14 @@ public class DenseCoalOreFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new DenseCoalOreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("supreme_mining_dimension:dense_coal_ore", FEATURE,
-				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_COAL_ORE.get().defaultBlockState()),
-						OreConfiguration.target(new BlockStateMatchTest(Blocks.ICE.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_COAL_ORE.get().defaultBlockState()),
-						OreConfiguration.target(new BlockStateMatchTest(Blocks.AMETHYST_BLOCK.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_COAL_ORE.get().defaultBlockState())), 11));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.ICE.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_COAL_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.AMETHYST_BLOCK.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_COAL_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_COAL_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.GRANITE.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_COAL_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.DIORITE.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_COAL_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.ANDESITE.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_COAL_ORE.get().defaultBlockState())), 9));
 		PLACED_FEATURE = PlacementUtils.register("supreme_mining_dimension:dense_coal_ore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(12), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(128)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(8), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(13), VerticalAnchor.absolute(113)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
@@ -54,6 +58,11 @@ public class DenseCoalOreFeature extends OreFeature {
 	public boolean place(FeaturePlaceContext<OreConfiguration> context) {
 		WorldGenLevel world = context.level();
 		if (!generate_dimensions.contains(world.getLevel().dimension()))
+			return false;
+		int x = context.origin().getX();
+		int y = context.origin().getY();
+		int z = context.origin().getZ();
+		if (!DenseCoalBoolProcedure.execute())
 			return false;
 		return super.place(context);
 	}

@@ -1,13 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "TTT",
-    "TTT",
-    "TTT"
+    "III",
+    "III",
+    "III"
   ],
   "key": {
-    "T": {
-      "item": "supreme_mining_dimension:tungsten_ingot"
+    "I": {
+      "tag": "ingots/tungsten"
     }
   },
   "result": {

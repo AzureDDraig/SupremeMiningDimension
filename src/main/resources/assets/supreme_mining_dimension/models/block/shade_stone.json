@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "supreme_mining_dimension:blocks/shade_stone",
+    "up": "supreme_mining_dimension:blocks/shade_stone",
+    "north": "supreme_mining_dimension:blocks/shade_stone",
+    "east": "supreme_mining_dimension:blocks/shade_stone",
+    "south": "supreme_mining_dimension:blocks/shade_stone",
+    "west": "supreme_mining_dimension:blocks/shade_stone",
+    "particle": "supreme_mining_dimension:blocks/shade_stone"
+  },
+  "render_type": "solid"
+}

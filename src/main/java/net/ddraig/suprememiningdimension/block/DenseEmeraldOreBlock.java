@@ -43,7 +43,7 @@ public class DenseEmeraldOreBlock extends Block {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(Items.EMERALD, 3));
+		return Collections.singletonList(new ItemStack(Items.EMERALD, 5));
 	}
 
 	@Override

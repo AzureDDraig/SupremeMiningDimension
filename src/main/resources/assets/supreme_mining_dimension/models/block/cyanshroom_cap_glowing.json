@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "supreme_mining_dimension:blocks/shroomcyan",
+    "particle": "supreme_mining_dimension:blocks/shroomcyan"
+  },
+  "render_type": "solid"
+}

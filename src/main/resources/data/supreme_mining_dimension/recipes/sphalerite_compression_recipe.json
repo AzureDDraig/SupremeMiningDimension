@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SS",
+    "SS"
+  ],
+  "key": {
+    "S": {
+      "item": "supreme_mining_dimension:sphalerite_dust"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:sphalerite",
+    "count": 1
+  }
+}

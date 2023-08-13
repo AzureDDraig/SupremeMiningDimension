@@ -2,13 +2,12 @@
   "type": "forge:add_spawns",
   "biomes": [
     "basalt_deltas",
-    "nether_wastes",
-    "supreme_mining_dimension:nether_islands"
+    "nether_wastes"
   ],
   "spawners": {
     "type": "supreme_mining_dimension:withered_blaze",
-    "weight": 20,
-    "minCount": 2,
-    "maxCount": 4
+    "weight": 1,
+    "minCount": 1,
+    "maxCount": 2
   }
 }

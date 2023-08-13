@@ -1,12 +1,10 @@
 {
   "type": "forge:add_spawns",
-  "biomes": {
-    "type": "forge:any"
-  },
+  "biomes": "supreme_mining_dimension:ancient_forest",
   "spawners": {
     "type": "supreme_mining_dimension:duck",
-    "weight": 20,
-    "minCount": 4,
+    "weight": 15,
+    "minCount": 2,
     "maxCount": 4
   }
 }

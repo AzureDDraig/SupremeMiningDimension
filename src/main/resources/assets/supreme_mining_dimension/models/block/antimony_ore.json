@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "supreme_mining_dimension:blocks/ore_antimony",
+    "particle": "supreme_mining_dimension:blocks/ore_antimony"
+  },
+  "render_type": "solid"
+}

@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "supreme_mining_dimension:blocks/ore_titanium_benitoite_crystal_large",
+    "particle": "supreme_mining_dimension:blocks/ore_titanium_benitoite_crystal_large"
+  },
+  "render_type": "cutout_mipped"
+}

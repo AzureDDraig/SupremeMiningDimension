@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "III",
+    "III",
+    "III"
+  ],
+  "key": {
+    "I": {
+      "tag": "ingots/antimony"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:antimony_block",
+    "count": 1
+  }
+}

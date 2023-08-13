@@ -28,12 +28,18 @@ import net.minecraft.core.BlockPos;
 
 import net.ddraig.suprememiningdimension.world.teleporter.StrangeForestsTeleporter;
 import net.ddraig.suprememiningdimension.world.teleporter.StrangeForestsPortalShape;
+import net.ddraig.suprememiningdimension.procedures.StrangeForestsOnPortalTickUpdateProcedure;
 
 import java.util.Optional;
 
 public class StrangeForestsPortalBlock extends NetherPortalBlock {
 	public StrangeForestsPortalBlock() {
 		super(BlockBehaviour.Properties.of(Material.PORTAL).noCollission().randomTicks().strength(-1.0F).sound(SoundType.GLASS).lightLevel(s -> 0).noLootTable());
+	}
+
+	@Override
+	public void tick(BlockState blockstate, ServerLevel world, BlockPos pos, RandomSource random) {
+		StrangeForestsOnPortalTickUpdateProcedure.execute(world, pos.getX(), pos.getY(), pos.getZ());
 	}
 
 	@Override

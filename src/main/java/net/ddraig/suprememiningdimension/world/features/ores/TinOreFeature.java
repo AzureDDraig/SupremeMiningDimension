@@ -23,6 +23,7 @@ import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
+import net.ddraig.suprememiningdimension.procedures.TinBoolProcedure;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModBlocks;
 
 import java.util.Set;
@@ -36,8 +37,11 @@ public class TinOreFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new TinOreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("supreme_mining_dimension:tin_ore", FEATURE,
-				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), SupremeMiningDimensionModBlocks.TIN_ORE.get().defaultBlockState()),
-						OreConfiguration.target(new BlockStateMatchTest(Blocks.DEEPSLATE.defaultBlockState()), SupremeMiningDimensionModBlocks.TIN_ORE.get().defaultBlockState())), 10));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.DEEPSLATE.defaultBlockState()), SupremeMiningDimensionModBlocks.TIN_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), SupremeMiningDimensionModBlocks.TIN_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.GRANITE.defaultBlockState()), SupremeMiningDimensionModBlocks.TIN_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.DIORITE.defaultBlockState()), SupremeMiningDimensionModBlocks.TIN_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.ANDESITE.defaultBlockState()), SupremeMiningDimensionModBlocks.TIN_ORE.get().defaultBlockState())), 10));
 		PLACED_FEATURE = PlacementUtils.register("supreme_mining_dimension:tin_ore", CONFIGURED_FEATURE,
 				List.of(CountPlacement.of(8), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(123)), BiomeFilter.biome()));
 		return FEATURE;
@@ -54,6 +58,11 @@ public class TinOreFeature extends OreFeature {
 	public boolean place(FeaturePlaceContext<OreConfiguration> context) {
 		WorldGenLevel world = context.level();
 		if (!generate_dimensions.contains(world.getLevel().dimension()))
+			return false;
+		int x = context.origin().getX();
+		int y = context.origin().getY();
+		int z = context.origin().getZ();
+		if (!TinBoolProcedure.execute())
 			return false;
 		return super.place(context);
 	}

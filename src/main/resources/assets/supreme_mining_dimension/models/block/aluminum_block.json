@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "supreme_mining_dimension:blocks/aluminum_ore_block",
-    "particle": "supreme_mining_dimension:blocks/aluminum_ore_block"
+    "all": "supreme_mining_dimension:blocks/storage_aluminum",
+    "particle": "supreme_mining_dimension:blocks/storage_aluminum"
   },
   "render_type": "solid"
 }

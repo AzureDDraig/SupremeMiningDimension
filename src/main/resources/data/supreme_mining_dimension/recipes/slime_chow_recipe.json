@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " R ",
+    "ASA",
+    " P "
+  ],
+  "key": {
+    "R": {
+      "item": "minecraft:redstone"
+    },
+    "A": {
+      "item": "supreme_mining_dimension:raw_nickel"
+    },
+    "S": {
+      "item": "minecraft:slime_ball"
+    },
+    "P": {
+      "item": "minecraft:poisonous_potato"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:slime_chow",
+    "count": 4
+  }
+}

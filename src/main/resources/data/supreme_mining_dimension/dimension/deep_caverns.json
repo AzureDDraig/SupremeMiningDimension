@@ -80,7 +80,7 @@
               0.2
             ],
             "erosion": [
-              0.6,
+              0.5997,
               1
             ],
             "depth": 0,
@@ -107,7 +107,7 @@
               0.2
             ],
             "erosion": [
-              0.6,
+              0.5999,
               1
             ],
             "depth": 0,
@@ -466,7 +466,7 @@
                         "then_run": {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:ice"
+                            "Name": "minecraft:blue_ice"
                           }
                         }
                       },

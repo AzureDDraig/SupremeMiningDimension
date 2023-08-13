@@ -58,7 +58,7 @@ public class WitheringFireballItem extends Item {
 					}
 				}
 				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					WitheringFireballEntity entityarrow = WitheringFireballEntity.shoot(world, entity, world.getRandom(), 2f, 4.5, 2);
+					WitheringFireballEntity entityarrow = WitheringFireballEntity.shoot(world, entity, world.getRandom(), 0.7000000000000001f, 3.9999999999999996, 2);
 					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;

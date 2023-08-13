@@ -23,6 +23,7 @@ import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
+import net.ddraig.suprememiningdimension.procedures.DenseCopperBoolProcedure;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModBlocks;
 
 import java.util.Set;
@@ -36,7 +37,10 @@ public class DenseCopperOreFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new DenseCopperOreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("supreme_mining_dimension:dense_copper_ore", FEATURE,
-				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_COPPER_ORE.get().defaultBlockState())), 12));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_COPPER_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.GRANITE.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_COPPER_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.DIORITE.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_COPPER_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.ANDESITE.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_COPPER_ORE.get().defaultBlockState())), 8));
 		PLACED_FEATURE = PlacementUtils.register("supreme_mining_dimension:dense_copper_ore", CONFIGURED_FEATURE,
 				List.of(CountPlacement.of(5), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(96)), BiomeFilter.biome()));
 		return FEATURE;
@@ -52,6 +56,11 @@ public class DenseCopperOreFeature extends OreFeature {
 	public boolean place(FeaturePlaceContext<OreConfiguration> context) {
 		WorldGenLevel world = context.level();
 		if (!generate_dimensions.contains(world.getLevel().dimension()))
+			return false;
+		int x = context.origin().getX();
+		int y = context.origin().getY();
+		int z = context.origin().getZ();
+		if (!DenseCopperBoolProcedure.execute())
 			return false;
 		return super.place(context);
 	}

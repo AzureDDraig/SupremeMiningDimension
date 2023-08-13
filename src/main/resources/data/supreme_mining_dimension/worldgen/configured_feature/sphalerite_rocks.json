@@ -1,0 +1,8 @@
+{
+  "type": "supreme_mining_dimension:sphalerite_rocks",
+  "config": {
+    "state": {
+      "Name": "supreme_mining_dimension:sphalerite_ore"
+    }
+  }
+}

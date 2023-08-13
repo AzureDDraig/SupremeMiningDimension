@@ -2,7 +2,6 @@
 package net.ddraig.suprememiningdimension.world.biome;
 
 import net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter;
-import net.minecraft.world.level.levelgen.placement.RarityFilter;
 import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.CountPlacement;
 import net.minecraft.world.level.levelgen.placement.BiomeFilter;
@@ -21,18 +20,18 @@ import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
-import net.minecraft.data.worldgen.placement.AquaticPlacements;
-import net.minecraft.data.worldgen.features.VegetationFeatures;
 import net.minecraft.data.worldgen.features.FeatureUtils;
-import net.minecraft.data.worldgen.features.AquaticFeatures;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 
 import java.util.List;
 
 public class SurfaceMiningDimensionBiome {
 	public static Biome createBiome() {
-		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607).foliageColorOverride(-14253005).grassColorOverride(-13631680).build();
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607).foliageColorOverride(-14253005).grassColorOverride(-13631680)
+				.ambientLoopSound(new SoundEvent(new ResourceLocation("supreme_mining_dimension:smd.biome.elevenpm"))).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("supreme_mining_dimension:tree_surface_mining_dimension",
@@ -40,12 +39,8 @@ public class SurfaceMiningDimensionBiome {
 								new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG.defaultBlockState()), new StraightTrunkPlacer(4, 2, 0), BlockStateProvider.simple(Blocks.OAK_LEAVES.defaultBlockState()),
 										new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1)).ignoreVines().build()),
 						List.of(CountPlacement.of(2), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0), PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING), BiomeFilter.biome())));
-		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacementUtils.register("supreme_mining_dimension:seagrass_surface_mining_dimension", AquaticFeatures.SEAGRASS_SHORT, AquaticPlacements.seagrassPlacement(2)));
-		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacementUtils.register("supreme_mining_dimension:flower_surface_mining_dimension", VegetationFeatures.FLOWER_DEFAULT,
-				List.of(CountPlacement.of(3), RarityFilter.onAverageOnceEvery(32), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
-		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacementUtils.register("supreme_mining_dimension:patch_sugar_cane_surface_mining_dimension", VegetationFeatures.PATCH_SUGAR_CANE,
-				List.of(RarityFilter.onAverageOnceEvery(1), InSquarePlacement.spread(), PlacementUtils.HEIGHTMAP, BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
+		BiomeDefaultFeatures.addDesertExtraDecoration(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
 		BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultMonsterRoom(biomeGenerationSettings);

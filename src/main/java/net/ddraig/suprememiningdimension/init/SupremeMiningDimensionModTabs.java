@@ -1,10 +1,6 @@
 
-/*
- *    MCreator note: This file will be REGENERATED on each build.
- */
 package net.ddraig.suprememiningdimension.init;
 
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.CreativeModeTab;
 
@@ -15,13 +11,13 @@ public class SupremeMiningDimensionModTabs {
 		TAB_SUPREME_MINING_DIMENSIONS = new CreativeModeTab("tabsupreme_mining_dimensions") {
 			@Override
 			public ItemStack makeIcon() {
-				return new ItemStack(Items.IRON_PICKAXE);
+				return new ItemStack(SupremeMiningDimensionModItems.STRANGE_FORESTS.get());
 			}
 
 			@Override
 			public boolean hasSearchBar() {
-				return false;
+				return true;
 			}
-		};
+		}.setBackgroundSuffix("item_search.png");
 	}
 }

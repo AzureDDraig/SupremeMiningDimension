@@ -16,11 +16,14 @@ import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.WorldGenLevel;
 import net.minecraft.world.level.Level;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
+import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
+import net.ddraig.suprememiningdimension.procedures.ZincBoolProcedure;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModBlocks;
 
 import java.util.Set;
@@ -34,13 +37,19 @@ public class ZincOreFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new ZincOreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("supreme_mining_dimension:zinc_ore", FEATURE,
-				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), SupremeMiningDimensionModBlocks.ZINC_ORE.get().defaultBlockState())), 9));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), SupremeMiningDimensionModBlocks.ZINC_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.GRANITE.defaultBlockState()), SupremeMiningDimensionModBlocks.ZINC_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.DIORITE.defaultBlockState()), SupremeMiningDimensionModBlocks.ZINC_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.ANDESITE.defaultBlockState()), SupremeMiningDimensionModBlocks.ZINC_ORE.get().defaultBlockState())), 14));
 		PLACED_FEATURE = PlacementUtils.register("supreme_mining_dimension:zinc_ore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(15), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(1), VerticalAnchor.absolute(86)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(8), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(-62), VerticalAnchor.absolute(84)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
-	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(Level.OVERWORLD);
+	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("supreme_mining_dimension:false_overworld_dimension")),
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("supreme_mining_dimension:underground_dimension")), ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("supreme_mining_dimension:caverns")),
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("supreme_mining_dimension:deep_caverns")), ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("supreme_mining_dimension:ender_caves")),
+			ResourceKey.create(Registry.DIMENSION_REGISTRY, new ResourceLocation("supreme_mining_dimension:strange_forests")));
 
 	public ZincOreFeature() {
 		super(OreConfiguration.CODEC);
@@ -49,6 +58,11 @@ public class ZincOreFeature extends OreFeature {
 	public boolean place(FeaturePlaceContext<OreConfiguration> context) {
 		WorldGenLevel world = context.level();
 		if (!generate_dimensions.contains(world.getLevel().dimension()))
+			return false;
+		int x = context.origin().getX();
+		int y = context.origin().getY();
+		int z = context.origin().getZ();
+		if (!ZincBoolProcedure.execute())
 			return false;
 		return super.place(context);
 	}

@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "supreme_mining_dimension:blocks/musicstationside",
+    "up": "supreme_mining_dimension:blocks/musicstationtop",
+    "north": "supreme_mining_dimension:blocks/musicstationside",
+    "east": "supreme_mining_dimension:blocks/musicstationside",
+    "south": "supreme_mining_dimension:blocks/musicstationside",
+    "west": "supreme_mining_dimension:blocks/musicstationside",
+    "particle": "supreme_mining_dimension:blocks/musicstationside"
+  },
+  "render_type": "solid"
+}

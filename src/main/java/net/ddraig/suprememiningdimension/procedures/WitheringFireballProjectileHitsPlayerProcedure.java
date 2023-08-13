@@ -11,6 +11,12 @@ public class WitheringFireballProjectileHitsPlayerProcedure {
 			return;
 		if (entity instanceof LivingEntity _entity)
 			_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 60, 1, (false), (true)));
-		entity.setSecondsOnFire(5);
+		if (Math.random() < 0.7) {
+			entity.setSecondsOnFire(2);
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(MobEffects.DARKNESS, 20, 1, (false), (true)));
+			if (entity instanceof LivingEntity _entity)
+				_entity.addEffect(new MobEffectInstance(MobEffects.NIGHT_VISION, 20, 1, (false), (true)));
+		}
 	}
 }

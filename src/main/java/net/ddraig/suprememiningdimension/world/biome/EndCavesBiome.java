@@ -45,7 +45,7 @@ public class EndCavesBiome {
 
 																EndCavesFruitDecorator.INSTANCE))
 														.build()),
-										List.of(CountPlacement.of(1), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0), PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING),
+										List.of(CountPlacement.of(2), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0), PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING),
 												BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultMonsterRoom(biomeGenerationSettings);

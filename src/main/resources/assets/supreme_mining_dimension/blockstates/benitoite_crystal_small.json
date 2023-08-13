@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "axis=x": {
+      "model": "supreme_mining_dimension:block/benitoite_crystal_small",
+      "x": 90,
+      "y": 90
+    },
+    "axis=y": {
+      "model": "supreme_mining_dimension:block/benitoite_crystal_small"
+    },
+    "axis=z": {
+      "model": "supreme_mining_dimension:block/benitoite_crystal_small",
+      "x": 90
+    }
+  }
+}

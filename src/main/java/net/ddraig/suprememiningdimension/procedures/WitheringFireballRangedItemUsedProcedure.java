@@ -9,7 +9,7 @@ public class WitheringFireballRangedItemUsedProcedure {
 		if (entity == null)
 			return;
 		if (entity instanceof Player) {
-			entity.hurt(DamageSource.MAGIC, 4);
+			entity.hurt(DamageSource.WITHER, 4);
 		}
 	}
 }

@@ -1,0 +1,143 @@
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "supreme_mining_dimension:sphalerite"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "chance": 0.3,
+      "item": "create:crushed_raw_zinc"
+    },
+    {
+      "chance": 0.3,
+      "item": "create:zinc_nugget"
+    }
+  ]
+}
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "supreme_mining_dimension:sphalerite_dust"
+    }
+  ],
+  "processingTime": 250,
+  "results": [
+    {
+      "chance": 0.3,
+      "item": "create:zinc_nugget"
+    }
+  ]
+}
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "supreme_mining_dimension:dense_lapis_ore"
+    }
+  ],
+  "processingTime": 400,
+  "results": [
+    {
+      "count": 24,
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "chance": 0.5,
+      "item": "minecraft:lapis_lazuli"
+    },
+    {
+      "chance": 0.9,
+      "item": "create:experience_nugget"
+    },
+    {
+      "chance": 0.025,
+      "item": "minecraft:cobblestone"
+    }
+  ]
+}
+
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "supreme_mining_dimension:dense_redstone_ore"
+    }
+  ],
+  "processingTime": 400,
+  "results": [
+    {
+      "count": 15,
+      "item": "minecraft:redstone"
+    },
+    {
+      "chance": 0.5,
+      "item": "minecraft:redstone"
+    },
+    {
+      "chance": 0.9,
+      "item": "create:experience_nugget"
+    },
+    {
+      "chance": 0.025,
+      "item": "minecraft:cobblestone"
+    }
+  ]
+}
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "supreme_mining_dimension:dense_iron_ore"
+    }
+  ],
+  "processingTime": 400,
+  "results": [
+    {
+      "count": 7,
+      "item": "create:crushed_raw_iron"
+    },
+    {
+      "chance": 0.75,
+      "item": "create:crushed_raw_iron"
+    },
+    {
+      "chance": 0.9,
+      "item": "create:experience_nugget"
+    },
+    {
+      "chance": 0.025,
+      "item": "minecraft:cobblestone"
+    }
+  ]
+}
+{
+  "type": "create:crushing",
+  "ingredients": [
+    {
+      "item": "supreme_mining_dimension:dense_gold_ore"
+    }
+  ],
+  "processingTime": 400,
+  "results": [
+    {
+      "count": 7,
+      "item": "create:crushed_raw_gold"
+    },
+    {
+      "chance": 0.75,
+      "item": "create:crushed_gold_iron"
+    },
+    {
+      "chance": 0.9,
+      "item": "create:experience_nugget"
+    },
+    {
+      "chance": 0.025,
+      "item": "minecraft:cobblestone"
+    }
+  ]
+}

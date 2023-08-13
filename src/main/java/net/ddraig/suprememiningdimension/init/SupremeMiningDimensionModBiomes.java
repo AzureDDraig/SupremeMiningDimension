@@ -1,7 +1,4 @@
 
-/*
- *    MCreator note: This file will be REGENERATED on each build.
- */
 package net.ddraig.suprememiningdimension.init;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -14,7 +11,7 @@ import net.ddraig.suprememiningdimension.world.biome.SurfaceMiningDimensionBiome
 import net.ddraig.suprememiningdimension.world.biome.SpruceShrublandBiome;
 import net.ddraig.suprememiningdimension.world.biome.SculkCavernsBiome;
 import net.ddraig.suprememiningdimension.world.biome.OvergrownCavernsBiome;
-import net.ddraig.suprememiningdimension.world.biome.NetherIslandsBiome;
+import net.ddraig.suprememiningdimension.world.biome.NetherIslesBiome;
 import net.ddraig.suprememiningdimension.world.biome.MushroomForestBiome;
 import net.ddraig.suprememiningdimension.world.biome.MagmaticCavernsBiome;
 import net.ddraig.suprememiningdimension.world.biome.GlacialCavernsBiome;
@@ -35,11 +32,11 @@ public class SupremeMiningDimensionModBiomes {
 	public static final RegistryObject<Biome> AMETHYST_CAVERNS = REGISTRY.register("amethyst_caverns", AmethystCavernsBiome::createBiome);
 	public static final RegistryObject<Biome> SURFACE_MINING_DIMENSION = REGISTRY.register("surface_mining_dimension", SurfaceMiningDimensionBiome::createBiome);
 	public static final RegistryObject<Biome> DRIPSTONE_CAVERNS = REGISTRY.register("dripstone_caverns", DripstoneCavernsBiome::createBiome);
-	public static final RegistryObject<Biome> NETHER_ISLANDS = REGISTRY.register("nether_islands", NetherIslandsBiome::createBiome);
 	public static final RegistryObject<Biome> END_CAVES = REGISTRY.register("end_caves", EndCavesBiome::createBiome);
 	public static final RegistryObject<Biome> MUSHROOM_FOREST = REGISTRY.register("mushroom_forest", MushroomForestBiome::createBiome);
 	public static final RegistryObject<Biome> SPRUCE_SHRUBLAND = REGISTRY.register("spruce_shrubland", SpruceShrublandBiome::createBiome);
 	public static final RegistryObject<Biome> ANCIENT_FOREST = REGISTRY.register("ancient_forest", AncientForestBiome::createBiome);
 	public static final RegistryObject<Biome> AMBER_CAVERNS = REGISTRY.register("amber_caverns", AmberCavernsBiome::createBiome);
 	public static final RegistryObject<Biome> GLACIAL_CAVERNS = REGISTRY.register("glacial_caverns", GlacialCavernsBiome::createBiome);
+	public static final RegistryObject<Biome> NETHER_ISLES = REGISTRY.register("nether_isles", NetherIslesBiome::createBiome);
 }

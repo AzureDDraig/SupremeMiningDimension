@@ -18,12 +18,15 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModTabs;
+import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModSounds;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModItems;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModFluids;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModFluidTypes;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModFeatures;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModEntities;
+import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModEnchantments;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModBlocks;
+import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModBlockEntities;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModBiomes;
 
 import java.util.function.Supplier;
@@ -44,14 +47,16 @@ public class SupremeMiningDimensionMod {
 		MinecraftForge.EVENT_BUS.register(this);
 		SupremeMiningDimensionModTabs.load();
 		IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
-
+		SupremeMiningDimensionModSounds.REGISTRY.register(bus);
 		SupremeMiningDimensionModBlocks.REGISTRY.register(bus);
 		SupremeMiningDimensionModItems.REGISTRY.register(bus);
 		SupremeMiningDimensionModEntities.REGISTRY.register(bus);
-
+		SupremeMiningDimensionModBlockEntities.REGISTRY.register(bus);
 		SupremeMiningDimensionModFeatures.REGISTRY.register(bus);
 		SupremeMiningDimensionModFluids.REGISTRY.register(bus);
 		SupremeMiningDimensionModFluidTypes.REGISTRY.register(bus);
+
+		SupremeMiningDimensionModEnchantments.REGISTRY.register(bus);
 
 		SupremeMiningDimensionModBiomes.REGISTRY.register(bus);
 	}

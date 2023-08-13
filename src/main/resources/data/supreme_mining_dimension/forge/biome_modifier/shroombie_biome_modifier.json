@@ -1,0 +1,10 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": "supreme_mining_dimension:mushroom_forest",
+  "spawners": {
+    "type": "supreme_mining_dimension:shroombie",
+    "weight": 80,
+    "minCount": 4,
+    "maxCount": 4
+  }
+}

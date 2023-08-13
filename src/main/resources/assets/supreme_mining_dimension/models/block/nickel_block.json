@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "supreme_mining_dimension:blocks/nickel_ore_block",
-    "particle": "supreme_mining_dimension:blocks/nickel_ore_block"
+    "all": "supreme_mining_dimension:blocks/storage_nickel",
+    "particle": "supreme_mining_dimension:blocks/storage_nickel"
   },
   "render_type": "solid"
 }

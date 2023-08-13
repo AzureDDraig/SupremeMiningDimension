@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
+    "supreme_mining_dimension:light_obsidian_bricks",
     "supreme_mining_dimension:dense_diamond_ore",
     "supreme_mining_dimension:dense_iron_ore",
     "supreme_mining_dimension:dense_redstone_ore",
@@ -10,7 +11,6 @@
     "supreme_mining_dimension:dense_lapis_ore",
     "supreme_mining_dimension:dense_gold_ore",
     "supreme_mining_dimension:dense_emerald_ore",
-    "supreme_mining_dimension:light_obsidian_bricks",
     "supreme_mining_dimension:silver_ore",
     "supreme_mining_dimension:silver_block",
     "supreme_mining_dimension:tin_ore",
@@ -27,6 +27,13 @@
     "supreme_mining_dimension:aluminum_block",
     "supreme_mining_dimension:zinc_ore",
     "supreme_mining_dimension:zinc_block",
-    "supreme_mining_dimension:amber_solid"
+    "supreme_mining_dimension:amber_solid",
+    "supreme_mining_dimension:antimony_ore",
+    "supreme_mining_dimension:antimony_block",
+    "supreme_mining_dimension:cobalt_ore",
+    "supreme_mining_dimension:cobalt_block",
+    "supreme_mining_dimension:sphalerite_ore",
+    "supreme_mining_dimension:shade_cobblestone",
+    "supreme_mining_dimension:shade_stone"
   ]
 }

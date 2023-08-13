@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "supreme_mining_dimension:tungsten_block"
+      "tag": "storage_blocks/tungsten"
     }
   ],
   "result": {

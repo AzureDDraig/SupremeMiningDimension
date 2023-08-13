@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:blasting",
+  "experience": 3,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "raw_materials/antimony"
+  },
+  "result": "supreme_mining_dimension:antimony_ingot"
+}

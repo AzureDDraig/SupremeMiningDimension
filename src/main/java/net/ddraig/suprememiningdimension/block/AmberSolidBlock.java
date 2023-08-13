@@ -15,7 +15,7 @@ import net.minecraft.core.BlockPos;
 
 public class AmberSolidBlock extends Block {
 	public AmberSolidBlock() {
-		super(BlockBehaviour.Properties.of(Material.AMETHYST).sound(SoundType.AMETHYST).strength(1f, 10f).lightLevel(s -> 4).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.AMETHYST).strength(1f, 10f).lightLevel(s -> 5).requiresCorrectToolForDrops());
 	}
 
 	@Override

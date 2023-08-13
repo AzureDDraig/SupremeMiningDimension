@@ -1,7 +1,4 @@
 
-/*
- *    MCreator note: This file will be REGENERATED on each build.
- */
 package net.ddraig.suprememiningdimension.init;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -26,6 +23,9 @@ import net.ddraig.suprememiningdimension.item.TinIngotItem;
 import net.ddraig.suprememiningdimension.item.StrangeForestsItem;
 import net.ddraig.suprememiningdimension.item.StoneOutpostWallingItem;
 import net.ddraig.suprememiningdimension.item.SpruceOutpostFlooringItem;
+import net.ddraig.suprememiningdimension.item.SphaleriteItem;
+import net.ddraig.suprememiningdimension.item.SphaleriteDustItem;
+import net.ddraig.suprememiningdimension.item.SlimeChowItem;
 import net.ddraig.suprememiningdimension.item.SilverIngotItem;
 import net.ddraig.suprememiningdimension.item.RawZincItem;
 import net.ddraig.suprememiningdimension.item.RawTungstenItem;
@@ -34,6 +34,8 @@ import net.ddraig.suprememiningdimension.item.RawSilverItem;
 import net.ddraig.suprememiningdimension.item.RawPlatinumItem;
 import net.ddraig.suprememiningdimension.item.RawNickelItem;
 import net.ddraig.suprememiningdimension.item.RawLeadItem;
+import net.ddraig.suprememiningdimension.item.RawCobaltItem;
+import net.ddraig.suprememiningdimension.item.RawAntimonyOreItem;
 import net.ddraig.suprememiningdimension.item.PlatinumIngotItem;
 import net.ddraig.suprememiningdimension.item.NickelIngotItem;
 import net.ddraig.suprememiningdimension.item.NetherIslandItem;
@@ -47,9 +49,13 @@ import net.ddraig.suprememiningdimension.item.FaultyExplosiveItem;
 import net.ddraig.suprememiningdimension.item.FalseOverworldDimensionItem;
 import net.ddraig.suprememiningdimension.item.ExplosiveThrownItem;
 import net.ddraig.suprememiningdimension.item.EnderCavesItem;
+import net.ddraig.suprememiningdimension.item.DiamondDustItem;
 import net.ddraig.suprememiningdimension.item.DeepCavernsItem;
+import net.ddraig.suprememiningdimension.item.CobaltIngotItem;
 import net.ddraig.suprememiningdimension.item.CavernsItem;
 import net.ddraig.suprememiningdimension.item.CavernPortalOutpostItem;
+import net.ddraig.suprememiningdimension.item.BenitoiteGemItem;
+import net.ddraig.suprememiningdimension.item.AntimonyIngotItem;
 import net.ddraig.suprememiningdimension.item.AmberChunkItem;
 import net.ddraig.suprememiningdimension.item.AluminumRawItem;
 import net.ddraig.suprememiningdimension.item.AluminumIngotItem;
@@ -163,7 +169,7 @@ public class SupremeMiningDimensionModItems {
 			() -> new ForgeSpawnEggItem(SupremeMiningDimensionModEntities.WITHERED_BLAZE, -13421773, -3381760, new Item.Properties().tab(SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS)));
 	public static final RegistryObject<Item> AMBER_CHUNK = REGISTRY.register("amber_chunk", () -> new AmberChunkItem());
 	public static final RegistryObject<Item> RED_SLIME_SPAWN_EGG = REGISTRY.register("red_slime_spawn_egg",
-			() -> new ForgeSpawnEggItem(SupremeMiningDimensionModEntities.RED_SLIME, -52429, -10092544, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
+			() -> new ForgeSpawnEggItem(SupremeMiningDimensionModEntities.RED_SLIME, -52429, -10092544, new Item.Properties().tab(SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS)));
 	public static final RegistryObject<Item> RAW_SILVER = REGISTRY.register("raw_silver", () -> new RawSilverItem());
 	public static final RegistryObject<Item> FAULTY_EXPLOSIVE = REGISTRY.register("faulty_explosive", () -> new FaultyExplosiveItem());
 	public static final RegistryObject<Item> EXPLOSIVE_THROWN = REGISTRY.register("explosive_thrown", () -> new ExplosiveThrownItem());
@@ -173,6 +179,34 @@ public class SupremeMiningDimensionModItems {
 			() -> new ForgeSpawnEggItem(SupremeMiningDimensionModEntities.BLAZING_WITHER_MASTER, -13421773, -3381760, new Item.Properties().tab(SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS)));
 	public static final RegistryObject<Item> WEAK_WITHERING_FIREBALL = REGISTRY.register("weak_withering_fireball", () -> new WeakWitheringFireballItem());
 	public static final RegistryObject<Item> WEAK_WITHERED_FIREBALL = REGISTRY.register("weak_withered_fireball", () -> new WeakWitheredFireballItem());
+	public static final RegistryObject<Item> SHROOMBIE_SPAWN_EGG = REGISTRY.register("shroombie_spawn_egg",
+			() -> new ForgeSpawnEggItem(SupremeMiningDimensionModEntities.SHROOMBIE, -6750055, -39169, new Item.Properties().tab(SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS)));
+	public static final RegistryObject<Item> MUSIC_STATION = block(SupremeMiningDimensionModBlocks.MUSIC_STATION, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> SLIME_CHOW = REGISTRY.register("slime_chow", () -> new SlimeChowItem());
+	public static final RegistryObject<Item> ANTIMONY_ORE = block(SupremeMiningDimensionModBlocks.ANTIMONY_ORE, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> RAW_ANTIMONY_ORE = REGISTRY.register("raw_antimony_ore", () -> new RawAntimonyOreItem());
+	public static final RegistryObject<Item> ANTIMONY_INGOT = REGISTRY.register("antimony_ingot", () -> new AntimonyIngotItem());
+	public static final RegistryObject<Item> ANTIMONY_BLOCK = block(SupremeMiningDimensionModBlocks.ANTIMONY_BLOCK, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> COBALT_ORE = block(SupremeMiningDimensionModBlocks.COBALT_ORE, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> RAW_COBALT = REGISTRY.register("raw_cobalt", () -> new RawCobaltItem());
+	public static final RegistryObject<Item> COBALT_BLOCK = block(SupremeMiningDimensionModBlocks.COBALT_BLOCK, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> COBALT_INGOT = REGISTRY.register("cobalt_ingot", () -> new CobaltIngotItem());
+	public static final RegistryObject<Item> SPHALERITE_DUST = REGISTRY.register("sphalerite_dust", () -> new SphaleriteDustItem());
+	public static final RegistryObject<Item> SPHALERITE_ORE = block(SupremeMiningDimensionModBlocks.SPHALERITE_ORE, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> SPHALERITE = REGISTRY.register("sphalerite", () -> new SphaleriteItem());
+	public static final RegistryObject<Item> DIAMOND_SAND = block(SupremeMiningDimensionModBlocks.DIAMOND_SAND, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> DIAMOND_GRAVEL = block(SupremeMiningDimensionModBlocks.DIAMOND_GRAVEL, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> DIAMOND_DUST = REGISTRY.register("diamond_dust", () -> new DiamondDustItem());
+	public static final RegistryObject<Item> BENITOITE_CRYSTAL_SMALL = block(SupremeMiningDimensionModBlocks.BENITOITE_CRYSTAL_SMALL, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> BENITOITE_CRYSTAL_MEDIUM = block(SupremeMiningDimensionModBlocks.BENITOITE_CRYSTAL_MEDIUM, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> BENITOITE_CRYSTAL_LARGE = block(SupremeMiningDimensionModBlocks.BENITOITE_CRYSTAL_LARGE, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> BENITOITE_CRYSTAL_SOLID = block(SupremeMiningDimensionModBlocks.BENITOITE_CRYSTAL_SOLID, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> SHADE_COBBLESTONE = block(SupremeMiningDimensionModBlocks.SHADE_COBBLESTONE, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> SHADE_STONE = block(SupremeMiningDimensionModBlocks.SHADE_STONE, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> SHADE_DIRT = block(SupremeMiningDimensionModBlocks.SHADE_DIRT, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> SHADE_GRASS = block(SupremeMiningDimensionModBlocks.SHADE_GRASS, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> BENITOITE_GEM = REGISTRY.register("benitoite_gem", () -> new BenitoiteGemItem());
+	public static final RegistryObject<Item> BENITOITE_CRYSTAL_BUDDING = block(SupremeMiningDimensionModBlocks.BENITOITE_CRYSTAL_BUDDING, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

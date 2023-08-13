@@ -1,7 +1,4 @@
 
-/*
- *    MCreator note: This file will be REGENERATED on each build.
- */
 package net.ddraig.suprememiningdimension.init;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -18,8 +15,13 @@ import net.ddraig.suprememiningdimension.block.TungstenBlockBlock;
 import net.ddraig.suprememiningdimension.block.TinOreBlock;
 import net.ddraig.suprememiningdimension.block.TinBlockBlock;
 import net.ddraig.suprememiningdimension.block.StrangeForestsPortalBlock;
+import net.ddraig.suprememiningdimension.block.SphaleriteOreBlock;
 import net.ddraig.suprememiningdimension.block.SilverOreBlock;
 import net.ddraig.suprememiningdimension.block.SilverBlockBlock;
+import net.ddraig.suprememiningdimension.block.ShadeStoneBlock;
+import net.ddraig.suprememiningdimension.block.ShadeGrassBlock;
+import net.ddraig.suprememiningdimension.block.ShadeDirtBlock;
+import net.ddraig.suprememiningdimension.block.ShadeCobblestoneBlock;
 import net.ddraig.suprememiningdimension.block.RelitLampBlock;
 import net.ddraig.suprememiningdimension.block.QuartzOreBlock;
 import net.ddraig.suprememiningdimension.block.PurpleshroomCapGlowingBlock;
@@ -29,6 +31,7 @@ import net.ddraig.suprememiningdimension.block.PlatinumBlockBlock;
 import net.ddraig.suprememiningdimension.block.NickelOreBlock;
 import net.ddraig.suprememiningdimension.block.NickelBlockBlock;
 import net.ddraig.suprememiningdimension.block.NetherIslandPortalBlock;
+import net.ddraig.suprememiningdimension.block.MusicStationBlock;
 import net.ddraig.suprememiningdimension.block.MushroomStalkPurpleGlowingBlock;
 import net.ddraig.suprememiningdimension.block.MushroomStalkPurpleBlock;
 import net.ddraig.suprememiningdimension.block.MushroomStalkGreenGlowingBlock;
@@ -67,6 +70,8 @@ import net.ddraig.suprememiningdimension.block.FalseOverworldDimensionPortalBloc
 import net.ddraig.suprememiningdimension.block.ExtinguishedLampBlock;
 import net.ddraig.suprememiningdimension.block.EtchedWoodBlock;
 import net.ddraig.suprememiningdimension.block.EnderCavesPortalBlock;
+import net.ddraig.suprememiningdimension.block.DiamondSandBlock;
+import net.ddraig.suprememiningdimension.block.DiamondGravelBlock;
 import net.ddraig.suprememiningdimension.block.DenseRedstoneOreBlock;
 import net.ddraig.suprememiningdimension.block.DenseLapisOreBlock;
 import net.ddraig.suprememiningdimension.block.DenseIronOreBlock;
@@ -79,9 +84,18 @@ import net.ddraig.suprememiningdimension.block.DenseAndesiteBlock;
 import net.ddraig.suprememiningdimension.block.DeepCavernsPortalBlock;
 import net.ddraig.suprememiningdimension.block.CyanshroomCapGlowingBlock;
 import net.ddraig.suprememiningdimension.block.CyanshroomCapBlock;
+import net.ddraig.suprememiningdimension.block.CobaltOreBlock;
+import net.ddraig.suprememiningdimension.block.CobaltBlockBlock;
 import net.ddraig.suprememiningdimension.block.CavernsPortalBlock;
 import net.ddraig.suprememiningdimension.block.BlueshroomCapGlowingBlock;
 import net.ddraig.suprememiningdimension.block.BlueshroomCapBlock;
+import net.ddraig.suprememiningdimension.block.BenitoiteCrystalSolidBlock;
+import net.ddraig.suprememiningdimension.block.BenitoiteCrystalSmallBlock;
+import net.ddraig.suprememiningdimension.block.BenitoiteCrystalMediumBlock;
+import net.ddraig.suprememiningdimension.block.BenitoiteCrystalLargeBlock;
+import net.ddraig.suprememiningdimension.block.BenitoiteCrystalBuddingBlock;
+import net.ddraig.suprememiningdimension.block.AntimonyOreBlock;
+import net.ddraig.suprememiningdimension.block.AntimonyBlockBlock;
 import net.ddraig.suprememiningdimension.block.AmberSolidBlock;
 import net.ddraig.suprememiningdimension.block.AluminumOreBlock;
 import net.ddraig.suprememiningdimension.block.AluminumBlockBlock;
@@ -164,4 +178,21 @@ public class SupremeMiningDimensionModBlocks {
 	public static final RegistryObject<Block> MUSHROOM_STALK_BLACK_WHITE = REGISTRY.register("mushroom_stalk_black_white", () -> new MushroomStalkBlackWhiteBlock());
 	public static final RegistryObject<Block> MUSHROOM_STALK_BLACK_WHITE_GLOWING = REGISTRY.register("mushroom_stalk_black_white_glowing", () -> new MushroomStalkBlackWhiteGlowingBlock());
 	public static final RegistryObject<Block> HONEY = REGISTRY.register("honey", () -> new HoneyBlock());
+	public static final RegistryObject<Block> MUSIC_STATION = REGISTRY.register("music_station", () -> new MusicStationBlock());
+	public static final RegistryObject<Block> ANTIMONY_ORE = REGISTRY.register("antimony_ore", () -> new AntimonyOreBlock());
+	public static final RegistryObject<Block> ANTIMONY_BLOCK = REGISTRY.register("antimony_block", () -> new AntimonyBlockBlock());
+	public static final RegistryObject<Block> COBALT_ORE = REGISTRY.register("cobalt_ore", () -> new CobaltOreBlock());
+	public static final RegistryObject<Block> COBALT_BLOCK = REGISTRY.register("cobalt_block", () -> new CobaltBlockBlock());
+	public static final RegistryObject<Block> SPHALERITE_ORE = REGISTRY.register("sphalerite_ore", () -> new SphaleriteOreBlock());
+	public static final RegistryObject<Block> DIAMOND_SAND = REGISTRY.register("diamond_sand", () -> new DiamondSandBlock());
+	public static final RegistryObject<Block> DIAMOND_GRAVEL = REGISTRY.register("diamond_gravel", () -> new DiamondGravelBlock());
+	public static final RegistryObject<Block> BENITOITE_CRYSTAL_SMALL = REGISTRY.register("benitoite_crystal_small", () -> new BenitoiteCrystalSmallBlock());
+	public static final RegistryObject<Block> BENITOITE_CRYSTAL_MEDIUM = REGISTRY.register("benitoite_crystal_medium", () -> new BenitoiteCrystalMediumBlock());
+	public static final RegistryObject<Block> BENITOITE_CRYSTAL_LARGE = REGISTRY.register("benitoite_crystal_large", () -> new BenitoiteCrystalLargeBlock());
+	public static final RegistryObject<Block> BENITOITE_CRYSTAL_SOLID = REGISTRY.register("benitoite_crystal_solid", () -> new BenitoiteCrystalSolidBlock());
+	public static final RegistryObject<Block> SHADE_COBBLESTONE = REGISTRY.register("shade_cobblestone", () -> new ShadeCobblestoneBlock());
+	public static final RegistryObject<Block> SHADE_STONE = REGISTRY.register("shade_stone", () -> new ShadeStoneBlock());
+	public static final RegistryObject<Block> SHADE_DIRT = REGISTRY.register("shade_dirt", () -> new ShadeDirtBlock());
+	public static final RegistryObject<Block> SHADE_GRASS = REGISTRY.register("shade_grass", () -> new ShadeGrassBlock());
+	public static final RegistryObject<Block> BENITOITE_CRYSTAL_BUDDING = REGISTRY.register("benitoite_crystal_budding", () -> new BenitoiteCrystalBuddingBlock());
 }

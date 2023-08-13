@@ -1,7 +1,4 @@
 
-/*
- *    MCreator note: This file will be REGENERATED on each build.
- */
 package net.ddraig.suprememiningdimension.init;
 
 import net.minecraftforge.fml.common.Mod;
@@ -13,6 +10,7 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.ddraig.suprememiningdimension.client.renderer.WitheredBlazeRenderer;
 import net.ddraig.suprememiningdimension.client.renderer.TunnelerBrotherRenderer;
+import net.ddraig.suprememiningdimension.client.renderer.ShroombieRenderer;
 import net.ddraig.suprememiningdimension.client.renderer.RedSlimeRenderer;
 import net.ddraig.suprememiningdimension.client.renderer.QuarrierBrotherRenderer;
 import net.ddraig.suprememiningdimension.client.renderer.ProspectorBrotherRenderer;
@@ -36,5 +34,6 @@ public class SupremeMiningDimensionModEntityRenderers {
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.BLAZING_WITHER_MASTER.get(), BlazingWitherMasterRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WEAK_WITHERING_FIREBALL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WEAK_WITHERED_FIREBALL.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SupremeMiningDimensionModEntities.SHROOMBIE.get(), ShroombieRenderer::new);
 	}
 }

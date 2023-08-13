@@ -1,7 +1,4 @@
 
-/*
- *    MCreator note: This file will be REGENERATED on each build.
- */
 package net.ddraig.suprememiningdimension.init;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -14,11 +11,14 @@ import net.minecraft.world.level.levelgen.feature.Feature;
 import net.ddraig.suprememiningdimension.world.features.ores.ZincOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.TungstenOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.TinOreFeature;
+import net.ddraig.suprememiningdimension.world.features.ores.SphaleriteOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.SilverOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.QuartzOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.PlatinumOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.NickelOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.LeadOreFeature;
+import net.ddraig.suprememiningdimension.world.features.ores.DiamondSandFeature;
+import net.ddraig.suprememiningdimension.world.features.ores.DiamondGravelFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.DenseRedstoneOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.DenseLapisOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.DenseIronOreFeature;
@@ -28,8 +28,11 @@ import net.ddraig.suprememiningdimension.world.features.ores.DenseDiamondOreFeat
 import net.ddraig.suprememiningdimension.world.features.ores.DenseCopperOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.DenseCoalOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.DenseAndesiteFeature;
+import net.ddraig.suprememiningdimension.world.features.ores.CobaltOreFeature;
+import net.ddraig.suprememiningdimension.world.features.ores.AntimonyOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.AmberSolidFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.AluminumOreFeature;
+import net.ddraig.suprememiningdimension.world.features.SphaleriteRocksFeature;
 import net.ddraig.suprememiningdimension.world.features.LargeBeeNestFeature;
 import net.ddraig.suprememiningdimension.world.features.KelpyOceanHelpFeature;
 import net.ddraig.suprememiningdimension.world.features.EnderShipFeature;
@@ -68,4 +71,10 @@ public class SupremeMiningDimensionModFeatures {
 	public static final RegistryObject<Feature<?>> LARGE_BEE_NEST = REGISTRY.register("large_bee_nest", LargeBeeNestFeature::feature);
 	public static final RegistryObject<Feature<?>> BIG_AS_SPRUCE_TREE = REGISTRY.register("big_as_spruce_tree", BigAsSpruceTreeFeature::feature);
 	public static final RegistryObject<Feature<?>> BIG_AS_SPRUCE_TREE_ON_PODZOL = REGISTRY.register("big_as_spruce_tree_on_podzol", BigAsSpruceTreeOnPodzolFeature::feature);
+	public static final RegistryObject<Feature<?>> ANTIMONY_ORE = REGISTRY.register("antimony_ore", AntimonyOreFeature::feature);
+	public static final RegistryObject<Feature<?>> COBALT_ORE = REGISTRY.register("cobalt_ore", CobaltOreFeature::feature);
+	public static final RegistryObject<Feature<?>> SPHALERITE_ORE = REGISTRY.register("sphalerite_ore", SphaleriteOreFeature::feature);
+	public static final RegistryObject<Feature<?>> SPHALERITE_ROCKS = REGISTRY.register("sphalerite_rocks", SphaleriteRocksFeature::new);
+	public static final RegistryObject<Feature<?>> DIAMOND_SAND = REGISTRY.register("diamond_sand", DiamondSandFeature::feature);
+	public static final RegistryObject<Feature<?>> DIAMOND_GRAVEL = REGISTRY.register("diamond_gravel", DiamondGravelFeature::feature);
 }

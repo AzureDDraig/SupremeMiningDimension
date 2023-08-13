@@ -23,6 +23,7 @@ import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
+import net.ddraig.suprememiningdimension.procedures.DenseEmeraldBoolProcedure;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModBlocks;
 
 import java.util.Set;
@@ -36,9 +37,12 @@ public class DenseEmeraldOreFeature extends OreFeature {
 	public static Feature<?> feature() {
 		FEATURE = new DenseEmeraldOreFeature();
 		CONFIGURED_FEATURE = FeatureUtils.register("supreme_mining_dimension:dense_emerald_ore", FEATURE,
-				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_EMERALD_ORE.get().defaultBlockState())), 4));
+				new OreConfiguration(List.of(OreConfiguration.target(new BlockStateMatchTest(Blocks.STONE.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_EMERALD_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.GRANITE.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_EMERALD_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.DIORITE.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_EMERALD_ORE.get().defaultBlockState()),
+						OreConfiguration.target(new BlockStateMatchTest(Blocks.ANDESITE.defaultBlockState()), SupremeMiningDimensionModBlocks.DENSE_EMERALD_ORE.get().defaultBlockState())), 4));
 		PLACED_FEATURE = PlacementUtils.register("supreme_mining_dimension:dense_emerald_ore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(2), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(96)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(1), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(0), VerticalAnchor.absolute(96)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 
@@ -52,6 +56,11 @@ public class DenseEmeraldOreFeature extends OreFeature {
 	public boolean place(FeaturePlaceContext<OreConfiguration> context) {
 		WorldGenLevel world = context.level();
 		if (!generate_dimensions.contains(world.getLevel().dimension()))
+			return false;
+		int x = context.origin().getX();
+		int y = context.origin().getY();
+		int z = context.origin().getZ();
+		if (!DenseEmeraldBoolProcedure.execute())
 			return false;
 		return super.place(context);
 	}
