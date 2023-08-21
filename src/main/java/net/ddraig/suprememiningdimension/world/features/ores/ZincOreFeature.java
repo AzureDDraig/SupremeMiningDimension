@@ -42,7 +42,7 @@ public class ZincOreFeature extends OreFeature {
 						OreConfiguration.target(new BlockStateMatchTest(Blocks.DIORITE.defaultBlockState()), SupremeMiningDimensionModBlocks.ZINC_ORE.get().defaultBlockState()),
 						OreConfiguration.target(new BlockStateMatchTest(Blocks.ANDESITE.defaultBlockState()), SupremeMiningDimensionModBlocks.ZINC_ORE.get().defaultBlockState())), 14));
 		PLACED_FEATURE = PlacementUtils.register("supreme_mining_dimension:zinc_ore", CONFIGURED_FEATURE,
-				List.of(CountPlacement.of(8), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(-62), VerticalAnchor.absolute(84)), BiomeFilter.biome()));
+				List.of(CountPlacement.of(7), InSquarePlacement.spread(), HeightRangePlacement.uniform(VerticalAnchor.absolute(-62), VerticalAnchor.absolute(84)), BiomeFilter.biome()));
 		return FEATURE;
 	}
 

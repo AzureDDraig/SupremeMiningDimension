@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "supreme_mining_dimension:ancient_forest",
+  "features": "supreme_mining_dimension:ancient_moss",
+  "step": "underground_ores"
+}

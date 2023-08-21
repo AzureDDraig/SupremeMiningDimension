@@ -5,10 +5,11 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.CocoaDecorator;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.util.RandomSource;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
+
+import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModBlocks;
 
 import java.util.List;
 
@@ -45,7 +46,7 @@ public class OvergrownCavernsFruitDecorator extends CocoaDecorator {
 						Direction direction1 = direction.getOpposite();
 						BlockPos blockpos = p_226026_.offset(direction1.getStepX(), 0, direction1.getStepZ());
 						if (context.isAir(blockpos)) {
-							context.setBlock(blockpos, Blocks.BEE_NEST.defaultBlockState());
+							context.setBlock(blockpos, SupremeMiningDimensionModBlocks.ANCIENT_MOSS.get().defaultBlockState());
 						}
 					}
 				}

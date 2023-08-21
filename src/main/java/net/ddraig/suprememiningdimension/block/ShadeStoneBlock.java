@@ -20,7 +20,7 @@ import java.util.Collections;
 
 public class ShadeStoneBlock extends Block {
 	public ShadeStoneBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(4.5f, 12f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(4.5f, 12f).requiresCorrectToolForDrops().randomTicks());
 	}
 
 	@Override

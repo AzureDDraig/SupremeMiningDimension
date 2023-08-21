@@ -11,15 +11,20 @@
     "minecraft:moss_block",
     "minecraft:rooted_dirt",
     "minecraft:magma_block",
-    "minecraft:amethyst_cluster",
+    "supreme_mining_dimension:heated_magma_block",
+    "minecraft:budding_amethyst",
     "minecraft:amethyst_block",
     "minecraft:blue_ice",
     "minecraft:sculk",
     "minecraft:deepslate",
     "minecraft:netherrack",
     "minecraft:end_stone",
-    "minecraft:coarse_dirt",
+    "supreme_mining_dimension:end_grass",
+    "supreme_mining_dimension:end_soil",
     "minecraft:podzol",
-    "minecraft:mycelium"
+    "minecraft:coarse_dirt",
+    "minecraft:mycelium",
+    "supreme_mining_dimension:shade_grass",
+    "supreme_mining_dimension:shade_dirt"
   ]
 }

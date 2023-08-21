@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "supreme_mining_dimension:blocks/blightwood_leaves",
+    "particle": "supreme_mining_dimension:blocks/blightwood_leaves"
+  },
+  "render_type": "cutout_mipped"
+}

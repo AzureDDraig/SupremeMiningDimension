@@ -59,6 +59,7 @@ import net.ddraig.suprememiningdimension.item.AntimonyIngotItem;
 import net.ddraig.suprememiningdimension.item.AmberChunkItem;
 import net.ddraig.suprememiningdimension.item.AluminumRawItem;
 import net.ddraig.suprememiningdimension.item.AluminumIngotItem;
+import net.ddraig.suprememiningdimension.item.AaaaItem;
 import net.ddraig.suprememiningdimension.SupremeMiningDimensionMod;
 
 public class SupremeMiningDimensionModItems {
@@ -168,8 +169,6 @@ public class SupremeMiningDimensionModItems {
 	public static final RegistryObject<Item> WITHERED_BLAZE_SPAWN_EGG = REGISTRY.register("withered_blaze_spawn_egg",
 			() -> new ForgeSpawnEggItem(SupremeMiningDimensionModEntities.WITHERED_BLAZE, -13421773, -3381760, new Item.Properties().tab(SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS)));
 	public static final RegistryObject<Item> AMBER_CHUNK = REGISTRY.register("amber_chunk", () -> new AmberChunkItem());
-	public static final RegistryObject<Item> RED_SLIME_SPAWN_EGG = REGISTRY.register("red_slime_spawn_egg",
-			() -> new ForgeSpawnEggItem(SupremeMiningDimensionModEntities.RED_SLIME, -52429, -10092544, new Item.Properties().tab(SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS)));
 	public static final RegistryObject<Item> RAW_SILVER = REGISTRY.register("raw_silver", () -> new RawSilverItem());
 	public static final RegistryObject<Item> FAULTY_EXPLOSIVE = REGISTRY.register("faulty_explosive", () -> new FaultyExplosiveItem());
 	public static final RegistryObject<Item> EXPLOSIVE_THROWN = REGISTRY.register("explosive_thrown", () -> new ExplosiveThrownItem());
@@ -207,6 +206,25 @@ public class SupremeMiningDimensionModItems {
 	public static final RegistryObject<Item> SHADE_GRASS = block(SupremeMiningDimensionModBlocks.SHADE_GRASS, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
 	public static final RegistryObject<Item> BENITOITE_GEM = REGISTRY.register("benitoite_gem", () -> new BenitoiteGemItem());
 	public static final RegistryObject<Item> BENITOITE_CRYSTAL_BUDDING = block(SupremeMiningDimensionModBlocks.BENITOITE_CRYSTAL_BUDDING, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> ANCIENT_MOSS = block(SupremeMiningDimensionModBlocks.ANCIENT_MOSS, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> OLIVINE_SAND = block(SupremeMiningDimensionModBlocks.OLIVINE_SAND, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> BLIGHTWOOD_WOOD = block(SupremeMiningDimensionModBlocks.BLIGHTWOOD_WOOD, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> BLIGHTWOOD_LOG = block(SupremeMiningDimensionModBlocks.BLIGHTWOOD_LOG, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> BLIGHTWOOD_PLANKS = block(SupremeMiningDimensionModBlocks.BLIGHTWOOD_PLANKS, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> BLIGHTWOOD_LEAVES = block(SupremeMiningDimensionModBlocks.BLIGHTWOOD_LEAVES, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> BLIGHTWOOD_STAIRS = block(SupremeMiningDimensionModBlocks.BLIGHTWOOD_STAIRS, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> BLIGHTWOOD_SLAB = block(SupremeMiningDimensionModBlocks.BLIGHTWOOD_SLAB, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> BLIGHTWOOD_FENCE = block(SupremeMiningDimensionModBlocks.BLIGHTWOOD_FENCE, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> BLIGHTWOOD_FENCE_GATE = block(SupremeMiningDimensionModBlocks.BLIGHTWOOD_FENCE_GATE, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> BLIGHTWOOD_PRESSURE_PLATE = block(SupremeMiningDimensionModBlocks.BLIGHTWOOD_PRESSURE_PLATE, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> BLIGHTWOOD_BUTTON = block(SupremeMiningDimensionModBlocks.BLIGHTWOOD_BUTTON, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> BLIGHTWOOD_SAPLING = block(SupremeMiningDimensionModBlocks.BLIGHTWOOD_SAPLING, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> HEATED_MAGMA_BLOCK = block(SupremeMiningDimensionModBlocks.HEATED_MAGMA_BLOCK, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> SHADOW_CREEPER_SPAWN_EGG = REGISTRY.register("shadow_creeper_spawn_egg",
+			() -> new ForgeSpawnEggItem(SupremeMiningDimensionModEntities.SHADOW_CREEPER, -16777216, -13421773, new Item.Properties().tab(SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS)));
+	public static final RegistryObject<Item> END_SOIL = block(SupremeMiningDimensionModBlocks.END_SOIL, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> END_GRASS = block(SupremeMiningDimensionModBlocks.END_GRASS, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> AAAA = REGISTRY.register("aaaa", () -> new AaaaItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

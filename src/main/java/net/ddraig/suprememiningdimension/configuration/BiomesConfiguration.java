@@ -60,6 +60,9 @@ public class BiomesConfiguration {
 	public static final ForgeConfigSpec.ConfigValue<Boolean> BIG_AS_SPRUCE_TREE;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> SHROOMPOISONER;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> SHROOMHEALER;
+	public static final ForgeConfigSpec.ConfigValue<Boolean> END_SOIL_SPREAD;
+	public static final ForgeConfigSpec.ConfigValue<Boolean> SHADE_SOIL_SPREAD;
+	public static final ForgeConfigSpec.ConfigValue<Boolean> SHADE_STONE_SPREAD;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> FALSE_OW_NICE_PLACE;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> CAVERNS_NICE_PLACE;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> DEEP_CAVERNS_NICE_PLACE;
@@ -136,10 +139,13 @@ public class BiomesConfiguration {
 		NETHER_ISLANDS = BUILDER.define("nether_islands", true);
 		STRANGE_FORESTS = BUILDER.define("strange_forests", true);
 		BUILDER.pop();
-		BUILDER.push("Structures");
+		BUILDER.push("Structures and Spreading");
 		BIG_AS_SPRUCE_TREE = BUILDER.define("big_as_spruce_tree", true);
 		SHROOMPOISONER = BUILDER.comment("Controls whether the toxicshroom poisons you on touch").define("shroompoisoner", true);
 		SHROOMHEALER = BUILDER.comment("Controls if the angelshroom can heal players").define("shroomhealer", true);
+		END_SOIL_SPREAD = BUILDER.comment("DEFAULT: TRUE || controls if end soil can spread to dirt ").define("end_soil_spread", true);
+		SHADE_SOIL_SPREAD = BUILDER.comment("DEFAULT: TRUE || controls if shade soil can spread to dirt").define("shade_soil_spread", true);
+		SHADE_STONE_SPREAD = BUILDER.comment("controls if shade stone can spread to stone or deepslate").define("shade_stone_spread", true);
 		BUILDER.pop();
 		BUILDER.push("Portals Placement");
 		FALSE_OW_NICE_PLACE = BUILDER.comment("This will make sure that on the first visit to the false overworld players will have their portal spawn above the surface").define("false_ow_nice_place", true);

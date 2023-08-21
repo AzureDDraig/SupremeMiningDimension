@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "supreme_mining_dimension:magmatic_caverns",
+  "features": "supreme_mining_dimension:heated_magma_block",
+  "step": "underground_ores"
+}

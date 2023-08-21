@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:blightwood_log"
+    }
+  ],
+  "result": {
+    "item": "supreme_mining_dimension:blightwood_planks",
+    "count": 4
+  }
+}

@@ -25,6 +25,8 @@ import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 
+import net.ddraig.suprememiningdimension.world.features.treedecorators.GlacialCavernsTrunkDecorator;
+import net.ddraig.suprememiningdimension.world.features.treedecorators.GlacialCavernsLeaveDecorator;
 import net.ddraig.suprememiningdimension.world.features.treedecorators.GlacialCavernsFruitDecorator;
 
 import java.util.List;
@@ -35,19 +37,13 @@ public class GlacialCavernsBiome {
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-6760470).waterColor(4159204).waterFogColor(329011).skyColor(-6760470).foliageColorOverride(10387789).grassColorOverride(9470285).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
-		biomeGenerationSettings
-				.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-						PlacementUtils
-								.register("supreme_mining_dimension:tree_glacial_caverns",
-										FeatureUtils.register("supreme_mining_dimension:tree_glacial_caverns", Feature.TREE,
-												new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.PACKED_ICE.defaultBlockState()), new GiantTrunkPlacer(12, 2, 14),
-														BlockStateProvider.simple(Blocks.BLUE_ICE.defaultBlockState()), new MegaPineFoliagePlacer(ConstantInt.of(0), ConstantInt.of(0), UniformInt.of(3, 4)), new TwoLayersFeatureSize(1, 1, 2))
-														.decorators(ImmutableList.of(
-
-																GlacialCavernsFruitDecorator.INSTANCE))
-														.build()),
-										List.of(CountPlacement.of(1), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0), PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING),
-												BiomeFilter.biome())));
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
+				PlacementUtils.register("supreme_mining_dimension:tree_glacial_caverns",
+						FeatureUtils.register("supreme_mining_dimension:tree_glacial_caverns", Feature.TREE,
+								new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.PACKED_ICE.defaultBlockState()), new GiantTrunkPlacer(12, 2, 14), BlockStateProvider.simple(Blocks.BLUE_ICE.defaultBlockState()),
+										new MegaPineFoliagePlacer(ConstantInt.of(0), ConstantInt.of(0), UniformInt.of(3, 4)), new TwoLayersFeatureSize(1, 1, 2))
+										.decorators(ImmutableList.of(GlacialCavernsLeaveDecorator.INSTANCE, GlacialCavernsTrunkDecorator.INSTANCE, GlacialCavernsFruitDecorator.INSTANCE)).build()),
+						List.of(CountPlacement.of(1), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0), PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING), BiomeFilter.biome())));
 		BiomeDefaultFeatures.addIcebergs(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultCrystalFormations(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);

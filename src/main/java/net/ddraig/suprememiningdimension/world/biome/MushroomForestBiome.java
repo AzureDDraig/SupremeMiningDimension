@@ -27,6 +27,7 @@ import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 import net.ddraig.suprememiningdimension.world.features.treedecorators.MushroomForestTrunkDecorator;
 import net.ddraig.suprememiningdimension.world.features.treedecorators.MushroomForestLeaveDecorator;
 import net.ddraig.suprememiningdimension.world.features.treedecorators.MushroomForestFruitDecorator;
+import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModEntities;
 
 import java.util.List;
 
@@ -53,6 +54,7 @@ public class MushroomForestBiome {
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.RAVAGER, 5, 1, 1));
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.STRAY, 80, 1, 2));
 		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(EntityType.WITCH, 12, 1, 2));
+		mobSpawnInfo.addSpawn(MobCategory.MONSTER, new MobSpawnSettings.SpawnerData(SupremeMiningDimensionModEntities.SHROOMBIE.get(), 55, 2, 4));
 		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).temperature(0.5f).downfall(0.5f).specialEffects(effects).mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();
 	}
 }

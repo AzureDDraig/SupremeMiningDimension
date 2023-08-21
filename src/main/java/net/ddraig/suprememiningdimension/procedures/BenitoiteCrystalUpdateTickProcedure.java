@@ -26,6 +26,7 @@ public class BenitoiteCrystalUpdateTickProcedure {
 		stage0 = SupremeMiningDimensionModBlocks.BENITOITE_CRYSTAL_SMALL.get().defaultBlockState();
 		stage1 = SupremeMiningDimensionModBlocks.BENITOITE_CRYSTAL_MEDIUM.get().defaultBlockState();
 		stage2 = SupremeMiningDimensionModBlocks.BENITOITE_CRYSTAL_LARGE.get().defaultBlockState();
+		stage3 = SupremeMiningDimensionModBlocks.BENITOITE_CRYSTAL_BUDDING.get().defaultBlockState();
 		if (new Object() {
 			public double getValue(LevelAccessor world, BlockPos pos, String tag) {
 				BlockEntity blockEntity = world.getBlockEntity(pos);
@@ -68,6 +69,36 @@ public class BenitoiteCrystalUpdateTickProcedure {
 				{
 					BlockPos _bp = new BlockPos(x, y, z);
 					BlockState _bs = stage2;
+					BlockState _bso = world.getBlockState(_bp);
+					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
+						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());
+						if (_property != null && _bs.getValue(_property) != null)
+							try {
+								_bs = _bs.setValue(_property, (Comparable) entry.getValue());
+							} catch (Exception e) {
+							}
+					}
+					BlockEntity _be = world.getBlockEntity(_bp);
+					CompoundTag _bnbt = null;
+					if (_be != null) {
+						_bnbt = _be.saveWithFullMetadata();
+						_be.setRemoved();
+					}
+					world.setBlock(_bp, _bs, 3);
+					if (_bnbt != null) {
+						_be = world.getBlockEntity(_bp);
+						if (_be != null) {
+							try {
+								_be.load(_bnbt);
+							} catch (Exception ignored) {
+							}
+						}
+					}
+				}
+			} else if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == stage2.getBlock() && stage3.canSurvive(world, new BlockPos(x, y, z))) {
+				{
+					BlockPos _bp = new BlockPos(x, y, z);
+					BlockState _bs = stage3;
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
 						Property _property = _bs.getBlock().getStateDefinition().getProperty(entry.getKey().getName());

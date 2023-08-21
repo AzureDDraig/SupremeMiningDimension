@@ -7,6 +7,6 @@ import net.ddraig.suprememiningdimension.configuration.BiomesConfiguration;
 
 public class ShroombieboolProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		return 7 >= world.getMaxLocalRawBrightness(new BlockPos(x, y, z)) && BiomesConfiguration.SHROOMBIE_ALLOWED.get();
+		return 10 >= world.getMaxLocalRawBrightness(new BlockPos(x, y, z)) && BiomesConfiguration.SHROOMBIE_ALLOWED.get();
 	}
 }

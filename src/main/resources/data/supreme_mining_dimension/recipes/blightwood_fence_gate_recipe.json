@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "SBS",
+    "SBS"
+  ],
+  "key": {
+    "S": {
+      "item": "minecraft:stick"
+    },
+    "B": {
+      "item": "supreme_mining_dimension:blightwood_planks"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:blightwood_fence_gate",
+    "count": 1
+  }
+}

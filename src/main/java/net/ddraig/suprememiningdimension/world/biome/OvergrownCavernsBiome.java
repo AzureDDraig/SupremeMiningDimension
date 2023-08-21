@@ -26,6 +26,7 @@ import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 
 import net.ddraig.suprememiningdimension.world.features.treedecorators.OvergrownCavernsTrunkDecorator;
 import net.ddraig.suprememiningdimension.world.features.treedecorators.OvergrownCavernsLeaveDecorator;
+import net.ddraig.suprememiningdimension.world.features.treedecorators.OvergrownCavernsFruitDecorator;
 
 import java.util.List;
 
@@ -35,10 +36,13 @@ public class OvergrownCavernsBiome {
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-5447571).waterColor(4159204).waterFogColor(329011).skyColor(-5447571).foliageColorOverride(10387789).grassColorOverride(9470285).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
-		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION, PlacementUtils.register("supreme_mining_dimension:tree_overgrown_caverns", FeatureUtils.register("supreme_mining_dimension:tree_overgrown_caverns", Feature.TREE,
-				new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG.defaultBlockState()), new StraightTrunkPlacer(7, 2, 0), BlockStateProvider.simple(Blocks.FLOWERING_AZALEA_LEAVES.defaultBlockState()),
-						new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1)).decorators(ImmutableList.of(OvergrownCavernsLeaveDecorator.INSTANCE, OvergrownCavernsTrunkDecorator.INSTANCE)).build()),
-				List.of(CountPlacement.of(1), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0), PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING), BiomeFilter.biome())));
+		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
+				PlacementUtils.register("supreme_mining_dimension:tree_overgrown_caverns",
+						FeatureUtils.register("supreme_mining_dimension:tree_overgrown_caverns", Feature.TREE,
+								new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.OAK_LOG.defaultBlockState()), new StraightTrunkPlacer(7, 2, 0),
+										BlockStateProvider.simple(Blocks.FLOWERING_AZALEA_LEAVES.defaultBlockState()), new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1))
+										.decorators(ImmutableList.of(OvergrownCavernsLeaveDecorator.INSTANCE, OvergrownCavernsTrunkDecorator.INSTANCE, OvergrownCavernsFruitDecorator.INSTANCE)).build()),
+						List.of(CountPlacement.of(1), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0), PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING), BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCrystalFormations(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDesertExtraDecoration(biomeGenerationSettings);

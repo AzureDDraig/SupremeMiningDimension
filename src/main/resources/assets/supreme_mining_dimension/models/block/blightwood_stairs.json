@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "supreme_mining_dimension:blocks/wood_blightwood_planks",
+    "top": "supreme_mining_dimension:blocks/wood_blightwood_planks",
+    "side": "supreme_mining_dimension:blocks/wood_blightwood_planks"
+  },
+  "render_type": "solid"
+}

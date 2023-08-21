@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B  ",
+    "BB ",
+    "BBB"
+  ],
+  "key": {
+    "B": {
+      "item": "supreme_mining_dimension:blightwood_planks"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:blightwood_stairs",
+    "count": 4
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "supreme_mining_dimension:end_caves",
+    "supreme_mining_dimension:magmatic_caverns",
+    "supreme_mining_dimension:sculk_caverns",
+    "supreme_mining_dimension:shadeblight",
+    "supreme_mining_dimension:dripstone_caverns"
+  ],
+  "spawners": {
+    "type": "supreme_mining_dimension:shadow_creeper",
+    "weight": 25,
+    "minCount": 1,
+    "maxCount": 4
+  }
+}

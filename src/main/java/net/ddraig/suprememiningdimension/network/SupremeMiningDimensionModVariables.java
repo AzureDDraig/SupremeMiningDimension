@@ -72,6 +72,7 @@ public class SupremeMiningDimensionModVariables {
 			clone.FirstVisitEnder = original.FirstVisitEnder;
 			clone.FirstVisitFalseOverworld = original.FirstVisitFalseOverworld;
 			clone.FirstVisitStrangeForests = original.FirstVisitStrangeForests;
+			clone.FirstJoin = original.FirstJoin;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -114,6 +115,7 @@ public class SupremeMiningDimensionModVariables {
 		public boolean FirstVisitEnder = true;
 		public boolean FirstVisitFalseOverworld = true;
 		public boolean FirstVisitStrangeForests = true;
+		public boolean FirstJoin = true;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -128,6 +130,7 @@ public class SupremeMiningDimensionModVariables {
 			nbt.putBoolean("FirstVisitEnder", FirstVisitEnder);
 			nbt.putBoolean("FirstVisitFalseOverworld", FirstVisitFalseOverworld);
 			nbt.putBoolean("FirstVisitStrangeForests", FirstVisitStrangeForests);
+			nbt.putBoolean("FirstJoin", FirstJoin);
 			return nbt;
 		}
 
@@ -139,6 +142,7 @@ public class SupremeMiningDimensionModVariables {
 			FirstVisitEnder = nbt.getBoolean("FirstVisitEnder");
 			FirstVisitFalseOverworld = nbt.getBoolean("FirstVisitFalseOverworld");
 			FirstVisitStrangeForests = nbt.getBoolean("FirstVisitStrangeForests");
+			FirstJoin = nbt.getBoolean("FirstJoin");
 		}
 	}
 
@@ -169,6 +173,7 @@ public class SupremeMiningDimensionModVariables {
 					variables.FirstVisitEnder = message.data.FirstVisitEnder;
 					variables.FirstVisitFalseOverworld = message.data.FirstVisitFalseOverworld;
 					variables.FirstVisitStrangeForests = message.data.FirstVisitStrangeForests;
+					variables.FirstJoin = message.data.FirstJoin;
 				}
 			});
 			context.setPacketHandled(true);

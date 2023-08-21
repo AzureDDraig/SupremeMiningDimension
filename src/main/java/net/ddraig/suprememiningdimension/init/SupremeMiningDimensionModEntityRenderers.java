@@ -11,7 +11,7 @@ import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 import net.ddraig.suprememiningdimension.client.renderer.WitheredBlazeRenderer;
 import net.ddraig.suprememiningdimension.client.renderer.TunnelerBrotherRenderer;
 import net.ddraig.suprememiningdimension.client.renderer.ShroombieRenderer;
-import net.ddraig.suprememiningdimension.client.renderer.RedSlimeRenderer;
+import net.ddraig.suprememiningdimension.client.renderer.ShadowCreeperRenderer;
 import net.ddraig.suprememiningdimension.client.renderer.QuarrierBrotherRenderer;
 import net.ddraig.suprememiningdimension.client.renderer.ProspectorBrotherRenderer;
 import net.ddraig.suprememiningdimension.client.renderer.DuckRenderer;
@@ -28,12 +28,12 @@ public class SupremeMiningDimensionModEntityRenderers {
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.QUARRIER_BROTHER.get(), QuarrierBrotherRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.PROSPECTOR_BROTHER.get(), ProspectorBrotherRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WITHERED_BLAZE.get(), WitheredBlazeRenderer::new);
-		event.registerEntityRenderer(SupremeMiningDimensionModEntities.RED_SLIME.get(), RedSlimeRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.EXPLOSIVE_THROWN.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WITHERING_FIREBALL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.BLAZING_WITHER_MASTER.get(), BlazingWitherMasterRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WEAK_WITHERING_FIREBALL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WEAK_WITHERED_FIREBALL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.SHROOMBIE.get(), ShroombieRenderer::new);
+		event.registerEntityRenderer(SupremeMiningDimensionModEntities.SHADOW_CREEPER.get(), ShadowCreeperRenderer::new);
 	}
 }

@@ -1,7 +1,12 @@
 {
-  "parent": "block/cube_all",
+  "parent": "block/cube",
   "textures": {
-    "all": "supreme_mining_dimension:blocks/ore_titanium_benitoite_crystal_solid",
+    "down": "supreme_mining_dimension:blocks/ore_titanium_benitoite_crystal_solid",
+    "up": "supreme_mining_dimension:blocks/ore_titanium_benitoite_crystal_solid_growing",
+    "north": "supreme_mining_dimension:blocks/ore_titanium_benitoite_crystal_solid",
+    "east": "supreme_mining_dimension:blocks/ore_titanium_benitoite_crystal_solid",
+    "south": "supreme_mining_dimension:blocks/ore_titanium_benitoite_crystal_solid",
+    "west": "supreme_mining_dimension:blocks/ore_titanium_benitoite_crystal_solid",
     "particle": "supreme_mining_dimension:blocks/ore_titanium_benitoite_crystal_solid"
   },
   "render_type": "cutout_mipped"

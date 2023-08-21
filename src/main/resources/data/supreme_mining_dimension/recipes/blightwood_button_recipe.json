@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "supreme_mining_dimension:blightwood_planks"
+    }
+  ],
+  "result": {
+    "item": "supreme_mining_dimension:blightwood_button",
+    "count": 1
+  }
+}

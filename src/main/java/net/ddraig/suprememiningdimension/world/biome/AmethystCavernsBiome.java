@@ -5,9 +5,10 @@ import net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter;
 import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.CountPlacement;
 import net.minecraft.world.level.levelgen.placement.BiomeFilter;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.GiantTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.treedecorators.AlterGroundDecorator;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.MegaPineFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -19,6 +20,7 @@ import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.util.valueproviders.ConstantInt;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
@@ -36,9 +38,12 @@ public class AmethystCavernsBiome {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-8449319).waterColor(4159204).waterFogColor(329011).skyColor(-8449319).foliageColorOverride(10387789).grassColorOverride(9470285).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
-				PlacementUtils.register("supreme_mining_dimension:tree_amethyst_caverns", FeatureUtils.register("supreme_mining_dimension:tree_amethyst_caverns", Feature.TREE,
-						new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.AMETHYST_BLOCK.defaultBlockState()), new StraightTrunkPlacer(3, 2, 0), BlockStateProvider.simple(Blocks.BUDDING_AMETHYST.defaultBlockState()),
-								new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1)).decorators(ImmutableList.of(AmethystCavernsLeaveDecorator.INSTANCE, AmethystCavernsTrunkDecorator.INSTANCE)).build()),
+				PlacementUtils.register("supreme_mining_dimension:tree_amethyst_caverns",
+						FeatureUtils.register("supreme_mining_dimension:tree_amethyst_caverns", Feature.TREE,
+								new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.AMETHYST_BLOCK.defaultBlockState()), new GiantTrunkPlacer(5, 2, 14),
+										BlockStateProvider.simple(Blocks.BUDDING_AMETHYST.defaultBlockState()), new MegaPineFoliagePlacer(ConstantInt.of(0), ConstantInt.of(0), UniformInt.of(13, 17)), new TwoLayersFeatureSize(1, 1, 2))
+										.decorators(ImmutableList.of(new AlterGroundDecorator(BlockStateProvider.simple(Blocks.PODZOL.defaultBlockState()))))
+										.decorators(ImmutableList.of(AmethystCavernsLeaveDecorator.INSTANCE, AmethystCavernsTrunkDecorator.INSTANCE)).build()),
 						List.of(CountPlacement.of(1), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0), PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING), BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCrystalFormations(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);

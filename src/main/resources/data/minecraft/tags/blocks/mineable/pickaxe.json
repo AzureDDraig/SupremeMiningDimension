@@ -33,7 +33,10 @@
     "supreme_mining_dimension:cobalt_ore",
     "supreme_mining_dimension:cobalt_block",
     "supreme_mining_dimension:sphalerite_ore",
+    "supreme_mining_dimension:benitoite_crystal_large",
     "supreme_mining_dimension:shade_cobblestone",
-    "supreme_mining_dimension:shade_stone"
+    "supreme_mining_dimension:shade_stone",
+    "supreme_mining_dimension:benitoite_crystal_budding",
+    "supreme_mining_dimension:heated_magma_block"
   ]
 }

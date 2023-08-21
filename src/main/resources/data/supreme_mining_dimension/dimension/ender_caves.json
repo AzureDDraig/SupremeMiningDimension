@@ -255,14 +255,14 @@
                         "then_run": {
                           "type": "minecraft:block",
                           "result_state": {
-                            "Name": "minecraft:end_stone"
+                            "Name": "supreme_mining_dimension:end_grass"
                           }
                         }
                       },
                       {
                         "type": "minecraft:block",
                         "result_state": {
-                          "Name": "minecraft:purpur_block"
+                          "Name": "supreme_mining_dimension:end_soil"
                         }
                       }
                     ]
@@ -280,7 +280,7 @@
                   "then_run": {
                     "type": "minecraft:block",
                     "result_state": {
-                      "Name": "minecraft:end_stone"
+                      "Name": "supreme_mining_dimension:end_soil"
                     }
                   }
                 }

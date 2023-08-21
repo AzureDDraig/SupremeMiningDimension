@@ -17,6 +17,7 @@ import net.ddraig.suprememiningdimension.world.features.ores.QuartzOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.PlatinumOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.NickelOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.LeadOreFeature;
+import net.ddraig.suprememiningdimension.world.features.ores.HeatedMagmaBlockFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.DiamondSandFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.DiamondGravelFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.DenseRedstoneOreFeature;
@@ -30,6 +31,7 @@ import net.ddraig.suprememiningdimension.world.features.ores.DenseCoalOreFeature
 import net.ddraig.suprememiningdimension.world.features.ores.DenseAndesiteFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.CobaltOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.AntimonyOreFeature;
+import net.ddraig.suprememiningdimension.world.features.ores.AncientMossFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.AmberSolidFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.AluminumOreFeature;
 import net.ddraig.suprememiningdimension.world.features.SphaleriteRocksFeature;
@@ -77,4 +79,6 @@ public class SupremeMiningDimensionModFeatures {
 	public static final RegistryObject<Feature<?>> SPHALERITE_ROCKS = REGISTRY.register("sphalerite_rocks", SphaleriteRocksFeature::new);
 	public static final RegistryObject<Feature<?>> DIAMOND_SAND = REGISTRY.register("diamond_sand", DiamondSandFeature::feature);
 	public static final RegistryObject<Feature<?>> DIAMOND_GRAVEL = REGISTRY.register("diamond_gravel", DiamondGravelFeature::feature);
+	public static final RegistryObject<Feature<?>> ANCIENT_MOSS = REGISTRY.register("ancient_moss", AncientMossFeature::feature);
+	public static final RegistryObject<Feature<?>> HEATED_MAGMA_BLOCK = REGISTRY.register("heated_magma_block", HeatedMagmaBlockFeature::feature);
 }

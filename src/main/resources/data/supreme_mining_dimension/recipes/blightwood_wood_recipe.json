@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "BB",
+    "BB"
+  ],
+  "key": {
+    "B": {
+      "item": "supreme_mining_dimension:blightwood_log"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:blightwood_wood",
+    "count": 3
+  }
+}

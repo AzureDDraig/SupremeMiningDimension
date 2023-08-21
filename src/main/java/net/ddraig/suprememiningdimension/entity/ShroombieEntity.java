@@ -5,11 +5,11 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.network.PlayMessages;
 import net.minecraftforge.network.NetworkHooks;
 
-import net.minecraft.world.level.levelgen.Heightmap;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.entity.projectile.ThrownPotion;
+import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.monster.Zombie;
 import net.minecraft.world.entity.ai.goal.target.HurtByTargetGoal;
 import net.minecraft.world.entity.ai.goal.RandomStrollGoal;
@@ -18,7 +18,6 @@ import net.minecraft.world.entity.ai.goal.MeleeAttackGoal;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
-import net.minecraft.world.entity.SpawnPlacements;
 import net.minecraft.world.entity.MobType;
 import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
@@ -30,7 +29,7 @@ import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.protocol.Packet;
 
-import net.ddraig.suprememiningdimension.procedures.ShroombieboolProcedure;
+import net.ddraig.suprememiningdimension.procedures.ShroombiePlayerCollidesProcedure;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModEntities;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModBlocks;
 
@@ -91,13 +90,13 @@ public class ShroombieEntity extends Zombie {
 		return super.hurt(source, amount);
 	}
 
+	@Override
+	public void playerTouch(Player sourceentity) {
+		super.playerTouch(sourceentity);
+		ShroombiePlayerCollidesProcedure.execute(this, sourceentity);
+	}
+
 	public static void init() {
-		SpawnPlacements.register(SupremeMiningDimensionModEntities.SHROOMBIE.get(), SpawnPlacements.Type.ON_GROUND, Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (entityType, world, reason, pos, random) -> {
-			int x = pos.getX();
-			int y = pos.getY();
-			int z = pos.getZ();
-			return ShroombieboolProcedure.execute(world, x, y, z);
-		});
 	}
 
 	public static AttributeSupplier.Builder createAttributes() {

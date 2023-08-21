@@ -5,9 +5,9 @@ import net.minecraft.world.level.levelgen.placement.SurfaceWaterDepthFilter;
 import net.minecraft.world.level.levelgen.placement.InSquarePlacement;
 import net.minecraft.world.level.levelgen.placement.CountPlacement;
 import net.minecraft.world.level.levelgen.placement.BiomeFilter;
-import net.minecraft.world.level.levelgen.feature.trunkplacers.StraightTrunkPlacer;
+import net.minecraft.world.level.levelgen.feature.trunkplacers.ForkingTrunkPlacer;
 import net.minecraft.world.level.levelgen.feature.stateproviders.BlockStateProvider;
-import net.minecraft.world.level.levelgen.feature.foliageplacers.BlobFoliagePlacer;
+import net.minecraft.world.level.levelgen.feature.foliageplacers.AcaciaFoliagePlacer;
 import net.minecraft.world.level.levelgen.feature.featuresize.TwoLayersFeatureSize;
 import net.minecraft.world.level.levelgen.feature.configurations.TreeConfiguration;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -32,19 +32,20 @@ import com.google.common.collect.ImmutableList;
 
 public class EndCavesBiome {
 	public static Biome createBiome() {
-		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-16777216).waterColor(-13434829).waterFogColor(-10092442).skyColor(-16777216).foliageColorOverride(-10092442).grassColorOverride(-16777216).build();
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-16777216).waterColor(-13434829).waterFogColor(-10092442).skyColor(-16777216).foliageColorOverride(-10092442).grassColorOverride(-26317).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings
 				.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 						PlacementUtils
 								.register("supreme_mining_dimension:tree_end_caves",
-										FeatureUtils.register("supreme_mining_dimension:tree_end_caves", Feature.TREE,
-												new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.CHORUS_PLANT.defaultBlockState()), new StraightTrunkPlacer(9, 2, 0),
-														BlockStateProvider.simple(Blocks.CHORUS_FLOWER.defaultBlockState()), new BlobFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0), 3), new TwoLayersFeatureSize(1, 0, 1))
-														.decorators(ImmutableList.of(
+										FeatureUtils
+												.register("supreme_mining_dimension:tree_end_caves", Feature.TREE,
+														new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.CHORUS_PLANT.defaultBlockState()), new ForkingTrunkPlacer(9, 2, 2),
+																BlockStateProvider.simple(Blocks.CHORUS_PLANT.defaultBlockState()), new AcaciaFoliagePlacer(ConstantInt.of(2), ConstantInt.of(0)), new TwoLayersFeatureSize(1, 0, 2))
+																.decorators(ImmutableList.of(
 
-																EndCavesFruitDecorator.INSTANCE))
-														.build()),
+																		EndCavesFruitDecorator.INSTANCE))
+																.build()),
 										List.of(CountPlacement.of(2), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0), PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING),
 												BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);

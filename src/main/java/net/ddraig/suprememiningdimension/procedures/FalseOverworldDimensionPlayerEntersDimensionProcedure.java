@@ -100,17 +100,9 @@ public class FalseOverworldDimensionPlayerEntersDimensionProcedure {
 			}
 			{
 				Entity _ent = entity;
-				_ent.teleportTo((xx + x), (y2 + 2), (z + zz));
+				_ent.teleportTo((xx + x), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (xx + x), (int) (z + zz))), (z + zz));
 				if (_ent instanceof ServerPlayer _serverPlayer)
-					_serverPlayer.connection.teleport((xx + x), (y2 + 2), (z + zz), _ent.getYRot(), _ent.getXRot());
-			}
-			if (60 >= entity.getY()) {
-				{
-					Entity _ent = entity;
-					_ent.teleportTo((xx + x), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (xx + x), (int) (z + zz))), (z + zz));
-					if (_ent instanceof ServerPlayer _serverPlayer)
-						_serverPlayer.connection.teleport((xx + x), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (xx + x), (int) (z + zz))), (z + zz), _ent.getYRot(), _ent.getXRot());
-				}
+					_serverPlayer.connection.teleport((xx + x), (world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) (xx + x), (int) (z + zz))), (z + zz), _ent.getYRot(), _ent.getXRot());
 			}
 		}
 		{
