@@ -20,6 +20,9 @@ import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.sounds.Music;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
@@ -28,7 +31,8 @@ import java.util.List;
 
 public class SurfaceMiningDimensionBiome {
 	public static Biome createBiome() {
-		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607).foliageColorOverride(-14253005).grassColorOverride(-13631680).build();
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607).foliageColorOverride(-14253005).grassColorOverride(-13631680)
+				.backgroundMusic(new Music(new SoundEvent(new ResourceLocation("supreme_mining_dimension:smd.biome.falseow")), 12000, 24000, true)).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("supreme_mining_dimension:tree_surface_mining_dimension",

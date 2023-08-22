@@ -18,10 +18,13 @@ import net.minecraft.world.level.biome.MobSpawnSettings;
 import net.minecraft.world.level.biome.BiomeSpecialEffects;
 import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
+import net.minecraft.world.level.biome.AmbientMoodSettings;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
@@ -32,7 +35,8 @@ import com.google.common.collect.ImmutableList;
 
 public class SpruceShrublandBiome {
 	public static Biome createBiome() {
-		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(-16751002).waterFogColor(-13382401).skyColor(7972607).foliageColorOverride(-16751053).grassColorOverride(-6711040).build();
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(-16751002).waterFogColor(-13382401).skyColor(7972607).foliageColorOverride(-16751053).grassColorOverride(-6711040)
+				.ambientMoodSound(new AmbientMoodSettings(new SoundEvent(new ResourceLocation("supreme_mining_dimension:smd.record.alwaysbeenhere")), 6000, 8, 2)).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("supreme_mining_dimension:tree_spruce_shrubland",

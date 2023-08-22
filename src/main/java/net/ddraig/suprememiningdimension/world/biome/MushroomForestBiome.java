@@ -20,6 +20,8 @@ import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
@@ -35,7 +37,8 @@ import com.google.common.collect.ImmutableList;
 
 public class MushroomForestBiome {
 	public static Biome createBiome() {
-		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-6710785).waterColor(-6710785).waterFogColor(-13382401).skyColor(-6710785).foliageColorOverride(-6723841).grassColorOverride(-6723841).build();
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-6710785).waterColor(-6710785).waterFogColor(-13382401).skyColor(-6710785).foliageColorOverride(-6723841).grassColorOverride(-6723841)
+				.ambientLoopSound(new SoundEvent(new ResourceLocation("supreme_mining_dimension:smd.biome.mushroomforest"))).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("supreme_mining_dimension:tree_mushroom_forest",

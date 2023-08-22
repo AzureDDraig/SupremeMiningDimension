@@ -20,6 +20,8 @@ import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
@@ -32,7 +34,8 @@ import com.google.common.collect.ImmutableList;
 
 public class EndCavesBiome {
 	public static Biome createBiome() {
-		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-16777216).waterColor(-13434829).waterFogColor(-10092442).skyColor(-16777216).foliageColorOverride(-10092442).grassColorOverride(-26317).build();
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-16777216).waterColor(-13434829).waterFogColor(-10092442).skyColor(-16777216).foliageColorOverride(-10092442).grassColorOverride(-26317)
+				.ambientLoopSound(new SoundEvent(new ResourceLocation("supreme_mining_dimension:smd.biome.endercaves"))).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings
 				.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,

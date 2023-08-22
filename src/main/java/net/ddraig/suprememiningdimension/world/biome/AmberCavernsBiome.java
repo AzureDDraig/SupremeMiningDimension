@@ -7,11 +7,14 @@ import net.minecraft.world.level.biome.BiomeGenerationSettings;
 import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 
 public class AmberCavernsBiome {
 	public static Biome createBiome() {
-		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-7512558).waterColor(4159204).waterFogColor(329011).skyColor(-7512558).foliageColorOverride(10387789).grassColorOverride(9470285).build();
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-7512558).waterColor(4159204).waterFogColor(329011).skyColor(-7512558).foliageColorOverride(10387789).grassColorOverride(9470285)
+				.ambientLoopSound(new SoundEvent(new ResourceLocation("supreme_mining_dimension:smd.biome.ambercaverns"))).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		BiomeDefaultFeatures.addDefaultCrystalFormations(biomeGenerationSettings);
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);

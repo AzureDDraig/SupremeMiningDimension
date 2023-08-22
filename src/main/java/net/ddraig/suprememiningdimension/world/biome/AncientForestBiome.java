@@ -21,6 +21,8 @@ import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
@@ -35,7 +37,8 @@ import com.google.common.collect.ImmutableList;
 
 public class AncientForestBiome {
 	public static Biome createBiome() {
-		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-16751053).waterColor(-16751002).waterFogColor(-13382401).skyColor(-16751053).foliageColorOverride(-16751053).grassColorOverride(-16751104).build();
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-16751053).waterColor(-16751002).waterFogColor(-13382401).skyColor(-16751053).foliageColorOverride(-16751053).grassColorOverride(-16751104)
+				.ambientLoopSound(new SoundEvent(new ResourceLocation("supreme_mining_dimension:smd.biome.ancient"))).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("supreme_mining_dimension:tree_ancient_forest",

@@ -1,11 +1,619 @@
 {
-  "entity.villager.work_music_dealer": {
+  "smd.record.flameofhope": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.flameofhope",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:flame_of_hope",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.flameinmyhead": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.flameinmyhead",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:flame_in_my_head",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.startingagain": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.startingagain",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:starting_again",
+        "stream": true
+      }
+    ]
+  },
+  "smd.biome.netherisles": {
     "category": "neutral",
-    "subtitle": "subtitles.entity.villager.work_music_dealer",
+    "subtitle": "subtitles.smd.biome.netherisles",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:flame_in_my_head",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:flame_of_hope",
+        "stream": false
+      }
+    ]
+  },
+  "smd.record.driftingupwards": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.driftingupwards",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:drifting_upwards",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.justalittletime": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.justalittletime",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:just_a_little_time",
+        "stream": true
+      }
+    ]
+  },
+  "smd.biome.endercaves": {
+    "category": "neutral",
+    "subtitle": "subtitles.smd.biome.endercaves",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:starting_again",
+        "stream": false
+      }
+    ]
+  },
+  "smd.entity.villager.work_music_dealer": {
+    "category": "neutral",
+    "subtitle": "subtitles.smd.entity.villager.work_music_dealer",
     "sounds": [
       {
         "name": "supreme_mining_dimension:vinyl_scratch",
         "stream": false
+      }
+    ]
+  },
+  "smd.record.hillofstone": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.hillofstone",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:hill_of_stone",
+        "stream": true
+      }
+    ]
+  },
+  "smd.biome.frozen": {
+    "category": "neutral",
+    "subtitle": "subtitles.smd.biome.frozen",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:hill_of_stone",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:subwoofer_alarm",
+        "stream": false
+      }
+    ]
+  },
+  "smd.record.subwooferalarm": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.subwooferalarm",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:subwoofer_alarm",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.darklightpitched": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.darklightpitched",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:my_darkened_light_slowed_pitched",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.tenterhooks": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.tenterhooks",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:holding_on_tenterhooks",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.blightconsumes": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.blightconsumes",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:the_blight_consumes",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.rotrejects": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.rotrejects",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:the_rot_rejects",
+        "stream": true
+      }
+    ]
+  },
+  "smd.biome.shadeblight": {
+    "category": "neutral",
+    "subtitle": "subtitles.smd.biome.shadeblight",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:my_darkened_light_slowed_pitched",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:holding_on_tenterhooks",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:the_blight_consumes",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:the_rot_rejects",
+        "stream": false
+      }
+    ]
+  },
+  "smd.record.darklight": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.darklight",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:my_darkened_light",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.flamesinmyeye": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.flamesinmyeye",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:flames_in_my_eye",
+        "stream": true
+      }
+    ]
+  },
+  "smd.biome.magmatic": {
+    "category": "neutral",
+    "subtitle": "subtitles.smd.biome.magmatic",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:flames_in_my_eye",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:my_darkened_light",
+        "stream": false
+      }
+    ]
+  },
+  "smd.record.goinganywhere": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.goinganywhere",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:are_we_going_anywhere",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.standingtall": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.standingtall",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:standing_tall",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.onmyshoulders": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.onmyshoulders",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:on_my_shoulders",
+        "stream": true
+      }
+    ]
+  },
+  "smd.biome.ancient": {
+    "category": "neutral",
+    "subtitle": "subtitles.smd.biome.ancient",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:on_my_shoulders",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:are_we_going_anywhere",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:standing_tall",
+        "stream": false
+      }
+    ]
+  },
+  "smd.record.adropofdaylight": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.adropofdaylight",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:a_drop_of_daylight",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.hiatus": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.hiatus",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:flipped_hiatus",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.emeraldmornings": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.emeraldmornings",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:emerald_mornings",
+        "stream": true
+      }
+    ]
+  },
+  "smd.biome.falseow": {
+    "category": "neutral",
+    "subtitle": "subtitles.smd.biome.falseow",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:emerald_mornings",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:a_drop_of_daylight",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:flipped_hiatus",
+        "stream": false
+      }
+    ]
+  },
+  "smd.record.11pm": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.11pm",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:eleven_pm",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.fungustalking": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.fungustalking",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:fungus_talking",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.mushroomatics": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.mushroomatics",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:mushroomatics",
+        "stream": true
+      }
+    ]
+  },
+  "smd.biome.mushroomforest": {
+    "category": "neutral",
+    "subtitle": "subtitles.smd.biome.mushroomforest",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:mushroomatics",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:eleven_pm",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:fungus_talking",
+        "stream": false
+      }
+    ]
+  },
+  "smd.record.loiteronstars": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.loiteronstars",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:loiter_on_stars",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.camefromdeeper": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.camefromdeeper",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:it_came_from_deeper",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.tunneltalking": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.tunneltalking",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:tunnel_talking",
+        "stream": true
+      }
+    ]
+  },
+  "smd.biome.sculkcaverns": {
+    "category": "neutral",
+    "subtitle": "subtitles.smd.biome.sculkcaverns",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:tunnel_talking",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:it_came_from_deeper",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:loiter_on_stars",
+        "stream": false
+      }
+    ]
+  },
+  "smd.record.balustersbelow": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.balustersbelow",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:balusters_below",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.elatedpillar": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.elatedpillar",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:elated_pillar",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.digitalsmiles": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.digitalsmiles",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:digital_smiles",
+        "stream": true
+      }
+    ]
+  },
+  "smd.biome.dripstonecaverns": {
+    "category": "neutral",
+    "subtitle": "subtitles.smd.biome.dripstonecaverns",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:digital_smiles",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:balusters_below",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:elated_pillar",
+        "stream": false
+      }
+    ]
+  },
+  "smd.record.stringsoffate": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.stringsoffate",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:strings_of_fate",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.wearegoingunder": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.wearegoingunder",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:we_are_going_under",
+        "stream": true
+      }
+    ]
+  },
+  "smd.biome.ambercaverns": {
+    "category": "neutral",
+    "subtitle": "subtitles.smd.biome.ambercaverns",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:we_are_going_under",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:strings_of_fate",
+        "stream": false
+      }
+    ]
+  },
+  "smd.record.lightinthestone": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.lightinthestone",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:the_light_in_the_stone",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.clockstrikes13": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.clockstrikes13",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:the_clock_strikes_13",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.faewelcome": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.faewelcome",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:faes_welcome",
+        "stream": true
+      }
+    ]
+  },
+  "smd.biome.overgrowncaverns": {
+    "category": "neutral",
+    "subtitle": "subtitles.smd.biome.overgrowncaverns",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:faes_welcome",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:the_clock_strikes_13",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:the_light_in_the_stone",
+        "stream": false
+      }
+    ]
+  },
+  "smd.record.emptywarmth": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.emptywarmth",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:empty_warmth",
+        "stream": true
+      }
+    ]
+  },
+  "smd.biome.glacial": {
+    "category": "neutral",
+    "subtitle": "subtitles.smd.biome.glacial",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:just_a_little_time",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:drifting_upwards",
+        "stream": false
+      }
+    ]
+  },
+  "smd.record.amethystdroplets": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.amethystdroplets",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:amethyst_droplets",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.lostoutthere": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.lostoutthere",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:lost_out_there",
+        "stream": true
+      }
+    ]
+  },
+  "smd.biome.amethystcaverns": {
+    "category": "neutral",
+    "subtitle": "subtitles.smd.biome.amethystcaverns",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:lost_out_there",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:amethyst_droplets",
+        "stream": false
+      },
+      {
+        "name": "supreme_mining_dimension:empty_warmth",
+        "stream": false
+      }
+    ]
+  },
+  "smd.record.alwaysbeenhere": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.alwaysbeenhere",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:always_been_here",
+        "stream": true
+      }
+    ]
+  },
+  "smd.record.tweeterhello": {
+    "category": "record",
+    "subtitle": "subtitles.smd.record.tweeterhello",
+    "sounds": [
+      {
+        "name": "supreme_mining_dimension:tweeter_hello",
+        "stream": true
       }
     ]
   }

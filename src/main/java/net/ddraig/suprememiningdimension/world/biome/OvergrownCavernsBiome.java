@@ -20,6 +20,8 @@ import net.minecraft.world.level.biome.Biome;
 import net.minecraft.world.entity.MobCategory;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.valueproviders.ConstantInt;
+import net.minecraft.sounds.SoundEvent;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
@@ -34,7 +36,8 @@ import com.google.common.collect.ImmutableList;
 
 public class OvergrownCavernsBiome {
 	public static Biome createBiome() {
-		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-5447571).waterColor(4159204).waterFogColor(329011).skyColor(-5447571).foliageColorOverride(10387789).grassColorOverride(9470285).build();
+		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(-5447571).waterColor(4159204).waterFogColor(329011).skyColor(-5447571).foliageColorOverride(10387789).grassColorOverride(9470285)
+				.ambientLoopSound(new SoundEvent(new ResourceLocation("supreme_mining_dimension:smd.biome.overgrowncaverns"))).build();
 		BiomeGenerationSettings.Builder biomeGenerationSettings = new BiomeGenerationSettings.Builder();
 		biomeGenerationSettings.addFeature(GenerationStep.Decoration.VEGETAL_DECORATION,
 				PlacementUtils.register("supreme_mining_dimension:tree_overgrown_caverns",

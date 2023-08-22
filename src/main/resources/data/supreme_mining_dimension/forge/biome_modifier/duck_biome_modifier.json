@@ -3,8 +3,8 @@
   "biomes": "supreme_mining_dimension:ancient_forest",
   "spawners": {
     "type": "supreme_mining_dimension:duck",
-    "weight": 15,
-    "minCount": 2,
-    "maxCount": 4
+    "weight": 4,
+    "minCount": 1,
+    "maxCount": 1
   }
 }
