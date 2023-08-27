@@ -3,7 +3,7 @@
   "experience": 0.35,
   "cookingtime": 200,
   "ingredient": {
-    "item": "supreme_mining_dimension:aluminum_raw"
+    "tag": "forge:raw_materials/aluminum"
   },
   "result": "supreme_mining_dimension:aluminum_ingot"
 }

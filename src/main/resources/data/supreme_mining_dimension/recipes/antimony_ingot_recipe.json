@@ -3,7 +3,7 @@
   "experience": 3,
   "cookingtime": 100,
   "ingredient": {
-    "tag": "raw_materials/antimony"
+    "tag": "forge:raw_materials/antimony"
   },
   "result": "supreme_mining_dimension:antimony_ingot"
 }

@@ -3,7 +3,7 @@
   "experience": 0.63,
   "cookingtime": 200,
   "ingredient": {
-    "item": "supreme_mining_dimension:raw_nickel"
+    "tag": "forge:raw_materials/nickel"
   },
   "result": "supreme_mining_dimension:nickel_ingot"
 }

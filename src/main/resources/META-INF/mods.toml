@@ -4,11 +4,14 @@ license="GNU Lesser General Public License version 2.1 (LGPLv2.1)"
 
 [[mods]]
 modId="supreme_mining_dimension"
-version="1.4.2.1"
+version="1.4.2.2"
 displayName="Supreme Mining Dimension"
 credits="Azureddraig"
 displayURL="https://discord.gg/XAp9p9PNxN"
 authors="Azureddraig"
+description='''
+All Kinds of Dimensions for every need!
+'''
 
 [[dependencies.supreme_mining_dimension]]
     modId="minecraft"
