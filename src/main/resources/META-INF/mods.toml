@@ -8,7 +8,7 @@ version="1.4.2.1"
 displayName="Supreme Mining Dimension"
 credits="Azureddraig"
 displayURL="https://discord.gg/XAp9p9PNxN"
-authors="Azureddraig/Kryztaly"
+authors="Azureddraig"
 
 [[dependencies.supreme_mining_dimension]]
     modId="minecraft"
