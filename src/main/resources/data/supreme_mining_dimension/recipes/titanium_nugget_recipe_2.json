@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "NNN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "tag": "forge:nuggets/titanium"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:titanium_ingot",
+    "count": 1
+  }
+}

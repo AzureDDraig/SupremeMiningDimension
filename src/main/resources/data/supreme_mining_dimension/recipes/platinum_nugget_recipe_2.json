@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "NNN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "tag": "forge:nuggets/platinum"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:platinum_ingot",
+    "count": 1
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "NNN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "tag": "forge:nuggets/silver"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:silver_ingot",
+    "count": 1
+  }
+}

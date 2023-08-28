@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "NNN",
+    "NNN",
+    "NNN"
+  ],
+  "key": {
+    "N": {
+      "tag": "forge:nuggets/tin"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:tin_ingot",
+    "count": 1
+  }
+}
