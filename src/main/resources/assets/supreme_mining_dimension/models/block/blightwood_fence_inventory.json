@@ -1,8 +1,8 @@
 {
   "parent": "block/fence_inventory",
   "textures": {
-    "texture": "supreme_mining_dimension:blocks/wood_blightwood_planks",
-    "particle": "supreme_mining_dimension:blocks/wood_blightwood_planks"
+    "texture": "supreme_mining_dimension:block/wood_blightwood_planks",
+    "particle": "supreme_mining_dimension:block/wood_blightwood_planks"
   },
   "render_type": "solid"
 }

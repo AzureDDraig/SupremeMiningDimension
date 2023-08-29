@@ -1,7 +1,7 @@
 
 package net.ddraig.suprememiningdimension.block;
 
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class ZincOreBlock extends Block {
 	public ZincOreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(2.1f, 3.758793233250228f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(2.1f, 3.7587932333f).requiresCorrectToolForDrops());
 	}
 
 	@Override

@@ -6,6 +6,6 @@ import net.minecraft.world.item.Item;
 
 public class FaultyExplosiveItem extends Item {
 	public FaultyExplosiveItem() {
-		super(new Item.Properties().tab(null).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
 	}
 }

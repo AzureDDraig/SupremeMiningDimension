@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "supreme_mining_dimension:blocks/end_soil",
-    "particle": "supreme_mining_dimension:blocks/end_soil"
+    "all": "supreme_mining_dimension:block/end_soil",
+    "particle": "supreme_mining_dimension:block/end_soil"
   },
   "render_type": "solid"
 }

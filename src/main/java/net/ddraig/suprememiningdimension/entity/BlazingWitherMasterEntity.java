@@ -31,12 +31,14 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.DifficultyInstance;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.core.BlockPos;
@@ -59,6 +61,7 @@ public class BlazingWitherMasterEntity extends Monster implements RangedAttackMo
 
 	public BlazingWitherMasterEntity(EntityType<BlazingWitherMasterEntity> type, Level world) {
 		super(type, world);
+		setMaxUpStep(0.6f);
 		xpReward = 15;
 		setNoAi(false);
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(SupremeMiningDimensionModItems.WITHERING_FIREBALL.get()));
@@ -66,7 +69,7 @@ public class BlazingWitherMasterEntity extends Monster implements RangedAttackMo
 	}
 
 	@Override
-	public Packet<?> getAddEntityPacket() {
+	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
@@ -100,6 +103,11 @@ public class BlazingWitherMasterEntity extends Monster implements RangedAttackMo
 		return MobType.UNDEFINED;
 	}
 
+	@Override
+	public double getMyRidingOffset() {
+		return -0.35D;
+	}
+
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
 		this.spawnAtLocation(new ItemStack(SupremeMiningDimensionModItems.WITHERING_ROD.get()));
@@ -122,18 +130,20 @@ public class BlazingWitherMasterEntity extends Monster implements RangedAttackMo
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
-		BlazingWitherMasterEntityIsHurtProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
-		if (source == DamageSource.CACTUS)
+		BlazingWitherMasterEntityIsHurtProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+		if (source.is(DamageTypes.IN_FIRE))
 			return false;
-		if (source == DamageSource.LIGHTNING_BOLT)
+		if (source.is(DamageTypes.CACTUS))
 			return false;
-		if (source.isExplosion())
+		if (source.is(DamageTypes.LIGHTNING_BOLT))
 			return false;
-		if (source == DamageSource.ANVIL)
+		if (source.is(DamageTypes.EXPLOSION))
 			return false;
-		if (source == DamageSource.WITHER)
+		if (source.is(DamageTypes.FALLING_ANVIL))
 			return false;
-		if (source.getMsgId().equals("witherSkull"))
+		if (source.is(DamageTypes.WITHER))
+			return false;
+		if (source.is(DamageTypes.WITHER_SKULL))
 			return false;
 		return super.hurt(source, amount);
 	}
@@ -141,7 +151,7 @@ public class BlazingWitherMasterEntity extends Monster implements RangedAttackMo
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		WitheredBlazeEntityDiesProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		WitheredBlazeEntityDiesProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override

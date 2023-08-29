@@ -10,12 +10,11 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.core.BlockPos;
 
 import net.ddraig.suprememiningdimension.procedures.StrangeForestsCanMakePortalProcedure;
-import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModTabs;
 import net.ddraig.suprememiningdimension.block.StrangeForestsPortalBlock;
 
 public class StrangeForestsItem extends Item {
 	public StrangeForestsItem() {
-		super(new Item.Properties().tab(SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS).durability(64));
+		super(new Item.Properties().durability(64));
 	}
 
 	@Override

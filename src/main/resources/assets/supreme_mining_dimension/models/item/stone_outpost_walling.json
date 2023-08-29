@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "supreme_mining_dimension:items/stonewallring"
+    "layer0": "supreme_mining_dimension:item/stonewallring"
   }
 }

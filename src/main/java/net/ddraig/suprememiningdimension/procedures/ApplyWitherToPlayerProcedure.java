@@ -12,7 +12,7 @@ public class ApplyWitherToPlayerProcedure {
 			return;
 		if (entity instanceof Player _player)
 			_player.causeFoodExhaustion((float) 0.1);
-		if (entity instanceof LivingEntity _entity)
+		if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 			_entity.addEffect(new MobEffectInstance(MobEffects.WITHER, 80, 1));
 	}
 }

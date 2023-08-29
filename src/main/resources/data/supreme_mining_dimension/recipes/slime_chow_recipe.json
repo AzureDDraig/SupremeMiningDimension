@@ -1,21 +1,25 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    " R ",
-    "ASA",
-    " P "
+    " 1 ",
+    "345",
+    " 7 "
   ],
   "key": {
-    "R": {
+    "1": {
       "item": "minecraft:redstone"
     },
-    "A": {
+    "3": {
       "item": "supreme_mining_dimension:raw_nickel"
     },
-    "S": {
+    "4": {
       "item": "minecraft:slime_ball"
     },
-    "P": {
+    "5": {
+      "item": "supreme_mining_dimension:raw_nickel"
+    },
+    "7": {
       "item": "minecraft:poisonous_potato"
     }
   },

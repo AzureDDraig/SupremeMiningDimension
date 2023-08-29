@@ -1,11 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "BB",
-    "BB"
+    "01",
+    "23"
   ],
   "key": {
-    "B": {
+    "0": {
+      "item": "supreme_mining_dimension:blightwood_log"
+    },
+    "1": {
+      "item": "supreme_mining_dimension:blightwood_log"
+    },
+    "2": {
+      "item": "supreme_mining_dimension:blightwood_log"
+    },
+    "3": {
       "item": "supreme_mining_dimension:blightwood_log"
     }
   },

@@ -1,15 +1,28 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "BSB",
-    "BSB"
+    "012",
+    "345"
   ],
   "key": {
-    "B": {
+    "0": {
       "item": "supreme_mining_dimension:blightwood_planks"
     },
-    "S": {
+    "1": {
       "item": "minecraft:stick"
+    },
+    "2": {
+      "item": "supreme_mining_dimension:blightwood_planks"
+    },
+    "3": {
+      "item": "supreme_mining_dimension:blightwood_planks"
+    },
+    "4": {
+      "item": "minecraft:stick"
+    },
+    "5": {
+      "item": "supreme_mining_dimension:blightwood_planks"
     }
   },
   "result": {

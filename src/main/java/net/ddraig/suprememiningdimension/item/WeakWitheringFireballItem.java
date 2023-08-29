@@ -17,7 +17,7 @@ import net.ddraig.suprememiningdimension.entity.WeakWitheringFireballEntity;
 
 public class WeakWitheringFireballItem extends Item {
 	public WeakWitheringFireballItem() {
-		super(new Item.Properties().tab(null).durability(100));
+		super(new Item.Properties().durability(100));
 	}
 
 	@Override

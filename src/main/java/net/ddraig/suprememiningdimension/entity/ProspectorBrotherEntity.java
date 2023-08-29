@@ -24,11 +24,13 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.ddraig.suprememiningdimension.procedures.ProspectorBrotherOnEntityTickUpdateProcedure;
@@ -45,6 +47,7 @@ public class ProspectorBrotherEntity extends Monster implements RangedAttackMob 
 
 	public ProspectorBrotherEntity(EntityType<ProspectorBrotherEntity> type, Level world) {
 		super(type, world);
+		setMaxUpStep(0.6f);
 		xpReward = 20;
 		setNoAi(false);
 		setPersistenceRequired();
@@ -55,7 +58,7 @@ public class ProspectorBrotherEntity extends Monster implements RangedAttackMob 
 	}
 
 	@Override
-	public Packet<?> getAddEntityPacket() {
+	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
@@ -87,6 +90,11 @@ public class ProspectorBrotherEntity extends Monster implements RangedAttackMob 
 	}
 
 	@Override
+	public double getMyRidingOffset() {
+		return -0.35D;
+	}
+
+	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 	}
@@ -98,14 +106,14 @@ public class ProspectorBrotherEntity extends Monster implements RangedAttackMob 
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
-		ProspectorBrotherEntityIsHurtProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
-		if (source == DamageSource.DROWN)
+		ProspectorBrotherEntityIsHurtProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+		if (source.is(DamageTypes.DROWN))
 			return false;
-		if (source.isExplosion())
+		if (source.is(DamageTypes.EXPLOSION))
 			return false;
-		if (source == DamageSource.WITHER)
+		if (source.is(DamageTypes.WITHER))
 			return false;
-		if (source.getMsgId().equals("witherSkull"))
+		if (source.is(DamageTypes.WITHER_SKULL))
 			return false;
 		return super.hurt(source, amount);
 	}
@@ -113,7 +121,7 @@ public class ProspectorBrotherEntity extends Monster implements RangedAttackMob 
 	@Override
 	public void baseTick() {
 		super.baseTick();
-		ProspectorBrotherOnEntityTickUpdateProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
+		ProspectorBrotherOnEntityTickUpdateProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override

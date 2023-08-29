@@ -45,7 +45,7 @@ public class FlameResistanceAugmentActivateProcedure {
 						_ist.setDamageValue(0);
 					}
 				}
-				if (entity instanceof LivingEntity _entity)
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 301, 1));
 			} else if (EnchantmentHelper.getItemEnchantmentLevel(SupremeMiningDimensionModEnchantments.FLAME_RESISTANCE_AUGMENT.get(),
 					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.CHEST) : ItemStack.EMPTY)) != 0) {
@@ -56,7 +56,7 @@ public class FlameResistanceAugmentActivateProcedure {
 						_ist.setDamageValue(0);
 					}
 				}
-				if (entity instanceof LivingEntity _entity)
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 301, 1));
 			} else if (EnchantmentHelper.getItemEnchantmentLevel(SupremeMiningDimensionModEnchantments.FLAME_RESISTANCE_AUGMENT.get(),
 					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.LEGS) : ItemStack.EMPTY)) != 0) {
@@ -67,7 +67,7 @@ public class FlameResistanceAugmentActivateProcedure {
 						_ist.setDamageValue(0);
 					}
 				}
-				if (entity instanceof LivingEntity _entity)
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 301, 1));
 			} else if (EnchantmentHelper.getItemEnchantmentLevel(SupremeMiningDimensionModEnchantments.FLAME_RESISTANCE_AUGMENT.get(),
 					(entity instanceof LivingEntity _entGetArmor ? _entGetArmor.getItemBySlot(EquipmentSlot.FEET) : ItemStack.EMPTY)) != 0) {
@@ -78,7 +78,7 @@ public class FlameResistanceAugmentActivateProcedure {
 						_ist.setDamageValue(0);
 					}
 				}
-				if (entity instanceof LivingEntity _entity)
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
 					_entity.addEffect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 301, 1));
 			}
 		}

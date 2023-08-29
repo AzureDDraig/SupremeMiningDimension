@@ -55,8 +55,8 @@ public class VarresetProcedure {
 				});
 			}
 		} else {
-			if (entity instanceof Player _player && !_player.level.isClientSide())
-				_player.displayClientMessage(Component.literal("Try checking the Config to see if you can reset SMD variables"), (false));
+			if (entity instanceof Player _player && !_player.level().isClientSide())
+				_player.displayClientMessage(Component.literal("Try checking the Config to see if you can reset SMD variables"), false);
 		}
 	}
 }

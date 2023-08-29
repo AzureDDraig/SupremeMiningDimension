@@ -1,11 +1,15 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "B",
-    "B"
+    "0",
+    "1"
   ],
   "key": {
-    "B": {
+    "0": {
+      "item": "supreme_mining_dimension:blightwood_planks"
+    },
+    "1": {
       "item": "supreme_mining_dimension:blightwood_planks"
     }
   },

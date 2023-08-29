@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "supreme_mining_dimension:items/disc_mush_fungus"
+    "layer0": "supreme_mining_dimension:item/disc_mush_fungus"
   }
 }

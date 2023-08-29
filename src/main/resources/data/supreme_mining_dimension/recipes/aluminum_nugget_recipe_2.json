@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:nuggets/aluminum"
+    },
+    "1": {
+      "tag": "forge:nuggets/aluminum"
+    },
+    "2": {
+      "tag": "forge:nuggets/aluminum"
+    },
+    "3": {
+      "tag": "forge:nuggets/aluminum"
+    },
+    "4": {
+      "tag": "forge:nuggets/aluminum"
+    },
+    "5": {
+      "tag": "forge:nuggets/aluminum"
+    },
+    "6": {
+      "tag": "forge:nuggets/aluminum"
+    },
+    "7": {
+      "tag": "forge:nuggets/aluminum"
+    },
+    "8": {
+      "tag": "forge:nuggets/aluminum"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:aluminum_ingot",
+    "count": 1
+  }
+}

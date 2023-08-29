@@ -1,17 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    " A",
-    "FS"
+    " 1",
+    "23"
   ],
   "key": {
-    "A": {
+    "1": {
       "item": "minecraft:amethyst_shard"
     },
-    "F": {
+    "2": {
       "item": "supreme_mining_dimension:false_overworld_dimension"
     },
-    "S": {
+    "3": {
       "item": "minecraft:slime_ball"
     }
   },

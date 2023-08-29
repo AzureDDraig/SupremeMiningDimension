@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "supreme_mining_dimension:blocks/blightwood_log_top",
-    "up": "supreme_mining_dimension:blocks/blightwood_log_top",
-    "north": "supreme_mining_dimension:blocks/wood_blightwood_log_side",
-    "east": "supreme_mining_dimension:blocks/wood_blightwood_log_side",
-    "south": "supreme_mining_dimension:blocks/wood_blightwood_log_side",
-    "west": "supreme_mining_dimension:blocks/wood_blightwood_log_side",
-    "particle": "supreme_mining_dimension:blocks/blightwood_log_top"
+    "down": "supreme_mining_dimension:block/blightwood_log_top",
+    "up": "supreme_mining_dimension:block/blightwood_log_top",
+    "north": "supreme_mining_dimension:block/wood_blightwood_log_side",
+    "east": "supreme_mining_dimension:block/wood_blightwood_log_side",
+    "south": "supreme_mining_dimension:block/wood_blightwood_log_side",
+    "west": "supreme_mining_dimension:block/wood_blightwood_log_side",
+    "particle": "supreme_mining_dimension:block/blightwood_log_top"
   },
   "render_type": "solid"
 }

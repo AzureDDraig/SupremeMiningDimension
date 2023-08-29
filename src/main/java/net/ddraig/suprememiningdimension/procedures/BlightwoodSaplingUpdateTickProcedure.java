@@ -15,11 +15,11 @@ public class BlightwoodSaplingUpdateTickProcedure {
 		double xx = 0;
 		double yy = 0;
 		double zz = 0;
-		if (6 < world.getMaxLocalRawBrightness(new BlockPos(x, y, z)) || world.canSeeSkyFromBelowWater(new BlockPos(x, y, z))) {
+		if (6 < world.getMaxLocalRawBrightness(BlockPos.containing(x, y, z)) || world.canSeeSkyFromBelowWater(BlockPos.containing(x, y, z))) {
 			yy = y;
-			for (int index0 = 0; index0 < (int) (4); index0++) {
+			for (int index0 = 0; index0 < 4; index0++) {
 				{
-					BlockPos _bp = new BlockPos(x, yy, z);
+					BlockPos _bp = BlockPos.containing(x, yy, z);
 					BlockState _bs = SupremeMiningDimensionModBlocks.BLIGHTWOOD_LOG.get().defaultBlockState();
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -34,13 +34,13 @@ public class BlightwoodSaplingUpdateTickProcedure {
 				}
 				yy = yy + 1;
 			}
-			for (int index1 = 0; index1 < (int) (2); index1++) {
+			for (int index1 = 0; index1 < 2; index1++) {
 				xx = x - 2;
-				for (int index2 = 0; index2 < (int) (5); index2++) {
+				for (int index2 = 0; index2 < 5; index2++) {
 					zz = z - 2;
-					for (int index3 = 0; index3 < (int) (5); index3++) {
+					for (int index3 = 0; index3 < 5; index3++) {
 						{
-							BlockPos _bp = new BlockPos(xx, yy, zz);
+							BlockPos _bp = BlockPos.containing(xx, yy, zz);
 							BlockState _bs = SupremeMiningDimensionModBlocks.BLIGHTWOOD_LEAVES.get().defaultBlockState();
 							BlockState _bso = world.getBlockState(_bp);
 							for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -59,13 +59,13 @@ public class BlightwoodSaplingUpdateTickProcedure {
 				}
 				yy = yy + 1;
 			}
-			for (int index4 = 0; index4 < (int) (2); index4++) {
+			for (int index4 = 0; index4 < 2; index4++) {
 				xx = x - 1;
-				for (int index5 = 0; index5 < (int) (3); index5++) {
+				for (int index5 = 0; index5 < 3; index5++) {
 					zz = z - 1;
-					for (int index6 = 0; index6 < (int) (3); index6++) {
+					for (int index6 = 0; index6 < 3; index6++) {
 						{
-							BlockPos _bp = new BlockPos(xx, yy, zz);
+							BlockPos _bp = BlockPos.containing(xx, yy, zz);
 							BlockState _bs = SupremeMiningDimensionModBlocks.BLIGHTWOOD_LEAVES.get().defaultBlockState();
 							BlockState _bso = world.getBlockState(_bp);
 							for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {

@@ -16,12 +16,11 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.server.level.ServerPlayer;
 
 import net.ddraig.suprememiningdimension.procedures.WitheringFireballRangedItemUsedProcedure;
-import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModTabs;
 import net.ddraig.suprememiningdimension.entity.WitheringFireballEntity;
 
 public class WitheringFireballItem extends Item {
 	public WitheringFireballItem() {
-		super(new Item.Properties().tab(SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS).durability(100));
+		super(new Item.Properties().durability(100));
 	}
 
 	@Override
@@ -58,7 +57,7 @@ public class WitheringFireballItem extends Item {
 					}
 				}
 				if (entity.getAbilities().instabuild || stack != ItemStack.EMPTY) {
-					WitheringFireballEntity entityarrow = WitheringFireballEntity.shoot(world, entity, world.getRandom(), 0.7000000000000001f, 3.9999999999999996, 2);
+					WitheringFireballEntity entityarrow = WitheringFireballEntity.shoot(world, entity, world.getRandom(), 0.7f, 4, 2);
 					itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 					if (entity.getAbilities().instabuild) {
 						entityarrow.pickup = AbstractArrow.Pickup.CREATIVE_ONLY;
@@ -76,7 +75,7 @@ public class WitheringFireballItem extends Item {
 								entity.getInventory().removeItem(stack);
 						}
 					}
-					WitheringFireballRangedItemUsedProcedure.execute(entity);
+					WitheringFireballRangedItemUsedProcedure.execute(world, entity);
 				}
 			}
 		}

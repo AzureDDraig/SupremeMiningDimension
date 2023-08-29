@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "supreme_mining_dimension:blocks/ore_dense_coal",
-    "particle": "supreme_mining_dimension:blocks/ore_dense_coal"
+    "all": "supreme_mining_dimension:block/ore_dense_coal",
+    "particle": "supreme_mining_dimension:block/ore_dense_coal"
   },
   "render_type": "solid"
 }

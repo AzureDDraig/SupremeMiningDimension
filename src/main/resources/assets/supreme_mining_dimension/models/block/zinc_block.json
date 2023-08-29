@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "supreme_mining_dimension:blocks/storage_zinc",
-    "particle": "supreme_mining_dimension:blocks/storage_zinc"
+    "all": "supreme_mining_dimension:block/storage_zinc",
+    "particle": "supreme_mining_dimension:block/storage_zinc"
   },
   "render_type": "solid"
 }

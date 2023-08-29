@@ -1,18 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "IM",
-    "CI"
+    "01",
+    "23"
   ],
   "key": {
-    "I": {
+    "0": {
       "item": "minecraft:iron_ingot"
     },
-    "M": {
+    "1": {
       "item": "minecraft:magma_cream"
     },
-    "C": {
+    "2": {
       "item": "supreme_mining_dimension:caverns"
+    },
+    "3": {
+      "item": "minecraft:iron_ingot"
     }
   },
   "result": {

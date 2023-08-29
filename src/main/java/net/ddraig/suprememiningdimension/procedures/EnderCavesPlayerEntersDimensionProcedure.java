@@ -28,11 +28,12 @@ public class EnderCavesPlayerEntersDimensionProcedure {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("supreme_mining_dimension", "enderport"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x, 64, z), new BlockPos(x, 64, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+						template.placeInWorld(_serverworld, BlockPos.containing(x, 64, z), BlockPos.containing(x, 64, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random,
+								3);
 					}
 				}
 				if (world instanceof Level _level)
-					EnderCavesPortalBlock.portalSpawn(_level, new BlockPos(x, 64, z));
+					EnderCavesPortalBlock.portalSpawn(_level, BlockPos.containing(x, 64, z));
 				{
 					Entity _ent = entity;
 					_ent.teleportTo(x, 66, z);

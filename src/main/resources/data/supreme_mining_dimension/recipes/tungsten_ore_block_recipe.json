@@ -1,13 +1,38 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "III",
-    "III",
-    "III"
+    "012",
+    "345",
+    "678"
   ],
   "key": {
-    "I": {
-      "tag": "ingots/tungsten"
+    "0": {
+      "tag": "forge:ingots/tungsten"
+    },
+    "1": {
+      "tag": "forge:ingots/tungsten"
+    },
+    "2": {
+      "tag": "forge:ingots/tungsten"
+    },
+    "3": {
+      "tag": "forge:ingots/tungsten"
+    },
+    "4": {
+      "tag": "forge:ingots/tungsten"
+    },
+    "5": {
+      "tag": "forge:ingots/tungsten"
+    },
+    "6": {
+      "tag": "forge:ingots/tungsten"
+    },
+    "7": {
+      "tag": "forge:ingots/tungsten"
+    },
+    "8": {
+      "tag": "forge:ingots/tungsten"
     }
   },
   "result": {

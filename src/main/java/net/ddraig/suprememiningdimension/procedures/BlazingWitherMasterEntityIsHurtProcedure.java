@@ -48,14 +48,14 @@ public class BlazingWitherMasterEntityIsHurtProcedure {
 				zz = entity.getZ();
 				if (world instanceof ServerLevel _level) {
 					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-					entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos(xx, yy, zz)));
+					entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos((int)xx, (int)yy, (int)zz)));
 					entityToSpawn.setVisualOnly(false);
 					_level.addFreshEntity(entityToSpawn);
 				}
 				if (BiomesConfiguration.FIREBALL_SIZE_INCREASE.get()) {
 					{
 						Entity _shootFrom = entity;
-						Level projectileLevel = _shootFrom.level;
+						Level projectileLevel = _shootFrom.level();
 						if (!projectileLevel.isClientSide()) {
 							Projectile _entityToSpawn = new Object() {
 								public Projectile getFireball(Level level, Entity shooter, double ax, double ay, double az) {
@@ -75,7 +75,7 @@ public class BlazingWitherMasterEntityIsHurtProcedure {
 				} else {
 					{
 						Entity _shootFrom = entity;
-						Level projectileLevel = _shootFrom.level;
+						Level projectileLevel = _shootFrom.level();
 						if (!projectileLevel.isClientSide()) {
 							Projectile _entityToSpawn = new Object() {
 								public Projectile getFireball(Level level, Entity shooter, double ax, double ay, double az) {

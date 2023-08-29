@@ -1,9 +1,10 @@
 {
   "type": "minecraft:blasting",
+  "category": "misc",
   "experience": 1,
   "cookingtime": 100,
   "ingredient": {
-    "tag": "raw_materials/cobalt"
+    "tag": "forge:raw_materials/cobalt"
   },
   "result": "supreme_mining_dimension:cobalt_ingot"
 }

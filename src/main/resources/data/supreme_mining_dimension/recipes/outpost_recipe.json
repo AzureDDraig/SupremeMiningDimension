@@ -1,19 +1,29 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "TST",
-    " P ",
-    "T T"
+    "012",
+    " 4 ",
+    "6 8"
   ],
   "key": {
-    "T": {
+    "0": {
       "item": "minecraft:torch"
     },
-    "S": {
+    "1": {
       "item": "supreme_mining_dimension:stone_outpost_walling"
     },
-    "P": {
+    "2": {
+      "item": "minecraft:torch"
+    },
+    "4": {
       "item": "supreme_mining_dimension:spruce_outpost_flooring"
+    },
+    "6": {
+      "item": "minecraft:torch"
+    },
+    "8": {
+      "item": "minecraft:torch"
     }
   },
   "result": {

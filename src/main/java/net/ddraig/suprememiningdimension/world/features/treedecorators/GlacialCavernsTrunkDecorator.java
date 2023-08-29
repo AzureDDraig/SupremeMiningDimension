@@ -1,6 +1,10 @@
+
 package net.ddraig.suprememiningdimension.world.features.treedecorators;
 
+import net.minecraftforge.registries.RegisterEvent;
 import net.minecraftforge.registries.ForgeRegistries;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
 
 import net.minecraft.world.level.levelgen.feature.treedecorators.TrunkVineDecorator;
 import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecoratorType;
@@ -8,19 +12,21 @@ import net.minecraft.world.level.levelgen.feature.treedecorators.TreeDecorator;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.core.BlockPos;
 
+import com.mojang.serialization.Codec;
+
+@Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class GlacialCavernsTrunkDecorator extends TrunkVineDecorator {
-	public static final GlacialCavernsTrunkDecorator INSTANCE = new GlacialCavernsTrunkDecorator();
-	public static com.mojang.serialization.Codec<GlacialCavernsTrunkDecorator> codec;
-	public static TreeDecoratorType<?> tdt;
-	static {
-		codec = com.mojang.serialization.Codec.unit(() -> INSTANCE);
-		tdt = new TreeDecoratorType<>(codec);
-		ForgeRegistries.TREE_DECORATOR_TYPES.register("glacial_caverns_tree_trunk_decorator", tdt);
+	public static Codec<GlacialCavernsTrunkDecorator> CODEC = Codec.unit(GlacialCavernsTrunkDecorator::new);
+	public static TreeDecoratorType<?> DECORATOR_TYPE = new TreeDecoratorType<>(CODEC);
+
+	@SubscribeEvent
+	public static void registerPointOfInterest(RegisterEvent event) {
+		event.register(ForgeRegistries.Keys.TREE_DECORATOR_TYPES, registerHelper -> registerHelper.register("glacial_caverns_tree_trunk_decorator", DECORATOR_TYPE));
 	}
 
 	@Override
 	protected TreeDecoratorType<?> type() {
-		return tdt;
+		return DECORATOR_TYPE;
 	}
 
 	@Override

@@ -1,13 +1,38 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "III",
-    "III",
-    "III"
+    "012",
+    "345",
+    "678"
   ],
   "key": {
-    "I": {
-      "tag": "ingots/antimony"
+    "0": {
+      "tag": "forge:ingots/antimony"
+    },
+    "1": {
+      "tag": "forge:ingots/antimony"
+    },
+    "2": {
+      "tag": "forge:ingots/antimony"
+    },
+    "3": {
+      "tag": "forge:ingots/antimony"
+    },
+    "4": {
+      "tag": "forge:ingots/antimony"
+    },
+    "5": {
+      "tag": "forge:ingots/antimony"
+    },
+    "6": {
+      "tag": "forge:ingots/antimony"
+    },
+    "7": {
+      "tag": "forge:ingots/antimony"
+    },
+    "8": {
+      "tag": "forge:ingots/antimony"
     }
   },
   "result": {

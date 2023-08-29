@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "supreme_mining_dimension:blocks/extinguishedlampother",
-    "up": "supreme_mining_dimension:blocks/extinguishedlampother",
-    "north": "supreme_mining_dimension:blocks/extinguishedlamp",
-    "east": "supreme_mining_dimension:blocks/extinguishedlampother",
-    "south": "supreme_mining_dimension:blocks/extinguishedlampother",
-    "west": "supreme_mining_dimension:blocks/extinguishedlampother",
-    "particle": "supreme_mining_dimension:blocks/extinguishedlampother"
+    "down": "supreme_mining_dimension:block/extinguishedlampother",
+    "up": "supreme_mining_dimension:block/extinguishedlampother",
+    "north": "supreme_mining_dimension:block/extinguishedlamp",
+    "east": "supreme_mining_dimension:block/extinguishedlampother",
+    "south": "supreme_mining_dimension:block/extinguishedlampother",
+    "west": "supreme_mining_dimension:block/extinguishedlampother",
+    "particle": "supreme_mining_dimension:block/extinguishedlampother"
   },
   "render_type": "solid"
 }

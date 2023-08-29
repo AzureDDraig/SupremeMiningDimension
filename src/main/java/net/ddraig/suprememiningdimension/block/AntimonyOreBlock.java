@@ -4,7 +4,7 @@ package net.ddraig.suprememiningdimension.block;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -23,7 +23,7 @@ import net.ddraig.suprememiningdimension.procedures.AntimonyOreClientRandomTickP
 
 public class AntimonyOreBlock extends Block {
 	public AntimonyOreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(1.5f, 2.871745887492587f).requiresCorrectToolForDrops().randomTicks());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(1.5f, 2.8717458875f).requiresCorrectToolForDrops().randomTicks());
 	}
 
 	@Override

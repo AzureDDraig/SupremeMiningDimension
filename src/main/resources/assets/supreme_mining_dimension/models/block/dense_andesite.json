@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "supreme_mining_dimension:blocks/denseandesite",
-    "up": "supreme_mining_dimension:blocks/denseandesite",
-    "north": "supreme_mining_dimension:blocks/denseandesite",
-    "east": "supreme_mining_dimension:blocks/denseandesite",
-    "south": "supreme_mining_dimension:blocks/denseandesite",
-    "west": "supreme_mining_dimension:blocks/denseandesite",
-    "particle": "supreme_mining_dimension:blocks/denseandesite"
+    "down": "supreme_mining_dimension:block/denseandesite",
+    "up": "supreme_mining_dimension:block/denseandesite",
+    "north": "supreme_mining_dimension:block/denseandesite",
+    "east": "supreme_mining_dimension:block/denseandesite",
+    "south": "supreme_mining_dimension:block/denseandesite",
+    "west": "supreme_mining_dimension:block/denseandesite",
+    "particle": "supreme_mining_dimension:block/denseandesite"
   },
   "render_type": "solid"
 }

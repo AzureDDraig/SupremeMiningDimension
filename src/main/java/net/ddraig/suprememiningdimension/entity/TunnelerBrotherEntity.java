@@ -22,11 +22,13 @@ import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.ddraig.suprememiningdimension.procedures.ProspectorBrotherEntityIsHurtProcedure;
@@ -42,6 +44,7 @@ public class TunnelerBrotherEntity extends Monster {
 
 	public TunnelerBrotherEntity(EntityType<TunnelerBrotherEntity> type, Level world) {
 		super(type, world);
+		setMaxUpStep(0.6f);
 		xpReward = 20;
 		setNoAi(false);
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(Items.IRON_PICKAXE));
@@ -50,7 +53,7 @@ public class TunnelerBrotherEntity extends Monster {
 	}
 
 	@Override
-	public Packet<?> getAddEntityPacket() {
+	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
@@ -73,6 +76,11 @@ public class TunnelerBrotherEntity extends Monster {
 	}
 
 	@Override
+	public double getMyRidingOffset() {
+		return -0.35D;
+	}
+
+	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
 		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
 	}
@@ -84,20 +92,22 @@ public class TunnelerBrotherEntity extends Monster {
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
-		ProspectorBrotherEntityIsHurtProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
+		ProspectorBrotherEntityIsHurtProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
+		if (source.is(DamageTypes.IN_FIRE))
+			return false;
 		if (source.getDirectEntity() instanceof AbstractArrow)
 			return false;
 		if (source.getDirectEntity() instanceof Player)
 			return false;
-		if (source == DamageSource.FALL)
+		if (source.is(DamageTypes.FALL))
 			return false;
-		if (source == DamageSource.CACTUS)
+		if (source.is(DamageTypes.CACTUS))
 			return false;
-		if (source == DamageSource.DROWN)
+		if (source.is(DamageTypes.DROWN))
 			return false;
-		if (source.getMsgId().equals("trident"))
+		if (source.is(DamageTypes.TRIDENT))
 			return false;
-		if (source == DamageSource.DRAGON_BREATH)
+		if (source.is(DamageTypes.DRAGON_BREATH))
 			return false;
 		return super.hurt(source, amount);
 	}

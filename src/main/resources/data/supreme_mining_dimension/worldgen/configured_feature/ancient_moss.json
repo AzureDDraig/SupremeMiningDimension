@@ -1,0 +1,70 @@
+{
+  "type": "supreme_mining_dimension:ancient_moss",
+  "config": {
+    "size": 7,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:grass_block",
+            "Properties": {
+              "snowy": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "supreme_mining_dimension:ancient_moss"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:dirt_path"
+          }
+        },
+        "state": {
+          "Name": "supreme_mining_dimension:ancient_moss"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:podzol",
+            "Properties": {
+              "snowy": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "supreme_mining_dimension:ancient_moss"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:coarse_dirt"
+          }
+        },
+        "state": {
+          "Name": "supreme_mining_dimension:ancient_moss"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:rooted_dirt"
+          }
+        },
+        "state": {
+          "Name": "supreme_mining_dimension:ancient_moss"
+        }
+      }
+    ]
+  }
+}

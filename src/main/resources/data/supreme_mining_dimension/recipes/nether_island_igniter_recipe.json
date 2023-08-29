@@ -1,18 +1,22 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "IB",
-    "CI"
+    "01",
+    "23"
   ],
   "key": {
-    "I": {
+    "0": {
       "item": "minecraft:iron_ingot"
     },
-    "B": {
+    "1": {
       "item": "minecraft:blaze_powder"
     },
-    "C": {
+    "2": {
       "item": "supreme_mining_dimension:caverns"
+    },
+    "3": {
+      "item": "minecraft:iron_ingot"
     }
   },
   "result": {

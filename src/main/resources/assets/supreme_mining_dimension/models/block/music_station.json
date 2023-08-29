@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "supreme_mining_dimension:blocks/musicstationside",
-    "up": "supreme_mining_dimension:blocks/musicstationtop",
-    "north": "supreme_mining_dimension:blocks/musicstationside",
-    "east": "supreme_mining_dimension:blocks/musicstationside",
-    "south": "supreme_mining_dimension:blocks/musicstationside",
-    "west": "supreme_mining_dimension:blocks/musicstationside",
-    "particle": "supreme_mining_dimension:blocks/musicstationside"
+    "down": "supreme_mining_dimension:block/musicstationside",
+    "up": "supreme_mining_dimension:block/musicstationtop",
+    "north": "supreme_mining_dimension:block/musicstationside",
+    "east": "supreme_mining_dimension:block/musicstationside",
+    "south": "supreme_mining_dimension:block/musicstationside",
+    "west": "supreme_mining_dimension:block/musicstationside",
+    "particle": "supreme_mining_dimension:block/musicstationside"
   },
   "render_type": "solid"
 }

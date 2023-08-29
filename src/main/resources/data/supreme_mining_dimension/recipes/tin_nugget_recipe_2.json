@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:nuggets/tin"
+    },
+    "1": {
+      "tag": "forge:nuggets/tin"
+    },
+    "2": {
+      "tag": "forge:nuggets/tin"
+    },
+    "3": {
+      "tag": "forge:nuggets/tin"
+    },
+    "4": {
+      "tag": "forge:nuggets/tin"
+    },
+    "5": {
+      "tag": "forge:nuggets/tin"
+    },
+    "6": {
+      "tag": "forge:nuggets/tin"
+    },
+    "7": {
+      "tag": "forge:nuggets/tin"
+    },
+    "8": {
+      "tag": "forge:nuggets/tin"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:tin_ingot",
+    "count": 1
+  }
+}

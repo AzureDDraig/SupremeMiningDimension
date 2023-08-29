@@ -1,7 +1,7 @@
 {
   "textures": {
-    "particle": "supreme_mining_dimension:blocks/surfaceport",
-    "portal": "supreme_mining_dimension:blocks/surfaceport"
+    "particle": "supreme_mining_dimension:block/surfaceport",
+    "portal": "supreme_mining_dimension:block/surfaceport"
   },
   "elements": [
     {

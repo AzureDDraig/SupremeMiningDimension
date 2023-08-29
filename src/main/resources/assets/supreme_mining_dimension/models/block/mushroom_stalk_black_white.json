@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "supreme_mining_dimension:blocks/shroomstalkblack_white",
-    "particle": "supreme_mining_dimension:blocks/shroomstalkblack_white"
+    "all": "supreme_mining_dimension:block/shroomstalkblack_white",
+    "particle": "supreme_mining_dimension:block/shroomstalkblack_white"
   },
   "render_type": "solid"
 }

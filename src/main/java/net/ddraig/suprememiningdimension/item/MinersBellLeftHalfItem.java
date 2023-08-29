@@ -8,13 +8,11 @@ import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
 import net.minecraft.network.chat.Component;
 
-import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModTabs;
-
 import java.util.List;
 
 public class MinersBellLeftHalfItem extends Item {
 	public MinersBellLeftHalfItem() {
-		super(new Item.Properties().tab(SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS).stacksTo(64).rarity(Rarity.COMMON));
+		super(new Item.Properties().stacksTo(64).rarity(Rarity.COMMON));
 	}
 
 	@Override

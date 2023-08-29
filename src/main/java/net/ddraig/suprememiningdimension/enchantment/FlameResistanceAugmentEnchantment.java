@@ -15,7 +15,7 @@ public class FlameResistanceAugmentEnchantment extends Enchantment {
 
 	@Override
 	protected boolean checkCompatibility(Enchantment ench) {
-		return !List.of(Enchantments.THORNS).contains(ench);
+		return this != ench && !List.of(Enchantments.THORNS).contains(ench);
 	}
 
 	@Override

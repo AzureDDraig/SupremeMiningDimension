@@ -1,17 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    " L",
-    "US"
+    " 1",
+    "23"
   ],
   "key": {
-    "L": {
+    "1": {
       "item": "minecraft:lapis_lazuli"
     },
-    "U": {
+    "2": {
       "item": "supreme_mining_dimension:underground_dimension"
     },
-    "S": {
+    "3": {
       "item": "minecraft:slime_ball"
     }
   },

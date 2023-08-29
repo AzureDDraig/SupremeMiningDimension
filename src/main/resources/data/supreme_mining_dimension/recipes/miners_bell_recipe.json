@@ -1,20 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "MGI",
-    " N "
+    "012",
+    " 4 "
   ],
   "key": {
-    "M": {
+    "0": {
       "item": "supreme_mining_dimension:miners_bell_left_half"
     },
-    "G": {
+    "1": {
       "item": "minecraft:gold_nugget"
     },
-    "I": {
+    "2": {
       "item": "supreme_mining_dimension:miners_bell_right_half"
     },
-    "N": {
+    "4": {
       "item": "supreme_mining_dimension:miners_bell_clapper"
     }
   },

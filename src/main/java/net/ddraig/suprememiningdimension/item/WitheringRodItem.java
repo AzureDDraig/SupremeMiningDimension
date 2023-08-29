@@ -7,11 +7,10 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.entity.LivingEntity;
 
 import net.ddraig.suprememiningdimension.procedures.WitheringRodLivingEntityIsHitWithItemProcedure;
-import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModTabs;
 
 public class WitheringRodItem extends Item {
 	public WitheringRodItem() {
-		super(new Item.Properties().tab(SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS).stacksTo(64).fireResistant().rarity(Rarity.EPIC));
+		super(new Item.Properties().stacksTo(64).fireResistant().rarity(Rarity.EPIC));
 	}
 
 	@Override

@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:oak_log",
+          "name": "minecraft:air",
           "weight": 1,
           "functions": [
             {
@@ -20,7 +20,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:oak_log",
+          "name": "minecraft:air",
           "weight": 1,
           "functions": [
             {
@@ -100,5 +100,6 @@
         }
       ]
     }
-  ]
+  ],
+  "random_sequence": "supreme_mining_dimension:blocks/amber_solid"
 }
