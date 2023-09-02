@@ -210,6 +210,10 @@ public class SupremeMiningDimensionModTabs {
 				tabData.accept(SupremeMiningDimensionModItems.ALUMINUM_NUGGET.get());
 				tabData.accept(SupremeMiningDimensionModItems.TITANIUM_NUGGET.get());
 				tabData.accept(SupremeMiningDimensionModItems.TUNGSTEN_NUGGET.get());
+				tabData.accept(SupremeMiningDimensionModItems.RAW_DUCK.get());
+				tabData.accept(SupremeMiningDimensionModItems.COOKED_DUCK.get());
+				tabData.accept(SupremeMiningDimensionModItems.SMOKED_DUCK.get());
+				tabData.accept(SupremeMiningDimensionModItems.DUCK_EGG.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

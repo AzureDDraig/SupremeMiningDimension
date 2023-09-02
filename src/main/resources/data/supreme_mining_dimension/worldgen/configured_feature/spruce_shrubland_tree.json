@@ -48,11 +48,15 @@
       "crown_height": {
         "type": "minecraft:uniform",
         "value": {
-          "min_inclusive": 13,
-          "max_inclusive": 17
+          "min_inclusive": 3,
+          "max_inclusive": 7
         }
       }
     },
-    "decorators": []
+    "decorators": [
+      {
+        "type": "supreme_mining_dimension:spruce_shrubland_tree_fruit_decorator"
+      }
+    ]
   }
 }
