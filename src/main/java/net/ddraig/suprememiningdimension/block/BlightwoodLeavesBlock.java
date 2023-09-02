@@ -12,7 +12,6 @@ import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
-import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
 
 import net.ddraig.suprememiningdimension.procedures.BlightwoodLeavesUpdateTickProcedure;
@@ -30,11 +29,6 @@ public class BlightwoodLeavesBlock extends Block {
 	@Override
 	public VoxelShape getVisualShape(BlockState state, BlockGetter world, BlockPos pos, CollisionContext context) {
 		return Shapes.empty();
-	}
-
-	@Override
-	public int getFlammability(BlockState state, BlockGetter world, BlockPos pos, Direction face) {
-		return 30;
 	}
 
 	@Override

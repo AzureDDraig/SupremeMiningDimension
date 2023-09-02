@@ -29,6 +29,8 @@ import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.data.worldgen.BiomeDefaultFeatures;
 
+import net.ddraig.suprememiningdimension.world.features.treedecorators.SpruceShrublandFruitDecorator;
+
 import java.util.List;
 
 import com.google.common.collect.ImmutableList;
@@ -43,7 +45,10 @@ public class SpruceShrublandBiome {
 						FeatureUtils.register("supreme_mining_dimension:tree_spruce_shrubland", Feature.TREE,
 								new TreeConfiguration.TreeConfigurationBuilder(BlockStateProvider.simple(Blocks.SPRUCE_LOG.defaultBlockState()), new GiantTrunkPlacer(2, 2, 14), BlockStateProvider.simple(Blocks.SPRUCE_LEAVES.defaultBlockState()),
 										new MegaPineFoliagePlacer(ConstantInt.of(0), ConstantInt.of(0), UniformInt.of(13, 17)), new TwoLayersFeatureSize(1, 1, 2))
-										.decorators(ImmutableList.of(new AlterGroundDecorator(BlockStateProvider.simple(Blocks.PODZOL.defaultBlockState())))).build()),
+										.decorators(ImmutableList.of(new AlterGroundDecorator(BlockStateProvider.simple(Blocks.PODZOL.defaultBlockState())))).decorators(ImmutableList.of(
+
+												SpruceShrublandFruitDecorator.INSTANCE))
+										.build()),
 						List.of(CountPlacement.of(2), InSquarePlacement.spread(), SurfaceWaterDepthFilter.forMaxDepth(0), PlacementUtils.HEIGHTMAP_OCEAN_FLOOR, PlacementUtils.filteredByBlockSurvival(Blocks.OAK_SAPLING), BiomeFilter.biome())));
 		BiomeDefaultFeatures.addDefaultCarversAndLakes(biomeGenerationSettings);
 		BiomeDefaultFeatures.addSwampVegetation(biomeGenerationSettings);

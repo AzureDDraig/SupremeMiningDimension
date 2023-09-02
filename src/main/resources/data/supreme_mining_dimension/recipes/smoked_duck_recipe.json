@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "experience": 6,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "supreme_mining_dimension:raw_duck"
+  },
+  "result": "supreme_mining_dimension:smoked_duck"
+}
