@@ -57,6 +57,7 @@ public class BiomesConfiguration {
 	public static final ForgeConfigSpec.ConfigValue<Boolean> ENDER_CAVES;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> NETHER_ISLANDS;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> STRANGE_FORESTS;
+	public static final ForgeConfigSpec.ConfigValue<Boolean> SHIFTED_SANDS;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> BIG_AS_SPRUCE_TREE;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> SHROOMPOISONER;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> SHROOMHEALER;
@@ -138,6 +139,7 @@ public class BiomesConfiguration {
 		ENDER_CAVES = BUILDER.define("ender_caves", true);
 		NETHER_ISLANDS = BUILDER.define("nether_islands", true);
 		STRANGE_FORESTS = BUILDER.define("strange_forests", true);
+		SHIFTED_SANDS = BUILDER.define("shifted_sands", true);
 		BUILDER.pop();
 		BUILDER.push("Structures and Spreading");
 		BIG_AS_SPRUCE_TREE = BUILDER.define("big_as_spruce_tree", true);

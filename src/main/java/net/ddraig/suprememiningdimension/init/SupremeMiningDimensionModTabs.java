@@ -214,6 +214,7 @@ public class SupremeMiningDimensionModTabs {
 				tabData.accept(SupremeMiningDimensionModItems.COOKED_DUCK.get());
 				tabData.accept(SupremeMiningDimensionModItems.SMOKED_DUCK.get());
 				tabData.accept(SupremeMiningDimensionModItems.DUCK_EGG.get());
+				tabData.accept(SupremeMiningDimensionModItems.SHIFTED_SANDS.get());
 			}).withSearchBar().build());
 
 	@SubscribeEvent

@@ -25,6 +25,8 @@
     "minecraft:podzol",
     "minecraft:mycelium",
     "supreme_mining_dimension:shade_grass",
-    "supreme_mining_dimension:shade_dirt"
+    "supreme_mining_dimension:shade_dirt",
+    "minecraft:sandstone",
+    "minecraft:sand"
   ]
 }
