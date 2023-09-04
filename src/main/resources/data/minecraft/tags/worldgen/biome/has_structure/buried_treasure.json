@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "supreme_mining_dimension:surface_mining_dimension"
+    "supreme_mining_dimension:surface_mining_dimension",
+    "supreme_mining_dimension:unending_desert"
   ]
 }

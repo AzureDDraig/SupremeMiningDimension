@@ -7,6 +7,7 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.biome.Biome;
 
+import net.ddraig.suprememiningdimension.world.biome.UnendingDesertBiome;
 import net.ddraig.suprememiningdimension.world.biome.SurfaceMiningDimensionBiome;
 import net.ddraig.suprememiningdimension.world.biome.SpruceShrublandBiome;
 import net.ddraig.suprememiningdimension.world.biome.ShadeblightBiome;
@@ -41,4 +42,5 @@ public class SupremeMiningDimensionModBiomes {
 	public static final RegistryObject<Biome> GLACIAL_CAVERNS = REGISTRY.register("glacial_caverns", GlacialCavernsBiome::createBiome);
 	public static final RegistryObject<Biome> NETHER_ISLES = REGISTRY.register("nether_isles", NetherIslesBiome::createBiome);
 	public static final RegistryObject<Biome> SHADEBLIGHT = REGISTRY.register("shadeblight", ShadeblightBiome::createBiome);
+	public static final RegistryObject<Biome> UNENDING_DESERT = REGISTRY.register("unending_desert", UnendingDesertBiome::createBiome);
 }

@@ -1,6 +1,7 @@
 {
   "replace": false,
   "values": [
-    "supreme_mining_dimension:dripstone_caverns"
+    "supreme_mining_dimension:dripstone_caverns",
+    "supreme_mining_dimension:unending_desert"
   ]
 }

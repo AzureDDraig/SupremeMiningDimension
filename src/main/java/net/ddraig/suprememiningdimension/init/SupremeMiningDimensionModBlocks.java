@@ -18,6 +18,7 @@ import net.ddraig.suprememiningdimension.block.StrangeForestsPortalBlock;
 import net.ddraig.suprememiningdimension.block.SphaleriteOreBlock;
 import net.ddraig.suprememiningdimension.block.SilverOreBlock;
 import net.ddraig.suprememiningdimension.block.SilverBlockBlock;
+import net.ddraig.suprememiningdimension.block.ShiftedSandsPortalBlock;
 import net.ddraig.suprememiningdimension.block.ShadeStoneBlock;
 import net.ddraig.suprememiningdimension.block.ShadeGrassBlock;
 import net.ddraig.suprememiningdimension.block.ShadeDirtBlock;
@@ -227,4 +228,5 @@ public class SupremeMiningDimensionModBlocks {
 	public static final RegistryObject<Block> HEATED_MAGMA_BLOCK = REGISTRY.register("heated_magma_block", () -> new HeatedMagmaBlockBlock());
 	public static final RegistryObject<Block> END_SOIL = REGISTRY.register("end_soil", () -> new EndSoilBlock());
 	public static final RegistryObject<Block> END_GRASS = REGISTRY.register("end_grass", () -> new EndGrassBlock());
+	public static final RegistryObject<Block> SHIFTED_SANDS_PORTAL = REGISTRY.register("shifted_sands_portal", () -> new ShiftedSandsPortalBlock());
 }
