@@ -118,3 +118,11 @@ Raw Duck
 Cooked Duck
 Smoked Duck
 Duck Egg
+
+1.4.3.0 build 1
+
+Added:
+Shifted sands dimension
+Shifted Sands Portal Igniter + texture
+Placeholder Portal Texture
+Unending Desert Biome
