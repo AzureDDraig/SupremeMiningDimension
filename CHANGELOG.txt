@@ -119,10 +119,30 @@ Cooked Duck
 Smoked Duck
 Duck Egg
 
-1.4.3.0 build 1
+
+
+1.4.2.5
 
 Added:
 Shifted sands dimension
 Shifted Sands Portal Igniter + texture
 Placeholder Portal Texture
 Unending Desert Biome
+Loot Tables for future portal structure
+
+Fixed:
+End Grass Texture
+
+1.4.2.6/1.4.3.0?
+
+Added
+Creative Tab for Structure placing Objects
+Spawn Eggs for Miner Brothers
+Small Ruined Etched Portal placement block
+
+Changed
+Solid Amber Loot Table to include possibility for shadeblight items
+Mining Outpost (and parts) creative tab
+Titanium ingot creative tab
+Underground dimension Height to -64 through 256
+(1.20.1 fix: nether isles igniter)

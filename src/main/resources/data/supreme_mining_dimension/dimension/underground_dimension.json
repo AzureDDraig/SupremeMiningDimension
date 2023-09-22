@@ -91,12 +91,12 @@
     },
     "settings": {
       "name": "supreme_mining_dimension:underground_dimension",
-      "sea_level": 32,
+      "sea_level": 0,
       "legacy_random_source": true,
-      "disable_mob_generation": true,
+      "disable_mob_generation": false,
       "noodle_caves_enabled": false,
       "noise_caves_enabled": false,
-      "aquifers_enabled": false,
+      "aquifers_enabled": true,
       "deepslate_enabled": false,
       "ore_veins_enabled": false,
       "min_surface_level": 0,
@@ -108,8 +108,8 @@
       },
       "spawn_target": [],
       "noise": {
-        "min_y": 0,
-        "height": 128,
+        "min_y": -64,
+        "height": 320,
         "size_horizontal": 1,
         "size_vertical": 2
       },
@@ -157,8 +157,8 @@
                     "type": "minecraft:mul",
                     "argument1": {
                       "type": "minecraft:y_clamped_gradient",
-                      "from_y": -8,
-                      "to_y": 24,
+                      "from_y": -72,
+                      "to_y": -40,
                       "from_value": 0,
                       "to_value": 1
                     },
@@ -172,8 +172,8 @@
                           "type": "minecraft:mul",
                           "argument1": {
                             "type": "minecraft:y_clamped_gradient",
-                            "from_y": 104,
-                            "to_y": 128,
+                            "from_y": 232,
+                            "to_y": 256,
                             "from_value": 1,
                             "to_value": 0
                           },

@@ -74,7 +74,7 @@ public class BiomesConfiguration {
 	public static final ForgeConfigSpec.ConfigValue<Double> FALSE_OW_MAX_DISTANCE;
 	public static final ForgeConfigSpec.ConfigValue<Boolean> CAN_RESET_FIRST_JOIN;
 	static {
-		BUILDER.push("Ores options");
+		BUILDER.push("Ores Enabled Options");
 		DENSE_ORES_ENABLED = BUILDER.comment("Enable or disable ALL Dense SMD Ores from generating here").define("dense_ores_enabled", true);
 		BUILDER.comment("Enable or disable Individual Dense Ores from generating here");
 		DENSE_ANDESITE_ENABLED = BUILDER.define("dense_andesite_enabled", true);
