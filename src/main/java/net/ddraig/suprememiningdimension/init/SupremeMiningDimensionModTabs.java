@@ -98,9 +98,14 @@ public class SupremeMiningDimensionModTabs {
 				tabData.accept(SupremeMiningDimensionModBlocks.MUSHROOM_STALK_BLACK_WHITE.get().asItem());
 				tabData.accept(SupremeMiningDimensionModBlocks.MUSHROOM_STALK_BLACK_WHITE_GLOWING.get().asItem());
 				tabData.accept(SupremeMiningDimensionModItems.WITHERING_ROD.get());
+				tabData.accept(SupremeMiningDimensionModItems.STONE_OUTPOST_WALLING.get());
+				tabData.accept(SupremeMiningDimensionModItems.SPRUCE_OUTPOST_FLOORING.get());
 				tabData.accept(SupremeMiningDimensionModItems.MINERS_BELL_CLAPPER.get());
 				tabData.accept(SupremeMiningDimensionModItems.MINERS_BELL_LEFT_HALF.get());
 				tabData.accept(SupremeMiningDimensionModItems.MINERS_BELL_RIGHT_HALF.get());
+				tabData.accept(SupremeMiningDimensionModItems.TUNNELER_BROTHER_SPAWN_EGG.get());
+				tabData.accept(SupremeMiningDimensionModItems.QUARRIER_BROTHER_SPAWN_EGG.get());
+				tabData.accept(SupremeMiningDimensionModItems.PROSPECTOR_BROTHER_SPAWN_EGG.get());
 				tabData.accept(SupremeMiningDimensionModItems.SILVER_INGOT.get());
 				tabData.accept(SupremeMiningDimensionModItems.TIN_INGOT.get());
 				tabData.accept(SupremeMiningDimensionModItems.TUNGSTEN_INGOT.get());
@@ -207,6 +212,7 @@ public class SupremeMiningDimensionModTabs {
 				tabData.accept(SupremeMiningDimensionModItems.PLATINUM_NUGGET.get());
 				tabData.accept(SupremeMiningDimensionModItems.SILVER_NUGGET.get());
 				tabData.accept(SupremeMiningDimensionModItems.RAW_TITANIUM.get());
+				tabData.accept(SupremeMiningDimensionModItems.TITANIUM_INGOT.get());
 				tabData.accept(SupremeMiningDimensionModItems.ALUMINUM_NUGGET.get());
 				tabData.accept(SupremeMiningDimensionModItems.TITANIUM_NUGGET.get());
 				tabData.accept(SupremeMiningDimensionModItems.TUNGSTEN_NUGGET.get());
@@ -215,7 +221,14 @@ public class SupremeMiningDimensionModTabs {
 				tabData.accept(SupremeMiningDimensionModItems.SMOKED_DUCK.get());
 				tabData.accept(SupremeMiningDimensionModItems.DUCK_EGG.get());
 				tabData.accept(SupremeMiningDimensionModItems.SHIFTED_SANDS.get());
+				tabData.accept(SupremeMiningDimensionModBlocks.STRANGE_FORESTS_RUINED_PORTAL.get().asItem());
 			}).withSearchBar().build());
+	public static final RegistryObject<CreativeModeTab> SMD_STRUCTURES = REGISTRY.register("smd_structures", () -> CreativeModeTab.builder().title(Component.translatable("item_group.supreme_mining_dimension.smd_structures"))
+			.icon(() -> new ItemStack(SupremeMiningDimensionModItems.CAVERN_PORTAL_OUTPOST.get())).displayItems((parameters, tabData) -> {
+				tabData.accept(SupremeMiningDimensionModItems.CAVERN_PORTAL_OUTPOST.get());
+			})
+
+			.build());
 
 	@SubscribeEvent
 	public static void buildTabContentsVanilla(BuildCreativeModeTabContentsEvent tabData) {
@@ -225,11 +238,7 @@ public class SupremeMiningDimensionModTabs {
 		}
 
 		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(SupremeMiningDimensionModItems.CAVERN_PORTAL_OUTPOST.get());
-			tabData.accept(SupremeMiningDimensionModItems.STONE_OUTPOST_WALLING.get());
-			tabData.accept(SupremeMiningDimensionModItems.SPRUCE_OUTPOST_FLOORING.get());
 			tabData.accept(SupremeMiningDimensionModItems.HONEY_BUCKET.get());
-			tabData.accept(SupremeMiningDimensionModItems.TITANIUM_INGOT.get());
 		}
 	}
 }

@@ -4,9 +4,9 @@
     "down": "supreme_mining_dimension:block/end_soil",
     "up": "supreme_mining_dimension:block/end_grass_top",
     "north": "supreme_mining_dimension:block/end_grass",
-    "east": "supreme_mining_dimension:block/end_soil",
-    "south": "supreme_mining_dimension:block/end_soil",
-    "west": "supreme_mining_dimension:block/end_soil",
+    "east": "supreme_mining_dimension:block/end_grass",
+    "south": "supreme_mining_dimension:block/end_grass",
+    "west": "supreme_mining_dimension:block/end_grass",
     "particle": "supreme_mining_dimension:block/end_soil"
   },
   "render_type": "solid"

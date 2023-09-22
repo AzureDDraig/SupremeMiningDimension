@@ -14,6 +14,7 @@ import net.ddraig.suprememiningdimension.block.TungstenOreBlock;
 import net.ddraig.suprememiningdimension.block.TungstenBlockBlock;
 import net.ddraig.suprememiningdimension.block.TinOreBlock;
 import net.ddraig.suprememiningdimension.block.TinBlockBlock;
+import net.ddraig.suprememiningdimension.block.StrangeForestsRuinedPortalBlock;
 import net.ddraig.suprememiningdimension.block.StrangeForestsPortalBlock;
 import net.ddraig.suprememiningdimension.block.SphaleriteOreBlock;
 import net.ddraig.suprememiningdimension.block.SilverOreBlock;
@@ -229,4 +230,5 @@ public class SupremeMiningDimensionModBlocks {
 	public static final RegistryObject<Block> END_SOIL = REGISTRY.register("end_soil", () -> new EndSoilBlock());
 	public static final RegistryObject<Block> END_GRASS = REGISTRY.register("end_grass", () -> new EndGrassBlock());
 	public static final RegistryObject<Block> SHIFTED_SANDS_PORTAL = REGISTRY.register("shifted_sands_portal", () -> new ShiftedSandsPortalBlock());
+	public static final RegistryObject<Block> STRANGE_FORESTS_RUINED_PORTAL = REGISTRY.register("strange_forests_ruined_portal", () -> new StrangeForestsRuinedPortalBlock());
 }

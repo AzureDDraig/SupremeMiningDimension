@@ -197,6 +197,10 @@ public class SupremeMiningDimensionModItems {
 	public static final RegistryObject<Item> MINERS_BELL_CLAPPER = REGISTRY.register("miners_bell_clapper", () -> new MinersBellClapperItem());
 	public static final RegistryObject<Item> MINERS_BELL_LEFT_HALF = REGISTRY.register("miners_bell_left_half", () -> new MinersBellLeftHalfItem());
 	public static final RegistryObject<Item> MINERS_BELL_RIGHT_HALF = REGISTRY.register("miners_bell_right_half", () -> new MinersBellRightHalfItem());
+	public static final RegistryObject<Item> TUNNELER_BROTHER_SPAWN_EGG = REGISTRY.register("tunneler_brother_spawn_egg", () -> new ForgeSpawnEggItem(SupremeMiningDimensionModEntities.TUNNELER_BROTHER, -30369, -16328, new Item.Properties()));
+	public static final RegistryObject<Item> QUARRIER_BROTHER_SPAWN_EGG = REGISTRY.register("quarrier_brother_spawn_egg", () -> new ForgeSpawnEggItem(SupremeMiningDimensionModEntities.QUARRIER_BROTHER, -30369, -7459169, new Item.Properties()));
+	public static final RegistryObject<Item> PROSPECTOR_BROTHER_SPAWN_EGG = REGISTRY.register("prospector_brother_spawn_egg",
+			() -> new ForgeSpawnEggItem(SupremeMiningDimensionModEntities.PROSPECTOR_BROTHER, -30369, -12018417, new Item.Properties()));
 	public static final RegistryObject<Item> SILVER_INGOT = REGISTRY.register("silver_ingot", () -> new SilverIngotItem());
 	public static final RegistryObject<Item> TIN_INGOT = REGISTRY.register("tin_ingot", () -> new TinIngotItem());
 	public static final RegistryObject<Item> TUNGSTEN_INGOT = REGISTRY.register("tungsten_ingot", () -> new TungstenIngotItem());
@@ -319,6 +323,7 @@ public class SupremeMiningDimensionModItems {
 	public static final RegistryObject<Item> SMOKED_DUCK = REGISTRY.register("smoked_duck", () -> new SmokedDuckItem());
 	public static final RegistryObject<Item> DUCK_EGG = REGISTRY.register("duck_egg", () -> new DuckEggItem());
 	public static final RegistryObject<Item> SHIFTED_SANDS = REGISTRY.register("shifted_sands", () -> new ShiftedSandsItem());
+	public static final RegistryObject<Item> STRANGE_FORESTS_RUINED_PORTAL = block(SupremeMiningDimensionModBlocks.STRANGE_FORESTS_RUINED_PORTAL);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
