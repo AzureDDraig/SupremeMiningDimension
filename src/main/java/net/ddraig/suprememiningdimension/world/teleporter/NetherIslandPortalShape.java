@@ -28,7 +28,7 @@ public class NetherIslandPortalShape {
 	private static final int MIN_HEIGHT = 3;
 	public static final int MAX_HEIGHT = 21;
 	private static final BlockBehaviour.StatePredicate FRAME = (p_77720_, p_77721_, p_77722_) -> {
-		return p_77720_.getBlock() == SupremeMiningDimensionModBlocks.IRON_REINFORCED_OBSIDIAN.get();
+		return p_77720_.getBlock() == SupremeMiningDimensionModBlocks.HEATED_MAGMA_BLOCK.get();
 	};
 	private final LevelAccessor level;
 	private final Direction.Axis axis;

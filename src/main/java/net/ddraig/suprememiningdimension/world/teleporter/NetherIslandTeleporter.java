@@ -29,7 +29,6 @@ import net.minecraft.core.Vec3i;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Direction;
 import net.minecraft.core.BlockPos;
-import net.minecraft.advancements.CriteriaTriggers;
 import net.minecraft.BlockUtil;
 
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModBlocks;
@@ -146,7 +145,7 @@ public class NetherIslandTeleporter implements ITeleporter {
 			for (int i3 = -1; i3 < 2; ++i3) {
 				for (int j3 = 0; j3 < 2; ++j3) {
 					for (int k3 = -1; k3 < 3; ++k3) {
-						BlockState blockstate1 = k3 < 0 ? SupremeMiningDimensionModBlocks.IRON_REINFORCED_OBSIDIAN.get().defaultBlockState() : Blocks.AIR.defaultBlockState();
+						BlockState blockstate1 = k3 < 0 ? SupremeMiningDimensionModBlocks.HEATED_MAGMA_BLOCK.get().defaultBlockState() : Blocks.AIR.defaultBlockState();
 						blockpos$mutableblockpos.setWithOffset(blockpos, j3 * direction.getStepX() + i3 * direction1.getStepX(), k3, j3 * direction.getStepZ() + i3 * direction1.getStepZ());
 						this.level.setBlockAndUpdate(blockpos$mutableblockpos, blockstate1);
 					}
@@ -157,7 +156,7 @@ public class NetherIslandTeleporter implements ITeleporter {
 			for (int j2 = -1; j2 < 4; ++j2) {
 				if (l1 == -1 || l1 == 2 || j2 == -1 || j2 == 3) {
 					blockpos$mutableblockpos.setWithOffset(blockpos, l1 * direction.getStepX(), j2, l1 * direction.getStepZ());
-					this.level.setBlock(blockpos$mutableblockpos, SupremeMiningDimensionModBlocks.IRON_REINFORCED_OBSIDIAN.get().defaultBlockState(), 3);
+					this.level.setBlock(blockpos$mutableblockpos, SupremeMiningDimensionModBlocks.HEATED_MAGMA_BLOCK.get().defaultBlockState(), 3);
 				}
 			}
 		}
@@ -189,7 +188,7 @@ public class NetherIslandTeleporter implements ITeleporter {
 	}
 
 	@Override
-	public Entity placeEntity(Entity entity, ServerLevel currentWorld, ServerLevel server, float yaw, Function<Boolean, Entity> repositionEntity) {
+	public Entity placeEntity(Entity entity, ServerLevel ServerLevel, ServerLevel server, float yaw, Function<Boolean, Entity> repositionEntity) {
 		PortalInfo portalinfo = getPortalInfo(entity, server);
 		if (entity instanceof ServerPlayer player) {
 			player.setLevel(server);
@@ -197,7 +196,6 @@ public class NetherIslandTeleporter implements ITeleporter {
 			entity.setYRot(portalinfo.yRot % 360.0F);
 			entity.setXRot(portalinfo.xRot % 360.0F);
 			entity.moveTo(portalinfo.pos.x, portalinfo.pos.y, portalinfo.pos.z);
-			CriteriaTriggers.CHANGED_DIMENSION.trigger(player, currentWorld.dimension(), server.dimension());
 			return entity;
 		} else {
 			Entity entityNew = entity.getType().create(server);

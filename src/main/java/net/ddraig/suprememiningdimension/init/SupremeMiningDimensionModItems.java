@@ -331,7 +331,8 @@ public class SupremeMiningDimensionModItems {
 	public static final RegistryObject<Item> SMOKED_DUCK = REGISTRY.register("smoked_duck", () -> new SmokedDuckItem());
 	public static final RegistryObject<Item> DUCK_EGG = REGISTRY.register("duck_egg", () -> new DuckEggItem());
 	public static final RegistryObject<Item> SHIFTED_SANDS = REGISTRY.register("shifted_sands", () -> new ShiftedSandsItem());
-	public static final RegistryObject<Item> STRANGE_FORESTS_RUINED_PORTAL = block(SupremeMiningDimensionModBlocks.STRANGE_FORESTS_RUINED_PORTAL, SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS);
+	public static final RegistryObject<Item> STRANGE_FORESTS_RUINED_PORTAL = block(SupremeMiningDimensionModBlocks.STRANGE_FORESTS_RUINED_PORTAL, SupremeMiningDimensionModTabs.TAB_SMD_STRUCTURES);
+	public static final RegistryObject<Item> NETHER_ISLES_RUINED_PORTAL = block(SupremeMiningDimensionModBlocks.NETHER_ISLES_RUINED_PORTAL, SupremeMiningDimensionModTabs.TAB_SMD_STRUCTURES);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));

@@ -138,9 +138,12 @@ End Grass Texture
 Added
 Creative Tab for Structure placing Objects
 Spawn Eggs for Miner Brothers
-Small Ruined Etched Portal placement block
+Ruined Etched Portal placement block
+Ruined Nether Isles Portal placement block
+Nether Isles Ruined Portal loot table
 
 Changed
+Nether Isles Portal frame block
 Solid Amber Loot Table to include possibility for shadeblight items
 Mining Outpost (and parts) creative tab
 Titanium ingot creative tab
