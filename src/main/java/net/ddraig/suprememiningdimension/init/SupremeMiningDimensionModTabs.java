@@ -226,6 +226,7 @@ public class SupremeMiningDimensionModTabs {
 	public static final RegistryObject<CreativeModeTab> SMD_STRUCTURES = REGISTRY.register("smd_structures", () -> CreativeModeTab.builder().title(Component.translatable("item_group.supreme_mining_dimension.smd_structures"))
 			.icon(() -> new ItemStack(SupremeMiningDimensionModItems.CAVERN_PORTAL_OUTPOST.get())).displayItems((parameters, tabData) -> {
 				tabData.accept(SupremeMiningDimensionModItems.CAVERN_PORTAL_OUTPOST.get());
+				tabData.accept(SupremeMiningDimensionModBlocks.NETHER_ISLES_RUINED_PORTAL.get().asItem());
 			})
 
 			.build());

@@ -13,13 +13,13 @@ import net.minecraft.util.RandomSource;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
-import net.ddraig.suprememiningdimension.procedures.StrangeForestsRuinedPortalPlaceProcedure;
+import net.ddraig.suprememiningdimension.procedures.NetherIslesRuinedPortalPlaceProcedure;
 
 import java.util.List;
 import java.util.Collections;
 
-public class StrangeForestsRuinedPortalBlock extends Block {
-	public StrangeForestsRuinedPortalBlock() {
+public class NetherIslesRuinedPortalBlock extends Block {
+	public NetherIslesRuinedPortalBlock() {
 		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.GRAVEL).strength(1f, 10f).randomTicks());
 	}
 
@@ -42,6 +42,6 @@ public class StrangeForestsRuinedPortalBlock extends Block {
 		int x = pos.getX();
 		int y = pos.getY();
 		int z = pos.getZ();
-		StrangeForestsRuinedPortalPlaceProcedure.execute(world, x, y, z);
+		NetherIslesRuinedPortalPlaceProcedure.execute(world, x, y, z);
 	}
 }

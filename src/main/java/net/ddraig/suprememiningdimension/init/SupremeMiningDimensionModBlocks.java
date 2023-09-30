@@ -33,6 +33,7 @@ import net.ddraig.suprememiningdimension.block.PlatinumBlockBlock;
 import net.ddraig.suprememiningdimension.block.OlivineSandBlock;
 import net.ddraig.suprememiningdimension.block.NickelOreBlock;
 import net.ddraig.suprememiningdimension.block.NickelBlockBlock;
+import net.ddraig.suprememiningdimension.block.NetherIslesRuinedPortalBlock;
 import net.ddraig.suprememiningdimension.block.NetherIslandPortalBlock;
 import net.ddraig.suprememiningdimension.block.MusicStationBlock;
 import net.ddraig.suprememiningdimension.block.MushroomStalkPurpleGlowingBlock;
@@ -231,4 +232,5 @@ public class SupremeMiningDimensionModBlocks {
 	public static final RegistryObject<Block> END_GRASS = REGISTRY.register("end_grass", () -> new EndGrassBlock());
 	public static final RegistryObject<Block> SHIFTED_SANDS_PORTAL = REGISTRY.register("shifted_sands_portal", () -> new ShiftedSandsPortalBlock());
 	public static final RegistryObject<Block> STRANGE_FORESTS_RUINED_PORTAL = REGISTRY.register("strange_forests_ruined_portal", () -> new StrangeForestsRuinedPortalBlock());
+	public static final RegistryObject<Block> NETHER_ISLES_RUINED_PORTAL = REGISTRY.register("nether_isles_ruined_portal", () -> new NetherIslesRuinedPortalBlock());
 }
