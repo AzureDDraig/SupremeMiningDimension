@@ -121,6 +121,7 @@ public class SupremeMiningDimensionModTabs {
 				tabData.accept(SupremeMiningDimensionModItems.RAW_TIN.get());
 				tabData.accept(SupremeMiningDimensionModItems.RAW_LEAD.get());
 				tabData.accept(SupremeMiningDimensionModItems.RAW_NICKEL.get());
+				tabData.accept(SupremeMiningDimensionModItems.HONEY_BUCKET.get());
 				tabData.accept(SupremeMiningDimensionModItems.WITHERED_BLAZE_SPAWN_EGG.get());
 				tabData.accept(SupremeMiningDimensionModItems.AMBER_CHUNK.get());
 				tabData.accept(SupremeMiningDimensionModItems.RAW_SILVER.get());
@@ -222,6 +223,7 @@ public class SupremeMiningDimensionModTabs {
 				tabData.accept(SupremeMiningDimensionModItems.DUCK_EGG.get());
 				tabData.accept(SupremeMiningDimensionModItems.SHIFTED_SANDS.get());
 				tabData.accept(SupremeMiningDimensionModBlocks.STRANGE_FORESTS_RUINED_PORTAL.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.AMBER_BRICKS.get().asItem());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> SMD_STRUCTURES = REGISTRY.register("smd_structures", () -> CreativeModeTab.builder().title(Component.translatable("item_group.supreme_mining_dimension.smd_structures"))
 			.icon(() -> new ItemStack(SupremeMiningDimensionModItems.CAVERN_PORTAL_OUTPOST.get())).displayItems((parameters, tabData) -> {
@@ -236,10 +238,6 @@ public class SupremeMiningDimensionModTabs {
 
 		if (tabData.getTabKey() == CreativeModeTabs.COMBAT) {
 			tabData.accept(SupremeMiningDimensionModItems.WEAK_WITHERED_FIREBALL.get());
-		}
-
-		if (tabData.getTabKey() == CreativeModeTabs.SPAWN_EGGS) {
-			tabData.accept(SupremeMiningDimensionModItems.HONEY_BUCKET.get());
 		}
 	}
 }

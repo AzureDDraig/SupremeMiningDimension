@@ -116,6 +116,7 @@ import net.ddraig.suprememiningdimension.block.AntimonyOreBlock;
 import net.ddraig.suprememiningdimension.block.AntimonyBlockBlock;
 import net.ddraig.suprememiningdimension.block.AncientMossBlock;
 import net.ddraig.suprememiningdimension.block.AmberSolidBlock;
+import net.ddraig.suprememiningdimension.block.AmberBricksBlock;
 import net.ddraig.suprememiningdimension.block.AluminumOreBlock;
 import net.ddraig.suprememiningdimension.block.AluminumBlockBlock;
 import net.ddraig.suprememiningdimension.SupremeMiningDimensionMod;
@@ -233,4 +234,5 @@ public class SupremeMiningDimensionModBlocks {
 	public static final RegistryObject<Block> SHIFTED_SANDS_PORTAL = REGISTRY.register("shifted_sands_portal", () -> new ShiftedSandsPortalBlock());
 	public static final RegistryObject<Block> STRANGE_FORESTS_RUINED_PORTAL = REGISTRY.register("strange_forests_ruined_portal", () -> new StrangeForestsRuinedPortalBlock());
 	public static final RegistryObject<Block> NETHER_ISLES_RUINED_PORTAL = REGISTRY.register("nether_isles_ruined_portal", () -> new NetherIslesRuinedPortalBlock());
+	public static final RegistryObject<Block> AMBER_BRICKS = REGISTRY.register("amber_bricks", () -> new AmberBricksBlock());
 }

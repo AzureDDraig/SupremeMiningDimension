@@ -19,6 +19,7 @@ import net.minecraft.network.FriendlyByteBuf;
 
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModTabs;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModSounds;
+import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModParticleTypes;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModItems;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModFluids;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModFluidTypes;
@@ -53,6 +54,8 @@ public class SupremeMiningDimensionMod {
 		SupremeMiningDimensionModEnchantments.REGISTRY.register(bus);
 		SupremeMiningDimensionModTabs.REGISTRY.register(bus);
 		SupremeMiningDimensionModFeatures.REGISTRY.register(bus);
+
+		SupremeMiningDimensionModParticleTypes.REGISTRY.register(bus);
 
 		SupremeMiningDimensionModFluids.REGISTRY.register(bus);
 		SupremeMiningDimensionModFluidTypes.REGISTRY.register(bus);

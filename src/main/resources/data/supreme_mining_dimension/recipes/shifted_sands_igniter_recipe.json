@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:blaze_powder"
+    },
+    {
+      "item": "supreme_mining_dimension:false_overworld_dimension"
+    },
+    {
+      "tag": "minecraft:sand"
+    }
+  ],
+  "result": {
+    "item": "supreme_mining_dimension:shifted_sands",
+    "count": 1
+  }
+}

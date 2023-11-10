@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "supreme_mining_dimension:amber_chunk"
+    },
+    "1": {
+      "item": "supreme_mining_dimension:amber_chunk"
+    },
+    "2": {
+      "item": "supreme_mining_dimension:amber_chunk"
+    },
+    "3": {
+      "item": "supreme_mining_dimension:amber_chunk"
+    },
+    "4": {
+      "tag": "minecraft:stone"
+    },
+    "5": {
+      "item": "supreme_mining_dimension:amber_chunk"
+    },
+    "6": {
+      "item": "supreme_mining_dimension:amber_chunk"
+    },
+    "7": {
+      "item": "supreme_mining_dimension:amber_chunk"
+    },
+    "8": {
+      "item": "supreme_mining_dimension:amber_chunk"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:amber_bricks",
+    "count": 2
+  }
+}
