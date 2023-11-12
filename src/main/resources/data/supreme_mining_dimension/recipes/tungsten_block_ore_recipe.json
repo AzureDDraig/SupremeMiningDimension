@@ -1,8 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "category": "misc",
   "ingredients": [
     {
-      "tag": "storage_blocks/tungsten"
+      "tag": "forge:storage_blocks/tungsten"
     }
   ],
   "result": {

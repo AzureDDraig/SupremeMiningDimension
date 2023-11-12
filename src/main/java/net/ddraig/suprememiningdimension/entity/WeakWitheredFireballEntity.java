@@ -16,6 +16,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModItems;
@@ -40,7 +41,7 @@ public class WeakWitheredFireballEntity extends AbstractArrow implements ItemSup
 	}
 
 	@Override
-	public Packet<?> getAddEntityPacket() {
+	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
@@ -82,18 +83,18 @@ public class WeakWitheredFireballEntity extends AbstractArrow implements ItemSup
 	}
 
 	public static WeakWitheredFireballEntity shoot(LivingEntity entity, LivingEntity target) {
-		WeakWitheredFireballEntity entityarrow = new WeakWitheredFireballEntity(SupremeMiningDimensionModEntities.WEAK_WITHERED_FIREBALL.get(), entity, entity.level);
+		WeakWitheredFireballEntity entityarrow = new WeakWitheredFireballEntity(SupremeMiningDimensionModEntities.WEAK_WITHERED_FIREBALL.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
 		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 0.4f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(3.9999999999999996);
+		entityarrow.setBaseDamage(4);
 		entityarrow.setKnockback(3);
 		entityarrow.setCritArrow(true);
 		entityarrow.setSecondsOnFire(100);
-		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.blaze.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().addFreshEntity(entityarrow);
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.blaze.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "supreme_mining_dimension:blocks/shade_dirt",
-    "up": "supreme_mining_dimension:blocks/shade_grass_top",
-    "north": "supreme_mining_dimension:blocks/shade_grass_side",
-    "east": "supreme_mining_dimension:blocks/shade_grass_side",
-    "south": "supreme_mining_dimension:blocks/shade_grass_side",
-    "west": "supreme_mining_dimension:blocks/shade_grass_side",
-    "particle": "supreme_mining_dimension:blocks/shade_dirt"
+    "down": "supreme_mining_dimension:block/shade_dirt",
+    "up": "supreme_mining_dimension:block/shade_grass_top",
+    "north": "supreme_mining_dimension:block/shade_grass_side",
+    "east": "supreme_mining_dimension:block/shade_grass_side",
+    "south": "supreme_mining_dimension:block/shade_grass_side",
+    "west": "supreme_mining_dimension:block/shade_grass_side",
+    "particle": "supreme_mining_dimension:block/shade_dirt"
   },
   "render_type": "solid"
 }

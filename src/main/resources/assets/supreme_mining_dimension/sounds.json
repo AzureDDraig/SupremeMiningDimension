@@ -1,6 +1,5 @@
 {
   "smd.record.flameofhope": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.flameofhope",
     "sounds": [
       {
@@ -10,7 +9,6 @@
     ]
   },
   "smd.record.flameinmyhead": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.flameinmyhead",
     "sounds": [
       {
@@ -20,7 +18,6 @@
     ]
   },
   "smd.record.startingagain": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.startingagain",
     "sounds": [
       {
@@ -30,7 +27,6 @@
     ]
   },
   "smd.biome.netherisles": {
-    "category": "neutral",
     "subtitle": "subtitles.smd.biome.netherisles",
     "sounds": [
       {
@@ -44,7 +40,6 @@
     ]
   },
   "smd.record.driftingupwards": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.driftingupwards",
     "sounds": [
       {
@@ -54,7 +49,6 @@
     ]
   },
   "smd.record.justalittletime": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.justalittletime",
     "sounds": [
       {
@@ -64,7 +58,6 @@
     ]
   },
   "smd.biome.endercaves": {
-    "category": "neutral",
     "subtitle": "subtitles.smd.biome.endercaves",
     "sounds": [
       {
@@ -74,7 +67,6 @@
     ]
   },
   "smd.entity.villager.work_music_dealer": {
-    "category": "neutral",
     "subtitle": "subtitles.smd.entity.villager.work_music_dealer",
     "sounds": [
       {
@@ -84,7 +76,6 @@
     ]
   },
   "smd.record.hillofstone": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.hillofstone",
     "sounds": [
       {
@@ -94,7 +85,6 @@
     ]
   },
   "smd.biome.frozen": {
-    "category": "neutral",
     "subtitle": "subtitles.smd.biome.frozen",
     "sounds": [
       {
@@ -108,7 +98,6 @@
     ]
   },
   "smd.record.subwooferalarm": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.subwooferalarm",
     "sounds": [
       {
@@ -118,7 +107,6 @@
     ]
   },
   "smd.record.darklightpitched": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.darklightpitched",
     "sounds": [
       {
@@ -128,7 +116,6 @@
     ]
   },
   "smd.record.tenterhooks": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.tenterhooks",
     "sounds": [
       {
@@ -138,7 +125,6 @@
     ]
   },
   "smd.record.blightconsumes": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.blightconsumes",
     "sounds": [
       {
@@ -148,7 +134,6 @@
     ]
   },
   "smd.record.rotrejects": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.rotrejects",
     "sounds": [
       {
@@ -158,7 +143,6 @@
     ]
   },
   "smd.biome.shadeblight": {
-    "category": "neutral",
     "subtitle": "subtitles.smd.biome.shadeblight",
     "sounds": [
       {
@@ -180,7 +164,6 @@
     ]
   },
   "smd.record.darklight": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.darklight",
     "sounds": [
       {
@@ -190,7 +173,6 @@
     ]
   },
   "smd.record.flamesinmyeye": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.flamesinmyeye",
     "sounds": [
       {
@@ -200,7 +182,6 @@
     ]
   },
   "smd.biome.magmatic": {
-    "category": "neutral",
     "subtitle": "subtitles.smd.biome.magmatic",
     "sounds": [
       {
@@ -214,7 +195,6 @@
     ]
   },
   "smd.record.goinganywhere": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.goinganywhere",
     "sounds": [
       {
@@ -224,7 +204,6 @@
     ]
   },
   "smd.record.standingtall": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.standingtall",
     "sounds": [
       {
@@ -234,7 +213,6 @@
     ]
   },
   "smd.record.onmyshoulders": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.onmyshoulders",
     "sounds": [
       {
@@ -244,7 +222,6 @@
     ]
   },
   "smd.biome.ancient": {
-    "category": "neutral",
     "subtitle": "subtitles.smd.biome.ancient",
     "sounds": [
       {
@@ -262,7 +239,6 @@
     ]
   },
   "smd.record.adropofdaylight": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.adropofdaylight",
     "sounds": [
       {
@@ -272,7 +248,6 @@
     ]
   },
   "smd.record.hiatus": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.hiatus",
     "sounds": [
       {
@@ -282,7 +257,6 @@
     ]
   },
   "smd.record.emeraldmornings": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.emeraldmornings",
     "sounds": [
       {
@@ -292,7 +266,6 @@
     ]
   },
   "smd.biome.falseow": {
-    "category": "neutral",
     "subtitle": "subtitles.smd.biome.falseow",
     "sounds": [
       {
@@ -310,7 +283,6 @@
     ]
   },
   "smd.record.11pm": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.11pm",
     "sounds": [
       {
@@ -320,7 +292,6 @@
     ]
   },
   "smd.record.fungustalking": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.fungustalking",
     "sounds": [
       {
@@ -330,7 +301,6 @@
     ]
   },
   "smd.record.mushroomatics": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.mushroomatics",
     "sounds": [
       {
@@ -340,7 +310,6 @@
     ]
   },
   "smd.biome.mushroomforest": {
-    "category": "neutral",
     "subtitle": "subtitles.smd.biome.mushroomforest",
     "sounds": [
       {
@@ -358,7 +327,6 @@
     ]
   },
   "smd.record.loiteronstars": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.loiteronstars",
     "sounds": [
       {
@@ -368,7 +336,6 @@
     ]
   },
   "smd.record.camefromdeeper": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.camefromdeeper",
     "sounds": [
       {
@@ -378,7 +345,6 @@
     ]
   },
   "smd.record.tunneltalking": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.tunneltalking",
     "sounds": [
       {
@@ -388,7 +354,6 @@
     ]
   },
   "smd.biome.sculkcaverns": {
-    "category": "neutral",
     "subtitle": "subtitles.smd.biome.sculkcaverns",
     "sounds": [
       {
@@ -406,7 +371,6 @@
     ]
   },
   "smd.record.balustersbelow": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.balustersbelow",
     "sounds": [
       {
@@ -416,7 +380,6 @@
     ]
   },
   "smd.record.elatedpillar": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.elatedpillar",
     "sounds": [
       {
@@ -426,7 +389,6 @@
     ]
   },
   "smd.record.digitalsmiles": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.digitalsmiles",
     "sounds": [
       {
@@ -436,7 +398,6 @@
     ]
   },
   "smd.biome.dripstonecaverns": {
-    "category": "neutral",
     "subtitle": "subtitles.smd.biome.dripstonecaverns",
     "sounds": [
       {
@@ -454,7 +415,6 @@
     ]
   },
   "smd.record.stringsoffate": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.stringsoffate",
     "sounds": [
       {
@@ -464,7 +424,6 @@
     ]
   },
   "smd.record.wearegoingunder": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.wearegoingunder",
     "sounds": [
       {
@@ -474,7 +433,6 @@
     ]
   },
   "smd.biome.ambercaverns": {
-    "category": "neutral",
     "subtitle": "subtitles.smd.biome.ambercaverns",
     "sounds": [
       {
@@ -488,7 +446,6 @@
     ]
   },
   "smd.record.lightinthestone": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.lightinthestone",
     "sounds": [
       {
@@ -498,7 +455,6 @@
     ]
   },
   "smd.record.clockstrikes13": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.clockstrikes13",
     "sounds": [
       {
@@ -508,7 +464,6 @@
     ]
   },
   "smd.record.faewelcome": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.faewelcome",
     "sounds": [
       {
@@ -518,7 +473,6 @@
     ]
   },
   "smd.biome.overgrowncaverns": {
-    "category": "neutral",
     "subtitle": "subtitles.smd.biome.overgrowncaverns",
     "sounds": [
       {
@@ -536,7 +490,6 @@
     ]
   },
   "smd.record.emptywarmth": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.emptywarmth",
     "sounds": [
       {
@@ -546,7 +499,6 @@
     ]
   },
   "smd.biome.glacial": {
-    "category": "neutral",
     "subtitle": "subtitles.smd.biome.glacial",
     "sounds": [
       {
@@ -560,7 +512,6 @@
     ]
   },
   "smd.record.amethystdroplets": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.amethystdroplets",
     "sounds": [
       {
@@ -570,7 +521,6 @@
     ]
   },
   "smd.record.lostoutthere": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.lostoutthere",
     "sounds": [
       {
@@ -580,7 +530,6 @@
     ]
   },
   "smd.biome.amethystcaverns": {
-    "category": "neutral",
     "subtitle": "subtitles.smd.biome.amethystcaverns",
     "sounds": [
       {
@@ -598,7 +547,6 @@
     ]
   },
   "smd.record.alwaysbeenhere": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.alwaysbeenhere",
     "sounds": [
       {
@@ -608,7 +556,6 @@
     ]
   },
   "smd.record.tweeterhello": {
-    "category": "record",
     "subtitle": "subtitles.smd.record.tweeterhello",
     "sounds": [
       {

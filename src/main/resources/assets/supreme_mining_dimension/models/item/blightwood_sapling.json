@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "supreme_mining_dimension:items/sapling_blightwood"
+    "layer0": "supreme_mining_dimension:item/sapling_blightwood"
   },
   "render_type": "translucent"
 }

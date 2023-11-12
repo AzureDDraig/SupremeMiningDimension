@@ -6,7 +6,7 @@ import net.minecraft.core.BlockPos;
 
 public class KelpyOceanHelpAdditionalGenerationConditionProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		if ((world.getBlockState(new BlockPos(x, y + 1, z))).getBlock() instanceof LiquidBlock) {
+		if ((world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock() instanceof LiquidBlock) {
 			return true;
 		}
 		return false;

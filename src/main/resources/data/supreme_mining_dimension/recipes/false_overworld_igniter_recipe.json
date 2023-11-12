@@ -1,17 +1,18 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    " S",
-    "HF"
+    " 1",
+    "23"
   ],
   "key": {
-    "S": {
+    "1": {
       "item": "minecraft:slime_ball"
     },
-    "H": {
+    "2": {
       "item": "minecraft:shears"
     },
-    "F": {
+    "3": {
       "item": "minecraft:flint"
     }
   },

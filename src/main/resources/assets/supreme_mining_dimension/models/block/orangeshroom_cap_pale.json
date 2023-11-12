@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "supreme_mining_dimension:block/shroomorangepale",
+    "particle": "supreme_mining_dimension:block/shroomorangepale"
+  },
+  "render_type": "solid"
+}

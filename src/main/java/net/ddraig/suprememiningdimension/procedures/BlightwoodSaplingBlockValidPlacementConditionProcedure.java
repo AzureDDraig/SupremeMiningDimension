@@ -7,7 +7,8 @@ import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModBlocks;
 
 public class BlightwoodSaplingBlockValidPlacementConditionProcedure {
 	public static boolean execute(LevelAccessor world, double x, double y, double z) {
-		if (SupremeMiningDimensionModBlocks.SHADE_DIRT.get() == (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock() || SupremeMiningDimensionModBlocks.SHADE_GRASS.get() == (world.getBlockState(new BlockPos(x, y - 1, z))).getBlock()) {
+		if (SupremeMiningDimensionModBlocks.SHADE_DIRT.get() == (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock()
+				|| SupremeMiningDimensionModBlocks.SHADE_GRASS.get() == (world.getBlockState(BlockPos.containing(x, y - 1, z))).getBlock()) {
 			return true;
 		}
 		return false;

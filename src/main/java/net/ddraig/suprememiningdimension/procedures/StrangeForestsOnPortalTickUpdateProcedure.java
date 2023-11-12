@@ -19,7 +19,7 @@ public class StrangeForestsOnPortalTickUpdateProcedure {
 		if (BiomesConfiguration.SPAWN_RANDOM_PORTAL_MONSTER.get()) {
 			if (Math.random() < 0.2) {
 				if (!world.isClientSide()) {
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = new BlockPos((int)x, (int)y, (int)z);
 					BlockEntity _blockEntity = world.getBlockEntity(_bp);
 					BlockState _bs = world.getBlockState(_bp);
 					if (_blockEntity != null)
@@ -30,7 +30,7 @@ public class StrangeForestsOnPortalTickUpdateProcedure {
 									return blockEntity.getPersistentData().getDouble(tag);
 								return -1;
 							}
-						}.getValue(world, new BlockPos(x, y, z), "counter1") + 1));
+						}.getValue(world, new BlockPos((int)x, (int)y, (int)z), "counter1") + 1));
 					if (world instanceof Level _level)
 						_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 				}
@@ -41,7 +41,7 @@ public class StrangeForestsOnPortalTickUpdateProcedure {
 							return blockEntity.getPersistentData().getDouble(tag);
 						return -1;
 					}
-				}.getValue(world, new BlockPos(x, y, z), "counter1")) % 50 == 0) {
+				}.getValue(world, new BlockPos((int)x, (int)y, (int)z), "counter1")) % 50 == 0) {
 					if (world instanceof ServerLevel _level) {
 						Entity entityToSpawn = new ShroombieEntity(SupremeMiningDimensionModEntities.SHROOMBIE.get(), _level);
 						entityToSpawn.moveTo(x, y, z, 0, 0);

@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:ingots/tungsten"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:tungsten_nugget",
+    "count": 9
+  }
+}

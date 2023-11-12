@@ -1,7 +1,7 @@
 {
   "parent": "block/pressure_plate_up",
   "textures": {
-    "texture": "supreme_mining_dimension:blocks/wood_blightwood_planks"
+    "texture": "supreme_mining_dimension:block/wood_blightwood_planks"
   },
   "render_type": "solid"
 }

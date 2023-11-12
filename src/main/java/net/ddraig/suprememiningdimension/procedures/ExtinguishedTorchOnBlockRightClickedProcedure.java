@@ -24,7 +24,7 @@ public class ExtinguishedTorchOnBlockRightClickedProcedure {
 			if (world instanceof ServerLevel _level)
 				_level.sendParticles(ParticleTypes.FIREWORK, x, y, z, 10, 2, 2, 2, 1);
 			{
-				BlockPos _bp = new BlockPos(x, y, z);
+				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockState _bs = SupremeMiningDimensionModBlocks.RELIT_LAMP.get().defaultBlockState();
 				BlockState _bso = world.getBlockState(_bp);
 				for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {

@@ -12,7 +12,7 @@ public class ExplosiveThrownProjectileHitsBlockProcedure {
 		SupremeMiningDimensionMod.queueServerWork((int) (20 * (double) BiomesConfiguration.TIME_EXPLOSION_SECONDS.get()), () -> {
 			if ((double) BiomesConfiguration.PERCENTFAULTY.get() > Math.random()) {
 				if (world instanceof Level _level && !_level.isClientSide())
-					_level.explode(null, x, y, z, (float) (double) BiomesConfiguration.PROSPECTOREXPLOSIVEPOWER.get(), Explosion.BlockInteraction.NONE);
+					_level.explode(null, x, y, z, 4, Level.ExplosionInteraction.MOB);
 			}
 		});
 	}

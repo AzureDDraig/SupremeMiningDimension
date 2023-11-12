@@ -1,8 +1,7 @@
 
 package net.ddraig.suprememiningdimension.block;
 
-import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -22,7 +21,7 @@ import java.util.Collections;
 
 public class ShadeDirtBlock extends Block {
 	public ShadeDirtBlock() {
-		super(BlockBehaviour.Properties.of(Material.DIRT).sound(SoundType.GRAVEL).strength(2f, 10f).requiresCorrectToolForDrops().randomTicks());
+		super(BlockBehaviour.Properties.of().sound(SoundType.GRAVEL).strength(2f, 10f).requiresCorrectToolForDrops().randomTicks());
 	}
 
 	@Override
@@ -38,7 +37,7 @@ public class ShadeDirtBlock extends Block {
 	}
 
 	@Override
-	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;

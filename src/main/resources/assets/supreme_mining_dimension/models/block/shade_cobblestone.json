@@ -1,13 +1,13 @@
 {
   "parent": "block/cube",
   "textures": {
-    "down": "supreme_mining_dimension:blocks/shade_stone_cobble",
-    "up": "supreme_mining_dimension:blocks/shade_stone_cobble",
-    "north": "supreme_mining_dimension:blocks/shade_stone_cobble",
-    "east": "supreme_mining_dimension:blocks/shade_stone_cobble",
-    "south": "supreme_mining_dimension:blocks/shade_stone_cobble",
-    "west": "supreme_mining_dimension:blocks/shade_stone_cobble",
-    "particle": "supreme_mining_dimension:blocks/shade_stone_cobble"
+    "down": "supreme_mining_dimension:block/shade_stone_cobble",
+    "up": "supreme_mining_dimension:block/shade_stone_cobble",
+    "north": "supreme_mining_dimension:block/shade_stone_cobble",
+    "east": "supreme_mining_dimension:block/shade_stone_cobble",
+    "south": "supreme_mining_dimension:block/shade_stone_cobble",
+    "west": "supreme_mining_dimension:block/shade_stone_cobble",
+    "particle": "supreme_mining_dimension:block/shade_stone_cobble"
   },
   "render_type": "solid"
 }

@@ -7,7 +7,10 @@ import net.minecraft.world.level.material.FluidState;
 import net.minecraft.world.level.material.Fluid;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.LiquidBlock;
+import net.minecraft.core.particles.SimpleParticleType;
+import net.minecraft.core.particles.ParticleOptions;
 
+import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModParticleTypes;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModItems;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModFluids;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModFluidTypes;
@@ -20,6 +23,11 @@ public abstract class HoneyFluid extends ForgeFlowingFluid {
 
 	private HoneyFluid() {
 		super(PROPERTIES);
+	}
+
+	@Override
+	public ParticleOptions getDripParticle() {
+		return (SimpleParticleType) (SupremeMiningDimensionModParticleTypes.HONEY_DRIP.get());
 	}
 
 	public static class Source extends HoneyFluid {

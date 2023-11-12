@@ -1,12 +1,25 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    " S ",
-    "SSS",
-    " S "
+    " 1 ",
+    "345",
+    " 7 "
   ],
   "key": {
-    "S": {
+    "1": {
+      "tag": "minecraft:stone_bricks"
+    },
+    "3": {
+      "tag": "minecraft:stone_bricks"
+    },
+    "4": {
+      "tag": "minecraft:stone_bricks"
+    },
+    "5": {
+      "tag": "minecraft:stone_bricks"
+    },
+    "7": {
       "tag": "minecraft:stone_bricks"
     }
   },

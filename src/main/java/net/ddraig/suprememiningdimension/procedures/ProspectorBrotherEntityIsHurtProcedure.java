@@ -17,7 +17,7 @@ public class ProspectorBrotherEntityIsHurtProcedure {
 			SupremeMiningDimensionMod.queueServerWork((int) (double) BiomesConfiguration.HOLDSTILLEXPLODEDELAYTICKS.get(), () -> {
 				if (0 == entity.getDeltaMovement().z() || 0 == entity.getDeltaMovement().x()) {
 					if (world instanceof Level _level && !_level.isClientSide())
-						_level.explode(null, x, y, z, 1, Explosion.BlockInteraction.BREAK);
+						_level.explode(null, x, y, z, 1, Level.ExplosionInteraction.MOB);
 					entity.setDeltaMovement(new Vec3(Math.random(), 1, Math.random()));
 				}
 			});

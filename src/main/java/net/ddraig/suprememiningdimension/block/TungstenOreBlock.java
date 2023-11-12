@@ -1,7 +1,7 @@
 
 package net.ddraig.suprememiningdimension.block;
 
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -13,7 +13,7 @@ import net.minecraft.core.BlockPos;
 
 public class TungstenOreBlock extends Block {
 	public TungstenOreBlock() {
-		super(BlockBehaviour.Properties.of(Material.STONE).sound(SoundType.STONE).strength(3.9000000000000004f, 6.1677205203558705f).requiresCorrectToolForDrops());
+		super(BlockBehaviour.Properties.of().instrument(NoteBlockInstrument.BASEDRUM).sound(SoundType.STONE).strength(3.9f, 6.1677205204f).requiresCorrectToolForDrops());
 	}
 
 	@Override

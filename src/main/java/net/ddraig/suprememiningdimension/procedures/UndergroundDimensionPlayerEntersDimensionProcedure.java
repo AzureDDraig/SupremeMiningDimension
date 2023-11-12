@@ -29,11 +29,11 @@ public class UndergroundDimensionPlayerEntersDimensionProcedure {
 				if (world instanceof ServerLevel _serverworld) {
 					StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("supreme_mining_dimension", "goldport"));
 					if (template != null) {
-						template.placeInWorld(_serverworld, new BlockPos(x, 64, z), new BlockPos(x, 64, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+						template.placeInWorld(_serverworld, new BlockPos((int)x, 64, (int)z), new BlockPos((int)x, 64, (int)z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 					}
 				}
 				if (world instanceof Level _level)
-					UndergroundDimensionPortalBlock.portalSpawn(_level, new BlockPos(x, 64, z));
+					UndergroundDimensionPortalBlock.portalSpawn(_level, new BlockPos((int)x, 64, (int)z));
 				{
 					Entity _ent = entity;
 					_ent.teleportTo(x, 66, z);
@@ -52,13 +52,13 @@ public class UndergroundDimensionPlayerEntersDimensionProcedure {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("supreme_mining_dimension", "airey"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x, 124, z), new BlockPos(x, 124, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+					template.placeInWorld(_serverworld, new BlockPos((int)x, 124, (int)z), new BlockPos((int)x, 124, (int)z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("supreme_mining_dimension", "goldport"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos(x, 124, z), new BlockPos(x, 124, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+					template.placeInWorld(_serverworld, new BlockPos((int)x, 124, (int)z), new BlockPos((int)x, 124, (int)z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 			{

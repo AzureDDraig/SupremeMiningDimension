@@ -1,11 +1,21 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "SS",
-    "SS"
+    "01",
+    "23"
   ],
   "key": {
-    "S": {
+    "0": {
+      "item": "supreme_mining_dimension:sphalerite_dust"
+    },
+    "1": {
+      "item": "supreme_mining_dimension:sphalerite_dust"
+    },
+    "2": {
+      "item": "supreme_mining_dimension:sphalerite_dust"
+    },
+    "3": {
       "item": "supreme_mining_dimension:sphalerite_dust"
     }
   },

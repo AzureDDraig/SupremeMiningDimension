@@ -1,16 +1,26 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    " O ",
-    "OGO",
-    " O "
+    " 1 ",
+    "345",
+    " 7 "
   ],
   "key": {
-    "O": {
+    "1": {
       "item": "minecraft:obsidian"
     },
-    "G": {
+    "3": {
+      "item": "minecraft:obsidian"
+    },
+    "4": {
       "item": "minecraft:glowstone_dust"
+    },
+    "5": {
+      "item": "minecraft:obsidian"
+    },
+    "7": {
+      "item": "minecraft:obsidian"
     }
   },
   "result": {

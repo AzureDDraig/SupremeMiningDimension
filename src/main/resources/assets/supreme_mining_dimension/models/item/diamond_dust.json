@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "supreme_mining_dimension:items/dust_diamond"
+    "layer0": "supreme_mining_dimension:item/dust_diamond"
   }
 }

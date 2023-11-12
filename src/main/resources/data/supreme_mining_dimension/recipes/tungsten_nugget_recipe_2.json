@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:nuggets/tungsten"
+    },
+    "1": {
+      "tag": "forge:nuggets/tungsten"
+    },
+    "2": {
+      "tag": "forge:nuggets/tungsten"
+    },
+    "3": {
+      "tag": "forge:nuggets/tungsten"
+    },
+    "4": {
+      "tag": "forge:nuggets/tungsten"
+    },
+    "5": {
+      "tag": "forge:nuggets/tungsten"
+    },
+    "6": {
+      "tag": "forge:nuggets/tungsten"
+    },
+    "7": {
+      "tag": "forge:nuggets/tungsten"
+    },
+    "8": {
+      "tag": "forge:nuggets/tungsten"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:tungsten_ingot",
+    "count": 1
+  }
+}

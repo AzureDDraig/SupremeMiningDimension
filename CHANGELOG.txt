@@ -1,0 +1,165 @@
+
+1.4.1
+
+UPDATED
+Nether Islands Dimension now has lava sea
+Nether Islands Entity spawning reworked
+Nether Islands Can now spawn Sphalerite
+Nether Islands Biome Name
+Creative Tab Icon
+Spawning Conditions for Dense Andesite
+Gravity for Diamond Sand and Diamond Gravel
+Texture naming
+Nether Isles Igniter Texture
+Dense Emerald Drop Rate
+Dense Ores Spawn Rate
+
+ADDED
+Sphalerite
+Sphalerite to Zinc Recipes
+Diamond Sand
+Diamond Gravel
+Diamond Dust
+Antimony
+Cobalt
+
+####
+Config options for each of the following ores to disable them:
+Aluminum
+Antimony
+Cobalt
+Dense Andesite 
+Dense Coal
+Dense Copper
+Dense Diamond
+Dense Emerald
+Dense Gold
+Dense Iron
+Dense Lapis
+Dense Ores (Master Enabler)
+Dense Redstone
+Diamond Gravel
+Diamond Sand
+Lead
+Nickel
+Platinum
+Quartz
+Silver
+Sphalerite
+Tin
+Zinc
+####
+Additional Create Crushing Recipe Support
+
+
+REMOVED
+unused textures
+
+
+1.4.2.0
+
+bugfixes
+fixed potentially spawning inside solid blocks on first visit to False Overworld
+salmon spawning in Ancient forest biome not limiting the spawn amount
+
+added
+Blightwood
+Shadeblight biome - in strange forests
+End Soil
+End grass
+
+
+changed
+Ore drops handling
+tweaked sculk caverns spawn rate
+changed end caves generation
+
+
+added
+textures for future update
+
+1.4.2.1
+
+added:
+music discs (blank OGGs to not bloat when not used - resource pack needed)
+
+changed:
+duck spawn rate in shadeblight biome
+
+1.4.2.2
+
+added
+Nuggets for most metals
+Recipes for titanium
+
+changed
+Creeper Shade sound
+
+bugfixes
+fixed recipe tag issues
+
+
+1.4.2.3
+
+Changed Spruce Shrubland biome settings
+
+
+1.4.2.4
+
+Changed 
+Lightning spawnrate in Shadeblight biome and on shade soil
+
+Bugfix
+Flammability of Blightwood buttons/logs/wood/leaves
+Default tool for most blightwood items
+
+Added
+Raw Duck
+Cooked Duck
+Smoked Duck
+Duck Egg
+
+
+
+1.4.2.5
+
+Added:
+Shifted sands dimension
+Shifted Sands Portal Igniter + texture
+Placeholder Portal Texture
+Unending Desert Biome
+Loot Tables for future portal structure
+
+Fixed:
+End Grass Texture
+
+1.4.2.6
+
+Added
+Creative Tab for Structure placing Objects
+Spawn Eggs for Miner Brothers
+Ruined Etched Portal placement block
+Ruined Nether Isles Portal placement block
+Nether Isles Ruined Portal loot table
+
+Changed
+Nether Isles Portal frame block
+Solid Amber Loot Table to include possibility for shadeblight items
+Mining Outpost (and parts) creative tab
+Titanium ingot creative tab
+Underground dimension Height to -64 through 256
+(1.20.1 fix: nether isles igniter)
+
+
+1.4.3.0
+
+Added:
+Amber Bricks
+Amber Bricks Recipe
+Shifted Sands Portal
+Shifted Sands Igniter Recipe
+Honey Bucket
+
+Changed:
+Added Drip textures to Honey
+Shifted Sands Portal Texture

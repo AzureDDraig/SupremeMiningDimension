@@ -3,8 +3,7 @@ package net.ddraig.suprememiningdimension.block;
 
 import net.minecraftforge.common.IPlantable;
 
-import net.minecraft.world.level.storage.loot.LootContext;
-import net.minecraft.world.level.material.Material;
+import net.minecraft.world.level.storage.loot.LootParams;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.SoundType;
@@ -19,7 +18,7 @@ import java.util.Collections;
 
 public class BlueshroomCapBlock extends Block {
 	public BlueshroomCapBlock() {
-		super(BlockBehaviour.Properties.of(Material.NETHER_WOOD).sound(SoundType.SHROOMLIGHT).strength(1f, 10f));
+		super(BlockBehaviour.Properties.of().sound(SoundType.SHROOMLIGHT).strength(1f, 10f));
 	}
 
 	@Override
@@ -43,7 +42,7 @@ public class BlueshroomCapBlock extends Block {
 	}
 
 	@Override
-	public List<ItemStack> getDrops(BlockState state, LootContext.Builder builder) {
+	public List<ItemStack> getDrops(BlockState state, LootParams.Builder builder) {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;

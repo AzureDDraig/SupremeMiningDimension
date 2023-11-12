@@ -1,16 +1,38 @@
 {
   "type": "minecraft:crafting_shaped",
+  "category": "misc",
   "pattern": [
-    "GGG",
-    "GOG",
-    "GGG"
+    "012",
+    "345",
+    "678"
   ],
   "key": {
-    "G": {
+    "0": {
       "item": "minecraft:gold_ingot"
     },
-    "O": {
+    "1": {
+      "item": "minecraft:gold_ingot"
+    },
+    "2": {
+      "item": "minecraft:gold_ingot"
+    },
+    "3": {
+      "item": "minecraft:gold_ingot"
+    },
+    "4": {
       "item": "minecraft:obsidian"
+    },
+    "5": {
+      "item": "minecraft:gold_ingot"
+    },
+    "6": {
+      "item": "minecraft:gold_ingot"
+    },
+    "7": {
+      "item": "minecraft:gold_ingot"
+    },
+    "8": {
+      "item": "minecraft:gold_ingot"
     }
   },
   "result": {

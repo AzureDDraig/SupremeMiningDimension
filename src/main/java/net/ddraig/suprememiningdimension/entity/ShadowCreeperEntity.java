@@ -33,6 +33,7 @@ import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.world.Difficulty;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
@@ -46,13 +47,14 @@ public class ShadowCreeperEntity extends Monster {
 
 	public ShadowCreeperEntity(EntityType<ShadowCreeperEntity> type, Level world) {
 		super(type, world);
+		setMaxUpStep(0.6f);
 		xpReward = 10;
 		setNoAi(false);
 		this.moveControl = new FlyingMoveControl(this, 10, true);
 	}
 
 	@Override
-	public Packet<?> getAddEntityPacket() {
+	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
@@ -88,7 +90,7 @@ public class ShadowCreeperEntity extends Monster {
 
 	@Override
 	public SoundEvent getHurtSound(DamageSource ds) {
-		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.generic.hurt"));
+		return ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.creeper.hurt"));
 	}
 
 	@Override
@@ -103,14 +105,14 @@ public class ShadowCreeperEntity extends Monster {
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
-		ShadowCreeperExplodeProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
+		ShadowCreeperExplodeProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 		return super.hurt(source, amount);
 	}
 
 	@Override
 	public void playerTouch(Player sourceentity) {
 		super.playerTouch(sourceentity);
-		ShadowCreeperExplodeProcedure.execute(this.level, this.getX(), this.getY(), this.getZ(), this);
+		ShadowCreeperExplodeProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ(), this);
 	}
 
 	@Override

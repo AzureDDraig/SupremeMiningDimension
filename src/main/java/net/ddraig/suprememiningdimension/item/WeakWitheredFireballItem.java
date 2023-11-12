@@ -5,7 +5,6 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.item.UseAnim;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.entity.projectile.AbstractArrow;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.entity.LivingEntity;
@@ -18,7 +17,7 @@ import net.ddraig.suprememiningdimension.entity.WeakWitheredFireballEntity;
 
 public class WeakWitheredFireballItem extends Item {
 	public WeakWitheredFireballItem() {
-		super(new Item.Properties().tab(CreativeModeTab.TAB_COMBAT).durability(100));
+		super(new Item.Properties().durability(100));
 	}
 
 	@Override
@@ -44,7 +43,7 @@ public class WeakWitheredFireballItem extends Item {
 			double y = entity.getY();
 			double z = entity.getZ();
 			if (true) {
-				WeakWitheredFireballEntity entityarrow = WeakWitheredFireballEntity.shoot(world, entity, world.getRandom(), 0.4f, 3.9999999999999996, 3);
+				WeakWitheredFireballEntity entityarrow = WeakWitheredFireballEntity.shoot(world, entity, world.getRandom(), 0.4f, 4, 3);
 				itemstack.hurtAndBreak(1, entity, e -> e.broadcastBreakEvent(entity.getUsedItemHand()));
 				entityarrow.pickup = AbstractArrow.Pickup.DISALLOWED;
 			}

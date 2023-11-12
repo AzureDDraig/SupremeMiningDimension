@@ -1,5 +1,6 @@
 {
   "type": "minecraft:crafting_shapeless",
+  "category": "misc",
   "ingredients": [
     {
       "item": "minecraft:iron_sword"
@@ -8,7 +9,7 @@
       "item": "minecraft:redstone_block"
     },
     {
-      "item": "minecraft:oak_log"
+      "tag": "minecraft:logs"
     },
     {
       "item": "minecraft:emerald_block"

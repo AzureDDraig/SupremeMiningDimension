@@ -1,7 +1,7 @@
 {
   "parent": "block/template_fence_gate_wall_open",
   "textures": {
-    "texture": "supreme_mining_dimension:blocks/wood_blightwood_planks"
+    "texture": "supreme_mining_dimension:block/wood_blightwood_planks"
   },
   "render_type": "solid"
 }

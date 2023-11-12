@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "supreme_mining_dimension:items/explosive"
+    "layer0": "supreme_mining_dimension:item/explosive"
   },
   "display": {
     "thirdperson_righthand": {

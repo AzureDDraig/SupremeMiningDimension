@@ -19,6 +19,7 @@ import net.minecraft.world.entity.EntityType;
 import net.minecraft.util.RandomSource;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 
 import net.ddraig.suprememiningdimension.procedures.WitheringFireballWhileProjectileFlyingTickProcedure;
@@ -46,7 +47,7 @@ public class WitheringFireballEntity extends AbstractArrow implements ItemSuppli
 	}
 
 	@Override
-	public Packet<?> getAddEntityPacket() {
+	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
@@ -76,13 +77,13 @@ public class WitheringFireballEntity extends AbstractArrow implements ItemSuppli
 	@Override
 	public void onHitBlock(BlockHitResult blockHitResult) {
 		super.onHitBlock(blockHitResult);
-		WitheringFireballProjectileHitsBlockProcedure.execute(this.level, blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
+		WitheringFireballProjectileHitsBlockProcedure.execute(this.level(), blockHitResult.getBlockPos().getX(), blockHitResult.getBlockPos().getY(), blockHitResult.getBlockPos().getZ());
 	}
 
 	@Override
 	public void tick() {
 		super.tick();
-		WitheringFireballWhileProjectileFlyingTickProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		WitheringFireballWhileProjectileFlyingTickProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 		if (this.inGround)
 			this.discard();
 	}
@@ -101,18 +102,18 @@ public class WitheringFireballEntity extends AbstractArrow implements ItemSuppli
 	}
 
 	public static WitheringFireballEntity shoot(LivingEntity entity, LivingEntity target) {
-		WitheringFireballEntity entityarrow = new WitheringFireballEntity(SupremeMiningDimensionModEntities.WITHERING_FIREBALL.get(), entity, entity.level);
+		WitheringFireballEntity entityarrow = new WitheringFireballEntity(SupremeMiningDimensionModEntities.WITHERING_FIREBALL.get(), entity, entity.level());
 		double dx = target.getX() - entity.getX();
 		double dy = target.getY() + target.getEyeHeight() - 1.1;
 		double dz = target.getZ() - entity.getZ();
-		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 0.7000000000000001f * 2, 12.0F);
+		entityarrow.shoot(dx, dy - entityarrow.getY() + Math.hypot(dx, dz) * 0.2F, dz, 0.7f * 2, 12.0F);
 		entityarrow.setSilent(true);
-		entityarrow.setBaseDamage(3.9999999999999996);
+		entityarrow.setBaseDamage(4);
 		entityarrow.setKnockback(2);
 		entityarrow.setCritArrow(true);
 		entityarrow.setSecondsOnFire(100);
-		entity.level.addFreshEntity(entityarrow);
-		entity.level.playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.blaze.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
+		entity.level().addFreshEntity(entityarrow);
+		entity.level().playSound(null, entity.getX(), entity.getY(), entity.getZ(), ForgeRegistries.SOUND_EVENTS.getValue(new ResourceLocation("entity.blaze.shoot")), SoundSource.PLAYERS, 1, 1f / (RandomSource.create().nextFloat() * 0.5f + 1));
 		return entityarrow;
 	}
 }

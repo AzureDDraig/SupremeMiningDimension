@@ -29,11 +29,13 @@ import net.minecraft.world.entity.Mob;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.damagesource.DamageTypes;
 import net.minecraft.world.damagesource.DamageSource;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.network.protocol.game.ClientGamePacketListener;
 import net.minecraft.network.protocol.Packet;
 import net.minecraft.core.BlockPos;
 
@@ -53,13 +55,14 @@ public class WitheredBlazeEntity extends Monster implements RangedAttackMob {
 
 	public WitheredBlazeEntity(EntityType<WitheredBlazeEntity> type, Level world) {
 		super(type, world);
+		setMaxUpStep(0.6f);
 		xpReward = 15;
 		setNoAi(false);
 		this.setItemSlot(EquipmentSlot.MAINHAND, new ItemStack(SupremeMiningDimensionModItems.WITHERING_ROD.get()));
 	}
 
 	@Override
-	public Packet<?> getAddEntityPacket() {
+	public Packet<ClientGamePacketListener> getAddEntityPacket() {
 		return NetworkHooks.getEntitySpawningPacket(this);
 	}
 
@@ -92,6 +95,11 @@ public class WitheredBlazeEntity extends Monster implements RangedAttackMob {
 		return MobType.UNDEAD;
 	}
 
+	@Override
+	public double getMyRidingOffset() {
+		return -0.35D;
+	}
+
 	protected void dropCustomDeathLoot(DamageSource source, int looting, boolean recentlyHitIn) {
 		super.dropCustomDeathLoot(source, looting, recentlyHitIn);
 		this.spawnAtLocation(new ItemStack(SupremeMiningDimensionModItems.WITHERING_ROD.get()));
@@ -120,11 +128,13 @@ public class WitheredBlazeEntity extends Monster implements RangedAttackMob {
 
 	@Override
 	public boolean hurt(DamageSource source, float amount) {
-		if (source == DamageSource.CACTUS)
+		if (source.is(DamageTypes.IN_FIRE))
 			return false;
-		if (source == DamageSource.WITHER)
+		if (source.is(DamageTypes.CACTUS))
 			return false;
-		if (source.getMsgId().equals("witherSkull"))
+		if (source.is(DamageTypes.WITHER))
+			return false;
+		if (source.is(DamageTypes.WITHER_SKULL))
 			return false;
 		return super.hurt(source, amount);
 	}
@@ -132,7 +142,7 @@ public class WitheredBlazeEntity extends Monster implements RangedAttackMob {
 	@Override
 	public void die(DamageSource source) {
 		super.die(source);
-		WitheredBlazeSecondPhaseProcedure.execute(this.level, this.getX(), this.getY(), this.getZ());
+		WitheredBlazeSecondPhaseProcedure.execute(this.level(), this.getX(), this.getY(), this.getZ());
 	}
 
 	@Override

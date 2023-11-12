@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "experience": 5,
+  "cookingtime": 160,
+  "ingredient": {
+    "item": "supreme_mining_dimension:raw_duck"
+  },
+  "result": "supreme_mining_dimension:cooked_duck"
+}

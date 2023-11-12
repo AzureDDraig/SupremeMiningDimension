@@ -18,13 +18,12 @@ import net.minecraft.world.InteractionHand;
 import net.minecraft.network.chat.Component;
 
 import net.ddraig.suprememiningdimension.procedures.MinersBellPlayerFinishesUsingItemProcedure;
-import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModTabs;
 
 import java.util.List;
 
 public class MinersBellItem extends Item {
 	public MinersBellItem() {
-		super(new Item.Properties().tab(SupremeMiningDimensionModTabs.TAB_SUPREME_MINING_DIMENSIONS).durability(2).rarity(Rarity.COMMON));
+		super(new Item.Properties().durability(2).rarity(Rarity.COMMON));
 	}
 
 	@Override
@@ -54,7 +53,6 @@ public class MinersBellItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		MinersBellPlayerFinishesUsingItemProcedure.execute(world, x, y, z, itemstack);
 		return ar;
 	}
@@ -65,7 +63,6 @@ public class MinersBellItem extends Item {
 		double x = entity.getX();
 		double y = entity.getY();
 		double z = entity.getZ();
-
 		MinersBellPlayerFinishesUsingItemProcedure.execute(world, x, y, z, itemstack);
 		return retval;
 	}

@@ -27,6 +27,12 @@
     "supreme_mining_dimension:mushroom_stalk_black_white_glowing",
     "supreme_mining_dimension:blightwood_wood",
     "supreme_mining_dimension:blightwood_log",
-    "supreme_mining_dimension:blightwood_planks"
+    "supreme_mining_dimension:blightwood_planks",
+    "supreme_mining_dimension:blightwood_stairs",
+    "supreme_mining_dimension:blightwood_slab",
+    "supreme_mining_dimension:blightwood_fence",
+    "supreme_mining_dimension:blightwood_fence_gate",
+    "supreme_mining_dimension:blightwood_pressure_plate",
+    "supreme_mining_dimension:blightwood_button"
   ]
 }

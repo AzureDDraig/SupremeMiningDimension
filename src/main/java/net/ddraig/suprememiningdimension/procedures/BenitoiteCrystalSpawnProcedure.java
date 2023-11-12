@@ -32,10 +32,10 @@ public class BenitoiteCrystalSpawnProcedure {
 					return blockEntity.getPersistentData().getDouble(tag);
 				return -1;
 			}
-		}.getValue(world, new BlockPos(x, y, z), "GrowthTime") <= 0) {
-			if ((world.getBlockState(new BlockPos(x, y, z))).getBlock() == stage0.getBlock() && stage1.canSurvive(world, new BlockPos(x, y, z))) {
+		}.getValue(world, BlockPos.containing(x, y, z), "GrowthTime") <= 0) {
+			if ((world.getBlockState(BlockPos.containing(x, y, z))).getBlock() == stage0.getBlock() && stage1.canSurvive(world, BlockPos.containing(x, y, z))) {
 				{
-					BlockPos _bp = new BlockPos(x, y, z);
+					BlockPos _bp = BlockPos.containing(x, y, z);
 					BlockState _bs = stage1;
 					BlockState _bso = world.getBlockState(_bp);
 					for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -63,9 +63,9 @@ public class BenitoiteCrystalSpawnProcedure {
 						}
 					}
 				}
-				if (Blocks.AIR == (world.getBlockState(new BlockPos(x, y + 1, z))).getBlock()) {
+				if (Blocks.AIR == (world.getBlockState(BlockPos.containing(x, y + 1, z))).getBlock()) {
 					{
-						BlockPos _bp = new BlockPos(x, y + 1, z);
+						BlockPos _bp = BlockPos.containing(x, y + 1, z);
 						BlockState _bs = SupremeMiningDimensionModBlocks.BENITOITE_CRYSTAL_SMALL.get().defaultBlockState();
 						BlockState _bso = world.getBlockState(_bp);
 						for (Map.Entry<Property<?>, Comparable<?>> entry : _bso.getValues().entrySet()) {
@@ -96,7 +96,7 @@ public class BenitoiteCrystalSpawnProcedure {
 				}
 			}
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos(x, y, z);
+				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -106,7 +106,7 @@ public class BenitoiteCrystalSpawnProcedure {
 			}
 		} else {
 			if (!world.isClientSide()) {
-				BlockPos _bp = new BlockPos(x, y, z);
+				BlockPos _bp = BlockPos.containing(x, y, z);
 				BlockEntity _blockEntity = world.getBlockEntity(_bp);
 				BlockState _bs = world.getBlockState(_bp);
 				if (_blockEntity != null)
@@ -117,7 +117,7 @@ public class BenitoiteCrystalSpawnProcedure {
 								return blockEntity.getPersistentData().getDouble(tag);
 							return -1;
 						}
-					}.getValue(world, new BlockPos(x, y, z), "GrowthTime")) - 1));
+					}.getValue(world, BlockPos.containing(x, y, z), "GrowthTime")) - 1));
 				if (world instanceof Level _level)
 					_level.sendBlockUpdated(_bp, _bs, _bs, 3);
 			}

@@ -1,0 +1,40 @@
+{
+  "type": "supreme_mining_dimension:heated_magma_block",
+  "config": {
+    "size": 10,
+    "discard_chance_on_air_exposure": 0,
+    "targets": [
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:magma_block"
+          }
+        },
+        "state": {
+          "Name": "supreme_mining_dimension:heated_magma_block"
+        }
+      },
+      {
+        "target": {
+          "predicate_type": "blockstate_match",
+          "block_state": {
+            "Name": "minecraft:sculk_vein",
+            "Properties": {
+              "down": "false",
+              "east": "false",
+              "north": "false",
+              "south": "false",
+              "up": "false",
+              "waterlogged": "false",
+              "west": "false"
+            }
+          }
+        },
+        "state": {
+          "Name": "supreme_mining_dimension:heated_magma_block"
+        }
+      }
+    ]
+  }
+}

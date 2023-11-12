@@ -156,7 +156,7 @@ public class ShadeGrassUpdateTickProcedure {
 				for (int index1 = 0; index1 < (int) (3); index1++) {
 					sz = -1;
 					for (int index2 = 0; index2 < (int) (3); index2++) {
-						if ((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == spreadto.getBlock()) {
+						if ((world.getBlockState(new BlockPos((int)(x + sx), (int)(y + sy), (int)(z + sz)))).getBlock() == spreadto.getBlock()) {
 							found = true;
 							break;
 						}
@@ -167,7 +167,7 @@ public class ShadeGrassUpdateTickProcedure {
 				sx = sx + 1;
 			}
 			if (found == true) {
-				world.setBlock(new BlockPos(sx, sy, sz), SupremeMiningDimensionModBlocks.SHADE_GRASS.get().defaultBlockState(), 3);
+				world.setBlock(new BlockPos((int)sx, (int)sy, (int)sz), SupremeMiningDimensionModBlocks.SHADE_GRASS.get().defaultBlockState(), 3);
 			} else {
 				spreadto = Blocks.GRASS_BLOCK.defaultBlockState();
 			}
@@ -179,7 +179,7 @@ public class ShadeGrassUpdateTickProcedure {
 					for (int index4 = 0; index4 < (int) (3); index4++) {
 						sz = -1;
 						for (int index5 = 0; index5 < (int) (3); index5++) {
-							if ((world.getBlockState(new BlockPos(x + sx, y + sy, z + sz))).getBlock() == spreadto.getBlock()) {
+							if ((world.getBlockState(new BlockPos((int)(x + sx), (int)(y + sy), (int)(z + sz)))).getBlock() == spreadto.getBlock()) {
 								found = true;
 								break;
 							}
@@ -190,7 +190,7 @@ public class ShadeGrassUpdateTickProcedure {
 					sx = sx + 1;
 				}
 				if (found == true) {
-					world.setBlock(new BlockPos(sx, sy, sz), SupremeMiningDimensionModBlocks.SHADE_GRASS.get().defaultBlockState(), 3);
+					world.setBlock(new BlockPos((int)sx, (int)sy, (int)sz), SupremeMiningDimensionModBlocks.SHADE_GRASS.get().defaultBlockState(), 3);
 				} else {
 					spreadto = Blocks.GRASS_BLOCK.defaultBlockState();
 				}

@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "supreme_mining_dimension:blocks/storage_cobalt",
-    "particle": "supreme_mining_dimension:blocks/storage_cobalt"
+    "all": "supreme_mining_dimension:block/storage_cobalt",
+    "particle": "supreme_mining_dimension:block/storage_cobalt"
   },
   "render_type": "solid"
 }

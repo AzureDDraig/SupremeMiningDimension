@@ -1,8 +1,8 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "supreme_mining_dimension:blocks/wood_blightwood_planks",
-    "particle": "supreme_mining_dimension:blocks/wood_blightwood_planks"
+    "all": "supreme_mining_dimension:block/wood_blightwood_planks",
+    "particle": "supreme_mining_dimension:block/wood_blightwood_planks"
   },
   "render_type": "solid"
 }

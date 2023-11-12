@@ -1,7 +1,7 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "supreme_mining_dimension:items/witheringballunpowered"
+    "layer0": "supreme_mining_dimension:item/witheringballunpowered"
   },
   "display": {
     "thirdperson_righthand": {
