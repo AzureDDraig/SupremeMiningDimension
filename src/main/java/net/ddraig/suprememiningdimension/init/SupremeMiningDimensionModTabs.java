@@ -1,4 +1,4 @@
-
+6
 package net.ddraig.suprememiningdimension.init;
 
 import net.minecraftforge.registries.RegistryObject;
@@ -224,6 +224,32 @@ public class SupremeMiningDimensionModTabs {
 				tabData.accept(SupremeMiningDimensionModItems.SHIFTED_SANDS.get());
 				tabData.accept(SupremeMiningDimensionModBlocks.STRANGE_FORESTS_RUINED_PORTAL.get().asItem());
 				tabData.accept(SupremeMiningDimensionModBlocks.AMBER_BRICKS.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.BLUESHROOM_CAP_PALE.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.BLUESHROOM_CAP_PALE_GLOWING.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.CYANSHROOM_CAP_PALE.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.CYANSHROOM_CAP_PALE_GLOWING.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.PURPLESHROOM_CAP_PALE.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.PURPLESHROOM_CAP_PALE_GLOWING.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.PINKSHROOM_CAP.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.PINKSHROOM_CAP_GLOWING.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.PINKSHROOM_CAP_PALE.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.PINKSHROOM_CAP_PALE_GLOWING.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.GREENSHROOM_CAP.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.GREENSHROOM_CAP_GLOWING.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.GREENSHROOM_CAP_PALE.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.GREENSHROOM_CAP_PALE_GLOWING.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.ORANGESHROOM_CAP.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.ORANGESHROOM_CAP_GLOWING.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.ORANGESHROOM_CAP_PALE.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.ORANGESHROOM_CAP_PALE_GLOWING.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.YELLOWSHROOM_CAP.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.YELLOWSHROOM_CAP_GLOWING.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.YELLOWSHROOM_CAP_PALE.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.YELLOWSHROOM_CAP_PALE_GLOWING.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.CRIMSONSHROOM_CAP.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.CRIMSONSHROOM_CAP_GLOWING.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.CRIMSONSHROOM_CAP_PALE.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.CRIMSONSHROOM_CAP_PALE_GLOWING.get().asItem());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> SMD_STRUCTURES = REGISTRY.register("smd_structures", () -> CreativeModeTab.builder().title(Component.translatable("item_group.supreme_mining_dimension.smd_structures"))
 			.icon(() -> new ItemStack(SupremeMiningDimensionModItems.CAVERN_PORTAL_OUTPOST.get())).displayItems((parameters, tabData) -> {

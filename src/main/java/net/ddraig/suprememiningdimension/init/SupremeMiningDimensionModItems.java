@@ -326,6 +326,32 @@ public class SupremeMiningDimensionModItems {
 	public static final RegistryObject<Item> STRANGE_FORESTS_RUINED_PORTAL = block(SupremeMiningDimensionModBlocks.STRANGE_FORESTS_RUINED_PORTAL);
 	public static final RegistryObject<Item> NETHER_ISLES_RUINED_PORTAL = block(SupremeMiningDimensionModBlocks.NETHER_ISLES_RUINED_PORTAL);
 	public static final RegistryObject<Item> AMBER_BRICKS = block(SupremeMiningDimensionModBlocks.AMBER_BRICKS);
+	public static final RegistryObject<Item> BLUESHROOM_CAP_PALE = block(SupremeMiningDimensionModBlocks.BLUESHROOM_CAP_PALE);
+	public static final RegistryObject<Item> BLUESHROOM_CAP_PALE_GLOWING = block(SupremeMiningDimensionModBlocks.BLUESHROOM_CAP_PALE_GLOWING);
+	public static final RegistryObject<Item> CYANSHROOM_CAP_PALE = block(SupremeMiningDimensionModBlocks.CYANSHROOM_CAP_PALE);
+	public static final RegistryObject<Item> CYANSHROOM_CAP_PALE_GLOWING = block(SupremeMiningDimensionModBlocks.CYANSHROOM_CAP_PALE_GLOWING);
+	public static final RegistryObject<Item> PURPLESHROOM_CAP_PALE = block(SupremeMiningDimensionModBlocks.PURPLESHROOM_CAP_PALE);
+	public static final RegistryObject<Item> PURPLESHROOM_CAP_PALE_GLOWING = block(SupremeMiningDimensionModBlocks.PURPLESHROOM_CAP_PALE_GLOWING);
+	public static final RegistryObject<Item> PINKSHROOM_CAP = block(SupremeMiningDimensionModBlocks.PINKSHROOM_CAP);
+	public static final RegistryObject<Item> PINKSHROOM_CAP_GLOWING = block(SupremeMiningDimensionModBlocks.PINKSHROOM_CAP_GLOWING);
+	public static final RegistryObject<Item> PINKSHROOM_CAP_PALE = block(SupremeMiningDimensionModBlocks.PINKSHROOM_CAP_PALE);
+	public static final RegistryObject<Item> PINKSHROOM_CAP_PALE_GLOWING = block(SupremeMiningDimensionModBlocks.PINKSHROOM_CAP_PALE_GLOWING);
+	public static final RegistryObject<Item> GREENSHROOM_CAP = block(SupremeMiningDimensionModBlocks.GREENSHROOM_CAP);
+	public static final RegistryObject<Item> GREENSHROOM_CAP_GLOWING = block(SupremeMiningDimensionModBlocks.GREENSHROOM_CAP_GLOWING);
+	public static final RegistryObject<Item> GREENSHROOM_CAP_PALE = block(SupremeMiningDimensionModBlocks.GREENSHROOM_CAP_PALE);
+	public static final RegistryObject<Item> GREENSHROOM_CAP_PALE_GLOWING = block(SupremeMiningDimensionModBlocks.GREENSHROOM_CAP_PALE_GLOWING);
+	public static final RegistryObject<Item> ORANGESHROOM_CAP = block(SupremeMiningDimensionModBlocks.ORANGESHROOM_CAP);
+	public static final RegistryObject<Item> ORANGESHROOM_CAP_GLOWING = block(SupremeMiningDimensionModBlocks.ORANGESHROOM_CAP_GLOWING);
+	public static final RegistryObject<Item> ORANGESHROOM_CAP_PALE = block(SupremeMiningDimensionModBlocks.ORANGESHROOM_CAP_PALE);
+	public static final RegistryObject<Item> ORANGESHROOM_CAP_PALE_GLOWING = block(SupremeMiningDimensionModBlocks.ORANGESHROOM_CAP_PALE_GLOWING);
+	public static final RegistryObject<Item> YELLOWSHROOM_CAP = block(SupremeMiningDimensionModBlocks.YELLOWSHROOM_CAP);
+	public static final RegistryObject<Item> YELLOWSHROOM_CAP_GLOWING = block(SupremeMiningDimensionModBlocks.YELLOWSHROOM_CAP_GLOWING);
+	public static final RegistryObject<Item> YELLOWSHROOM_CAP_PALE = block(SupremeMiningDimensionModBlocks.YELLOWSHROOM_CAP_PALE);
+	public static final RegistryObject<Item> YELLOWSHROOM_CAP_PALE_GLOWING = block(SupremeMiningDimensionModBlocks.YELLOWSHROOM_CAP_PALE_GLOWING);
+	public static final RegistryObject<Item> CRIMSONSHROOM_CAP = block(SupremeMiningDimensionModBlocks.CRIMSONSHROOM_CAP);
+	public static final RegistryObject<Item> CRIMSONSHROOM_CAP_GLOWING = block(SupremeMiningDimensionModBlocks.CRIMSONSHROOM_CAP_GLOWING);
+	public static final RegistryObject<Item> CRIMSONSHROOM_CAP_PALE = block(SupremeMiningDimensionModBlocks.CRIMSONSHROOM_CAP_PALE);
+	public static final RegistryObject<Item> CRIMSONSHROOM_CAP_PALE_GLOWING = block(SupremeMiningDimensionModBlocks.CRIMSONSHROOM_CAP_PALE_GLOWING);
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));
