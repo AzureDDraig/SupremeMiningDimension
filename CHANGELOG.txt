@@ -163,3 +163,12 @@ Honey Bucket
 Changed:
 Added Drip textures to Honey
 Shifted Sands Portal Texture
+
+1.4.3.1
+Added:
+Pale Variants of Mushroom Caps
+Green Mushroom Caps
+Pink Mushroom Caps
+Orange Mushroom Caps
+Yellow Mushroom Caps
+Crimson Mushroom Caps
