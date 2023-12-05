@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "supreme_mining_dimension:cobbled_gabbro"
+        }
+    },
+    "result": {
+        "item": "supreme_mining_dimension:cobbled_gabbro_slab",
+        "count": 6
+    }
+}

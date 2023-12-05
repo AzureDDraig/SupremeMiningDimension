@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "supreme_mining_dimension:block/stone_syenite_brick_chiseled",
+    "top": "supreme_mining_dimension:block/stone_syenite_brick_chiseled",
+    "side": "supreme_mining_dimension:block/stone_syenite"
+  },
+  "render_type": "solid"
+}

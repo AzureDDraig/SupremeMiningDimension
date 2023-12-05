@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "supreme_mining_dimension:block/stone_gabbro_brick_side_cracked",
+    "up": "supreme_mining_dimension:block/stone_gabbro_brick_top_cracked",
+    "north": "supreme_mining_dimension:block/stone_gabbro_brick_side_cracked",
+    "east": "supreme_mining_dimension:block/stone_gabbro_brick_side_cracked",
+    "south": "supreme_mining_dimension:block/stone_gabbro_brick_side_cracked",
+    "west": "supreme_mining_dimension:block/stone_gabbro_brick_side_cracked",
+    "particle": "supreme_mining_dimension:block/stone_gabbro_brick_side_cracked"
+  },
+  "render_type": "solid"
+}

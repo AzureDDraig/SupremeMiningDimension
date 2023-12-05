@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "supreme_mining_dimension:block/stone_syenite_brick_chiseled",
+    "top": "supreme_mining_dimension:block/stone_syenite_brick_chiseled",
+    "side": "supreme_mining_dimension:block/stone_syenite_brick_chiseled"
+  },
+  "render_type": "solid"
+}

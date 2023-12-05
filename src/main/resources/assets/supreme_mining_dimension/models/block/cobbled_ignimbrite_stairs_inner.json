@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "supreme_mining_dimension:block/stone_ignimbrite_cobbled",
+    "top": "supreme_mining_dimension:block/stone_ignimbrite_cobbled",
+    "side": "supreme_mining_dimension:block/stone_ignimbrite_cobbled"
+  },
+  "render_type": "solid"
+}

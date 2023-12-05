@@ -1,7 +1,7 @@
 package net.ddraig.suprememiningdimension.configuration;
 
 import net.minecraftforge.common.ForgeConfigSpec;
-
+ 
 public class BiomesConfiguration {
 	public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
 	public static final ForgeConfigSpec SPEC;

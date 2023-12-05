@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "supreme_mining_dimension:block/stone_syenite_brick_tiles",
+    "top": "supreme_mining_dimension:block/stone_syenite_brick_tiles",
+    "side": "supreme_mining_dimension:block/stone_syenite_brick_tiles"
+  },
+  "render_type": "solid"
+}

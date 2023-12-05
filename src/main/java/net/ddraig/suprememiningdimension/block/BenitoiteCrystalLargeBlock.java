@@ -105,7 +105,7 @@ public class BenitoiteCrystalLargeBlock extends Block implements EntityBlock {
 		List<ItemStack> dropsOriginal = super.getDrops(state, builder);
 		if (!dropsOriginal.isEmpty())
 			return dropsOriginal;
-		return Collections.singletonList(new ItemStack(SupremeMiningDimensionModItems.BENITOITE_GEM.get()));
+		return Collections.singletonList(new ItemStack(SupremeMiningDimensionModItems.RAW_TITANIUM.get()));
 	}
 
 	@Override

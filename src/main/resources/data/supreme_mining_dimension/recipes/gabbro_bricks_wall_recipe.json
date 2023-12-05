@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "XXX",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "supreme_mining_dimension:gabbro_bricks"
+        }
+    },
+    "result": {
+        "item": "supreme_mining_dimension:gabbro_bricks_wall",
+        "count": 6
+    }
+}

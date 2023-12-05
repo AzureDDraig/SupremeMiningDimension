@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "count": 1,
+    "ingredient": {
+        "item": "supreme_mining_dimension:ignimbrite"
+    },
+    "result": "supreme_mining_dimension:ignimbrite_bricks_chiseled_cracked_stairs"
+}

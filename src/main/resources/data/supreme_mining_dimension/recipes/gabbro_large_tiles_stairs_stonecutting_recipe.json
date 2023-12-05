@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "count": 1,
+    "ingredient": {
+        "item": "supreme_mining_dimension:gabbro"
+    },
+    "result": "supreme_mining_dimension:gabbro_large_tiles_stairs"
+}

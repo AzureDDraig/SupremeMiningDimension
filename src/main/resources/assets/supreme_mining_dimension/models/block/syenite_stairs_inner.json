@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "supreme_mining_dimension:block/stone_syenite",
+    "top": "supreme_mining_dimension:block/stone_syenite",
+    "side": "supreme_mining_dimension:block/stone_syenite"
+  },
+  "render_type": "solid"
+}

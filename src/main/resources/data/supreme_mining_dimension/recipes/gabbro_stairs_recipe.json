@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "X  ",
+        "XX ",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "supreme_mining_dimension:gabbro"
+        }
+    },
+    "result": {
+        "item": "supreme_mining_dimension:gabbro_stairs",
+        "count": 4
+    }
+}

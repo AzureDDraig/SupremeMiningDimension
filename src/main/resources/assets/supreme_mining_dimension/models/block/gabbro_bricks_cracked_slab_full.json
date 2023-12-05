@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "supreme_mining_dimension:block/stone_gabbro_brick_side_cracked",
+    "top": "supreme_mining_dimension:block/stone_gabbro_brick_top_cracked",
+    "side": "supreme_mining_dimension:block/stone_gabbro_brick_side_cracked"
+  },
+  "render_type": "solid"
+}

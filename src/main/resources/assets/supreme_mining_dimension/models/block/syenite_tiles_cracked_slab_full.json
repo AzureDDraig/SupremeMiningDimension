@@ -1,0 +1,9 @@
+{
+  "parent": "block/cube_bottom_top",
+  "textures": {
+    "bottom": "supreme_mining_dimension:block/stone_syenite_brick_tiles_cracked",
+    "top": "supreme_mining_dimension:block/stone_syenite_brick_tiles_cracked",
+    "side": "supreme_mining_dimension:block/stone_syenite_brick_tiles_cracked"
+  },
+  "render_type": "solid"
+}

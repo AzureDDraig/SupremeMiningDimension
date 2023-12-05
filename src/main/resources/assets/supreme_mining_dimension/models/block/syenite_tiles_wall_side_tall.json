@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "supreme_mining_dimension:block/stone_syenite_brick_tiles",
+    "particle": "supreme_mining_dimension:block/stone_syenite_brick_tiles"
+  },
+  "render_type": "solid"
+}

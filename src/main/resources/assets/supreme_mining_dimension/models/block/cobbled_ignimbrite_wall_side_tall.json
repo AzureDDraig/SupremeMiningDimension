@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "supreme_mining_dimension:block/stone_ignimbrite_cobbled",
+    "particle": "supreme_mining_dimension:block/stone_ignimbrite_cobbled"
+  },
+  "render_type": "solid"
+}

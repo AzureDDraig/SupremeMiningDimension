@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "supreme_mining_dimension:block/stone_ignimbrite_brick_side_cracked",
+    "top": "supreme_mining_dimension:block/stone_ignimbrite_brick_top_cracked",
+    "side": "supreme_mining_dimension:block/stone_ignimbrite_brick_side_cracked"
+  },
+  "render_type": "solid"
+}

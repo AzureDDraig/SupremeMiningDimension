@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "X  ",
+        "XX ",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "supreme_mining_dimension:gabbro_bricks_chiseled_cracked"
+        }
+    },
+    "result": {
+        "item": "supreme_mining_dimension:gabbro_bricks_chiseled_cracked_stairs",
+        "count": 4
+    }
+}

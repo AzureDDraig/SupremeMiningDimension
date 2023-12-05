@@ -1,4 +1,35 @@
 {
   "replace": false,
-  "values": []
+  "values": [
+    "supreme_mining_dimension:syenite_wall",
+    "supreme_mining_dimension:ignimbrite_bricks_wall",
+    "supreme_mining_dimension:syenite_large_tiles_wall",
+    "supreme_mining_dimension:ignimbrite_tiles_cracked_wall",
+    "supreme_mining_dimension:gabbro_bricks_chiseled_wall",
+    "supreme_mining_dimension:ignimbrite_large_tiles_wall",
+    "supreme_mining_dimension:gabbro_bricks_chiseled_cracked_wall",
+    "supreme_mining_dimension:syenite_tiles_cracked_wall",
+    "supreme_mining_dimension:cobbled_ignimbrite_wall",
+    "supreme_mining_dimension:ignimbrite_wall",
+    "supreme_mining_dimension:syenite_large_tiles_cracked_wall",
+    "supreme_mining_dimension:cobbled_syenite_wall",
+    "supreme_mining_dimension:ignimbrite_large_tiles_cracked_wall",
+    "supreme_mining_dimension:syenite_tiles_wall",
+    "supreme_mining_dimension:ignimbrite_bricks_chiseled_cracked_wall",
+    "supreme_mining_dimension:syenite_bricks_chiseled_wall",
+    "supreme_mining_dimension:gabbro_wall",
+    "supreme_mining_dimension:ignimbrite_bricks_chiseled_wall",
+    "supreme_mining_dimension:syenite_bricks_cracked_wall",
+    "supreme_mining_dimension:gabbro_tiles_cracked_wall",
+    "supreme_mining_dimension:gabbro_bricks_cracked_wall",
+    "supreme_mining_dimension:gabbro_bricks_wall",
+    "supreme_mining_dimension:cobbled_gabbro_wall",
+    "supreme_mining_dimension:syenite_bricks_chiseled_cracked_wall",
+    "supreme_mining_dimension:gabbro_large_tiles_cracked_wall",
+    "supreme_mining_dimension:gabbro_large_tiles_wall",
+    "supreme_mining_dimension:ignimbrite_tiles_wall",
+    "supreme_mining_dimension:gabbro_tiles_wall",
+    "supreme_mining_dimension:syenite_bricks_wall",
+    "supreme_mining_dimension:ignimbrite_bricks_cracked_wall"
+  ]
 }

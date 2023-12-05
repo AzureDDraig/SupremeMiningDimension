@@ -1,0 +1,8 @@
+{
+  "parent": "block/wall_inventory",
+  "textures": {
+    "wall": "supreme_mining_dimension:block/stone_gabbro_brick_side",
+    "particle": "supreme_mining_dimension:block/stone_gabbro_brick_side"
+  },
+  "render_type": "solid"
+}

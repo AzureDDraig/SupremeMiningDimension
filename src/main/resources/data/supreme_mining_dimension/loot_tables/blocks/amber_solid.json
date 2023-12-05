@@ -2,12 +2,15 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "rolls": 1,
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
-          "weight": 1,
+          "weight": 24,
           "functions": [
             {
               "function": "set_count",
@@ -21,7 +24,7 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:air",
-          "weight": 1,
+          "weight": 5,
           "functions": [
             {
               "function": "set_count",
@@ -40,26 +43,24 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
-            },
-            {
-              "function": "minecraft:apply_bonus",
-              "enchantment": "minecraft:fortune",
-              "formula": "minecraft:ore_drops"
             }
           ]
         }
       ]
     },
     {
-      "rolls": 1,
+      "rolls": {
+        "min": 0,
+        "max": 1
+      },
       "entries": [
         {
           "type": "minecraft:item",
           "name": "minecraft:oak_sapling",
-          "weight": 1,
+          "weight": 8,
           "functions": [
             {
               "function": "set_count",
@@ -73,12 +74,12 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:spruce_sapling",
-          "weight": 1,
+          "weight": 22,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -87,13 +88,13 @@
         {
           "type": "minecraft:item",
           "name": "minecraft:jungle_sapling",
-          "weight": 1,
+          "weight": 14,
           "functions": [
             {
               "function": "set_count",
               "count": {
-                "min": 1,
-                "max": 1
+                "min": 0,
+                "max": 4
               }
             }
           ]
@@ -106,7 +107,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             }
@@ -120,7 +121,7 @@
         {
           "type": "minecraft:item",
           "name": "supreme_mining_dimension:amber_chunk",
-          "weight": 1,
+          "weight": 24,
           "functions": [
             {
               "function": "set_count",
@@ -144,7 +145,7 @@
             {
               "function": "set_count",
               "count": {
-                "min": 1,
+                "min": 0,
                 "max": 1
               }
             },
