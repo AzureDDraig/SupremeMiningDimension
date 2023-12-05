@@ -1,0 +1,9 @@
+{
+  "parent": "block/inner_stairs",
+  "textures": {
+    "bottom": "supreme_mining_dimension:block/stone_gabbro",
+    "top": "supreme_mining_dimension:block/stone_gabbro",
+    "side": "supreme_mining_dimension:block/stone_gabbro"
+  },
+  "render_type": "solid"
+}

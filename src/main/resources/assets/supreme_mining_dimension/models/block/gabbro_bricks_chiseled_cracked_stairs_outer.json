@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "supreme_mining_dimension:block/stone_gabbro_brick_chiseled_cracked",
+    "top": "supreme_mining_dimension:block/stone_gabbro_brick_chiseled_cracked",
+    "side": "supreme_mining_dimension:block/stone_gabbro_brick_chiseled_cracked"
+  },
+  "render_type": "solid"
+}

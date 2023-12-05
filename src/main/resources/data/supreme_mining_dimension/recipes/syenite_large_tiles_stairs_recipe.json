@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "X  ",
+        "XX ",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "supreme_mining_dimension:syenite_large_tiles"
+        }
+    },
+    "result": {
+        "item": "supreme_mining_dimension:syenite_large_tiles_stairs",
+        "count": 4
+    }
+}

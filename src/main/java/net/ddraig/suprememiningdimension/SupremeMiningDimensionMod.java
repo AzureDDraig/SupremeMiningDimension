@@ -17,6 +17,7 @@ import net.minecraftforge.common.MinecraftForge;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.network.FriendlyByteBuf;
 
+import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModVillagerProfessions;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModTabs;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModSounds;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModParticleTypes;
@@ -56,6 +57,7 @@ public class SupremeMiningDimensionMod {
 		SupremeMiningDimensionModFeatures.REGISTRY.register(bus);
 
 		SupremeMiningDimensionModParticleTypes.REGISTRY.register(bus);
+		SupremeMiningDimensionModVillagerProfessions.PROFESSIONS.register(bus);
 
 		SupremeMiningDimensionModFluids.REGISTRY.register(bus);
 		SupremeMiningDimensionModFluidTypes.REGISTRY.register(bus);

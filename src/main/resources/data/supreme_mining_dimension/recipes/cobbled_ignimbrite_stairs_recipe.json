@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "X  ",
+        "XX ",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "supreme_mining_dimension:cobbled_ignimbrite"
+        }
+    },
+    "result": {
+        "item": "supreme_mining_dimension:cobbled_ignimbrite_stairs",
+        "count": 4
+    }
+}

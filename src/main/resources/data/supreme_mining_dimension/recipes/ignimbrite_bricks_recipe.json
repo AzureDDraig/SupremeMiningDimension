@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "supreme_mining_dimension:ignimbrite"
+    },
+    "1": {
+      "item": "supreme_mining_dimension:ignimbrite"
+    },
+    "2": {
+      "item": "supreme_mining_dimension:ignimbrite"
+    },
+    "3": {
+      "item": "supreme_mining_dimension:ignimbrite"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:ignimbrite_bricks",
+    "count": 4
+  }
+}

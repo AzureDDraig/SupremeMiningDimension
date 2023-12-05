@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "supreme_mining_dimension:block/stone_gabbro_brick_top",
+    "particle": "supreme_mining_dimension:block/stone_gabbro_brick_top"
+  },
+  "render_type": "solid"
+}

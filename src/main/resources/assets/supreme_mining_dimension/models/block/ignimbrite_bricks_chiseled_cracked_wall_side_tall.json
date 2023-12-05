@@ -1,0 +1,8 @@
+{
+  "parent": "block/template_wall_side_tall",
+  "textures": {
+    "wall": "supreme_mining_dimension:block/stone_ignimbrite_brick_chiseled_cracked",
+    "particle": "supreme_mining_dimension:block/stone_ignimbrite_brick_chiseled_cracked"
+  },
+  "render_type": "solid"
+}

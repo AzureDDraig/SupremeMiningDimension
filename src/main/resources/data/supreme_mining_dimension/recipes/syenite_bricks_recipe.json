@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "supreme_mining_dimension:syenite"
+    },
+    "1": {
+      "item": "supreme_mining_dimension:syenite"
+    },
+    "2": {
+      "item": "supreme_mining_dimension:syenite"
+    },
+    "3": {
+      "item": "supreme_mining_dimension:syenite"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:syenite_bricks",
+    "count": 4
+  }
+}

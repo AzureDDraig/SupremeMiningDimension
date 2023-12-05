@@ -588,10 +588,7 @@
                           "then_run": {
                             "type": "minecraft:block",
                             "result_state": {
-                              "Name": "minecraft:podzol",
-                              "Properties": {
-                                "snowy": "false"
-                              }
+                              "Name": "supreme_mining_dimension:ancient_moss"
                             }
                           }
                         },

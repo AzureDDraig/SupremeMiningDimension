@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "supreme_mining_dimension:block/stone_ignimbrite",
+    "top": "supreme_mining_dimension:block/stone_ignimbrite",
+    "side": "supreme_mining_dimension:block/stone_ignimbrite"
+  },
+  "render_type": "solid"
+}

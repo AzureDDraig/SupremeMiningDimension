@@ -22,18 +22,18 @@ import net.ddraig.suprememiningdimension.client.renderer.BlazingWitherMasterRend
 public class SupremeMiningDimensionModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(SupremeMiningDimensionModEntities.DUCK.get(), DuckRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.CHICKSHROOM.get(), ChickshroomRenderer::new);
+		event.registerEntityRenderer(SupremeMiningDimensionModEntities.DUCK.get(), DuckRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.TUNNELER_BROTHER.get(), TunnelerBrotherRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.QUARRIER_BROTHER.get(), QuarrierBrotherRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.PROSPECTOR_BROTHER.get(), ProspectorBrotherRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WITHERED_BLAZE.get(), WitheredBlazeRenderer::new);
-		event.registerEntityRenderer(SupremeMiningDimensionModEntities.EXPLOSIVE_THROWN.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WITHERING_FIREBALL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.BLAZING_WITHER_MASTER.get(), BlazingWitherMasterRenderer::new);
-		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WEAK_WITHERING_FIREBALL.get(), ThrownItemRenderer::new);
-		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WEAK_WITHERED_FIREBALL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.SHROOMBIE.get(), ShroombieRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.SHADOW_CREEPER.get(), ShadowCreeperRenderer::new);
+		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WEAK_WITHERED_FIREBALL.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SupremeMiningDimensionModEntities.EXPLOSIVE_THROWN.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WEAK_WITHERING_FIREBALL.get(), ThrownItemRenderer::new);
 	}
 }

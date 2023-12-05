@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "supreme_mining_dimension:syenite_tiles"
+        }
+    },
+    "result": {
+        "item": "supreme_mining_dimension:syenite_tiles_slab",
+        "count": 6
+    }
+}

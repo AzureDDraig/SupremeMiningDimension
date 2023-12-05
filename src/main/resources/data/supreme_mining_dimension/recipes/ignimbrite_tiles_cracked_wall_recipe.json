@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+        "XXX",
+        "XXX"
+    ],
+    "key": {
+        "X": {
+            "item": "supreme_mining_dimension:ignimbrite_tiles_cracked"
+        }
+    },
+    "result": {
+        "item": "supreme_mining_dimension:ignimbrite_tiles_cracked_wall",
+        "count": 6
+    }
+}

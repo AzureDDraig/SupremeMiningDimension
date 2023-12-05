@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "supreme_mining_dimension:block/stone_gabbro_brick_chiseled",
+    "top": "supreme_mining_dimension:block/stone_gabbro_brick_chiseled",
+    "side": "supreme_mining_dimension:block/stone_gabbro"
+  },
+  "render_type": "solid"
+}

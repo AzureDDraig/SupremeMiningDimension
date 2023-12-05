@@ -1,0 +1,8 @@
+{
+    "type": "minecraft:stonecutting",
+    "count": 1,
+    "ingredient": {
+        "item": "supreme_mining_dimension:syenite"
+    },
+    "result": "supreme_mining_dimension:syenite_bricks_chiseled_cracked_wall"
+}

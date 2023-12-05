@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "supreme_mining_dimension:block/stone_syenite_brick_side",
+    "up": "supreme_mining_dimension:block/stone_syenite_brick_top",
+    "north": "supreme_mining_dimension:block/stone_syenite_brick_side",
+    "east": "supreme_mining_dimension:block/stone_syenite_brick_side",
+    "south": "supreme_mining_dimension:block/stone_syenite_brick_side",
+    "west": "supreme_mining_dimension:block/stone_syenite_brick_side",
+    "particle": "supreme_mining_dimension:block/stone_syenite_brick_side"
+  },
+  "render_type": "solid"
+}

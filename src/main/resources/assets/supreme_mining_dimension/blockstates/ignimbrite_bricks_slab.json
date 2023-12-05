@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "supreme_mining_dimension:block/ignimbrite_bricks_slab"
+    },
+    "type=top": {
+      "model": "supreme_mining_dimension:block/ignimbrite_bricks_slab_top"
+    },
+    "type=double": {
+      "model": "supreme_mining_dimension:block/ignimbrite_bricks_slab_full"
+    }
+  }
+}

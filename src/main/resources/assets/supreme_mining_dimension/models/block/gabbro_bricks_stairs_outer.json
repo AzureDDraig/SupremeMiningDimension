@@ -1,0 +1,9 @@
+{
+  "parent": "block/outer_stairs",
+  "textures": {
+    "bottom": "supreme_mining_dimension:block/stone_gabbro_brick_side",
+    "top": "supreme_mining_dimension:block/stone_gabbro_brick_top",
+    "side": "supreme_mining_dimension:block/stone_gabbro_brick_side"
+  },
+  "render_type": "solid"
+}

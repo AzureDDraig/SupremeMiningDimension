@@ -1,0 +1,9 @@
+{
+  "parent": "block/stairs",
+  "textures": {
+    "bottom": "supreme_mining_dimension:block/stone_syenite_brick_side",
+    "top": "supreme_mining_dimension:block/stone_syenite_brick_top_cracked",
+    "side": "supreme_mining_dimension:block/stone_syenite_brick_side"
+  },
+  "render_type": "solid"
+}

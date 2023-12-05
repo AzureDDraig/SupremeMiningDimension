@@ -1,0 +1,110 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "forge:raw_materials/nickel"
+  },
+  "result": "supreme_mining_dimension:nickel_ingot"
+}
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "forge:raw_materials/platinum"
+  },
+  "result": "supreme_mining_dimension:platinum_ingot"
+}
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "forge:raw_materials/silver"
+  },
+  "result": "supreme_mining_dimension:silver_ingot"
+}
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "forge:raw_materials/tin"
+  },
+  "result": "supreme_mining_dimension:tin_ingot"
+}
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "forge:raw_materials/titanium"
+  },
+  "result": "supreme_mining_dimension:titanium_ingot"
+}
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "forge:raw_materials/tungsten"
+  },
+  "result": "supreme_mining_dimension:tungsten_ingot"
+}
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "forge:raw_materials/zinc"
+  },
+  "result": "supreme_mining_dimension:zinc_ingot"
+}
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "forge:raw_materials/lead"
+  },
+  "result": "supreme_mining_dimension:lead_ingot"
+}
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "forge:raw_materials/aluminum"
+  },
+  "result": "supreme_mining_dimension:aluminum_ingot"
+}
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "forge:raw_materials/antimony"
+  },
+  "result": "supreme_mining_dimension:antimony_ingot"
+}
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "experience": 1,
+  "cookingtime": 100,
+  "ingredient": {
+    "tag": "forge:raw_materials/cobalt"
+  },
+  "result": "supreme_mining_dimension:cobalt_ingot"
+}
