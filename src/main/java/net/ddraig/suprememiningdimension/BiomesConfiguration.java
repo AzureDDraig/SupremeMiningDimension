@@ -155,7 +155,7 @@ public class BiomesConfiguration {
 		DEEP_CAVERNS_NICE_PLACE = BUILDER.define("deep_caverns_nice_place", true);
 		UNDERGROUND_NICE_PLACE = BUILDER.define("underground_nice_place", true);
 		STRANGE_FOREST_NICE_PLACE = BUILDER.define("strange_forest_nice_place", true);
-		FALSE_OW_AWAY_FROM_PORTAL = BUILDER.comment("Determines if player is placed away from the portal on first join").define("false_ow_away_from_portal", true);
+		FALSE_OW_AWAY_FROM_PORTAL = BUILDER.comment("Determines if player is placed away from the portal on first join").define("false_ow_away_from_portal", false);
 		FALSE_OW_MIN_DISTANCE = BUILDER.comment("Minimum distance from False Overworld portal on first join").define("false_ow_min_distance", (double) 100);
 		FALSE_OW_MAX_DISTANCE = BUILDER.comment("Max distance from False Overworld portal on first join").define("false_ow_max_distance", (double) 200);
 		CAN_RESET_FIRST_JOIN = BUILDER.comment("DEFAULT: TRUE || If True then players can reset their first join variable to a dimension").define("can_reset_first_join", true);

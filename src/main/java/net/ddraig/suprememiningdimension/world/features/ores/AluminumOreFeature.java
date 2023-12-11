@@ -17,7 +17,7 @@ import java.util.Set;
 public class AluminumOreFeature extends OreFeature {
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(ResourceKey.create(Registries.DIMENSION, new ResourceLocation("supreme_mining_dimension:false_overworld_dimension")),
 			ResourceKey.create(Registries.DIMENSION, new ResourceLocation("supreme_mining_dimension:underground_dimension")), ResourceKey.create(Registries.DIMENSION, new ResourceLocation("supreme_mining_dimension:caverns")),
-			ResourceKey.create(Registries.DIMENSION, new ResourceLocation("supreme_mining_dimension:deep_caverns")));
+			ResourceKey.create(Registries.DIMENSION, new ResourceLocation("supreme_mining_dimension:deep_caverns")), ResourceKey.create(Registries.DIMENSION, new ResourceLocation("supreme_mining_dimension:strange_forests")));
 
 	public AluminumOreFeature() {
 		super(OreConfiguration.CODEC);

@@ -293,7 +293,6 @@ public class SupremeMiningDimensionModTabs {
 				tabData.accept(SupremeMiningDimensionModItems.TITANIUM_NUGGET.get());
 				tabData.accept(SupremeMiningDimensionModItems.TUNGSTEN_NUGGET.get());
 				tabData.accept(SupremeMiningDimensionModBlocks.STRANGE_FORESTS_RUINED_PORTAL.get().asItem());
-				tabData.accept(SupremeMiningDimensionModItems.ORE_UNIFIER.get());
 				tabData.accept(SupremeMiningDimensionModBlocks.GABBRO.get().asItem());
 				tabData.accept(SupremeMiningDimensionModBlocks.COBBLED_GABBRO.get().asItem());
 				tabData.accept(SupremeMiningDimensionModBlocks.GABBRO_BRICKS.get().asItem());
@@ -414,6 +413,13 @@ public class SupremeMiningDimensionModTabs {
 				tabData.accept(SupremeMiningDimensionModBlocks.SYENITE_TILES_CRACKED_SLAB.get().asItem());
 				tabData.accept(SupremeMiningDimensionModBlocks.SYENITE_TILES_CRACKED_STAIRS.get().asItem());
 				tabData.accept(SupremeMiningDimensionModBlocks.SYENITE_TILES_CRACKED_WALL.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.MACHINESIFTER.get().asItem());
+				tabData.accept(SupremeMiningDimensionModItems.SIEVE.get());
+				tabData.accept(SupremeMiningDimensionModItems.SIEVE_GEM.get());
+				tabData.accept(SupremeMiningDimensionModItems.PERIDOT.get());
+				tabData.accept(SupremeMiningDimensionModBlocks.BLOCK_OF_PERIDOT.get().asItem());
+				tabData.accept(SupremeMiningDimensionModBlocks.SULPHUR_ORE.get().asItem());
+				tabData.accept(SupremeMiningDimensionModItems.RAW_SULPHUR.get());
 			}).withSearchBar().build());
 	public static final RegistryObject<CreativeModeTab> SMD_STRUCTURES = REGISTRY.register("smd_structures", () -> CreativeModeTab.builder().title(Component.translatable("item_group.supreme_mining_dimension.smd_structures"))
 			.icon(() -> new ItemStack(SupremeMiningDimensionModItems.CAVERN_PORTAL_OUTPOST.get())).displayItems((parameters, tabData) -> {

@@ -157,6 +157,8 @@
     "supreme_mining_dimension:syenite_tiles_cracked",
     "supreme_mining_dimension:syenite_tiles_cracked_slab",
     "supreme_mining_dimension:syenite_tiles_cracked_stairs",
-    "supreme_mining_dimension:syenite_tiles_cracked_wall"
+    "supreme_mining_dimension:syenite_tiles_cracked_wall",
+    "supreme_mining_dimension:machinesifter",
+    "supreme_mining_dimension:block_of_peridot"
   ]
 }

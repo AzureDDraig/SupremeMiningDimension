@@ -43,11 +43,14 @@ import net.ddraig.suprememiningdimension.item.SmokedDuckItem;
 import net.ddraig.suprememiningdimension.item.SlimeChowItem;
 import net.ddraig.suprememiningdimension.item.SilverNuggetItem;
 import net.ddraig.suprememiningdimension.item.SilverIngotItem;
+import net.ddraig.suprememiningdimension.item.SieveItem;
+import net.ddraig.suprememiningdimension.item.SieveGemItem;
 import net.ddraig.suprememiningdimension.item.ShiftedSandsItem;
 import net.ddraig.suprememiningdimension.item.RawZincItem;
 import net.ddraig.suprememiningdimension.item.RawTungstenItem;
 import net.ddraig.suprememiningdimension.item.RawTitaniumItem;
 import net.ddraig.suprememiningdimension.item.RawTinItem;
+import net.ddraig.suprememiningdimension.item.RawSulphurItem;
 import net.ddraig.suprememiningdimension.item.RawSilverItem;
 import net.ddraig.suprememiningdimension.item.RawPlatinumItem;
 import net.ddraig.suprememiningdimension.item.RawNickelItem;
@@ -57,6 +60,7 @@ import net.ddraig.suprememiningdimension.item.RawCobaltItem;
 import net.ddraig.suprememiningdimension.item.RawAntimonyOreItem;
 import net.ddraig.suprememiningdimension.item.PlatinumNuggetItem;
 import net.ddraig.suprememiningdimension.item.PlatinumIngotItem;
+import net.ddraig.suprememiningdimension.item.PeridotItem;
 import net.ddraig.suprememiningdimension.item.OreUnifierItem;
 import net.ddraig.suprememiningdimension.item.OnMyShouldersItem;
 import net.ddraig.suprememiningdimension.item.NickelIngotItem;
@@ -516,6 +520,13 @@ public class SupremeMiningDimensionModItems {
 	public static final RegistryObject<Item> SYENITE_TILES_CRACKED_SLAB = block(SupremeMiningDimensionModBlocks.SYENITE_TILES_CRACKED_SLAB);
 	public static final RegistryObject<Item> SYENITE_TILES_CRACKED_STAIRS = block(SupremeMiningDimensionModBlocks.SYENITE_TILES_CRACKED_STAIRS);
 	public static final RegistryObject<Item> SYENITE_TILES_CRACKED_WALL = block(SupremeMiningDimensionModBlocks.SYENITE_TILES_CRACKED_WALL);
+	public static final RegistryObject<Item> MACHINESIFTER = block(SupremeMiningDimensionModBlocks.MACHINESIFTER);
+	public static final RegistryObject<Item> SIEVE = REGISTRY.register("sieve", () -> new SieveItem());
+	public static final RegistryObject<Item> SIEVE_GEM = REGISTRY.register("sieve_gem", () -> new SieveGemItem());
+	public static final RegistryObject<Item> PERIDOT = REGISTRY.register("peridot", () -> new PeridotItem());
+	public static final RegistryObject<Item> BLOCK_OF_PERIDOT = block(SupremeMiningDimensionModBlocks.BLOCK_OF_PERIDOT);
+	public static final RegistryObject<Item> SULPHUR_ORE = block(SupremeMiningDimensionModBlocks.SULPHUR_ORE);
+	public static final RegistryObject<Item> RAW_SULPHUR = REGISTRY.register("raw_sulphur", () -> new RawSulphurItem());
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties()));

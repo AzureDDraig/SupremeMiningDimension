@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "supreme_mining_dimension:raw_sulphur"
+    },
+    "1": {
+      "item": "minecraft:charcoal"
+    },
+    "2": {
+      "item": "minecraft:charcoal"
+    },
+    "3": {
+      "item": "supreme_mining_dimension:raw_sulphur"
+    }
+  },
+  "result": {
+    "item": "minecraft:gunpowder",
+    "count": 2
+  }
+}
