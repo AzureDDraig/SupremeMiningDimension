@@ -210,3 +210,6 @@ Added Gem Sieve
 Added Sifter
 Added forge:siftables tag
 Added Block of Peridot
+Added Sulphur Ore
+Added Raw Sulphur
+Added Sulphur to Gunpowder recipe
