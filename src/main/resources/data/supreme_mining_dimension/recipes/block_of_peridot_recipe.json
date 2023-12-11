@@ -1,0 +1,42 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "012",
+    "345",
+    "678"
+  ],
+  "key": {
+    "0": {
+      "item": "supreme_mining_dimension:peridot"
+    },
+    "1": {
+      "item": "supreme_mining_dimension:peridot"
+    },
+    "2": {
+      "item": "supreme_mining_dimension:peridot"
+    },
+    "3": {
+      "item": "supreme_mining_dimension:peridot"
+    },
+    "4": {
+      "item": "supreme_mining_dimension:peridot"
+    },
+    "5": {
+      "item": "supreme_mining_dimension:peridot"
+    },
+    "6": {
+      "item": "supreme_mining_dimension:peridot"
+    },
+    "7": {
+      "item": "supreme_mining_dimension:peridot"
+    },
+    "8": {
+      "item": "supreme_mining_dimension:peridot"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:block_of_peridot",
+    "count": 1
+  }
+}

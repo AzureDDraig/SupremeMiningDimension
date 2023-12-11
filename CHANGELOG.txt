@@ -191,3 +191,25 @@ Updated Benitoite Geode Crystals to drop raw titanium instead of Benitoite Gems
 Added Gabbro Stone Type
 Added Syenite Stone Type
 Added Ignimbrite Stone Type
+
+1.4.3.4
+Changed Aluminum Spawns
+Changed Dense Iron Spawns
+Changed Dense Gold Spawns
+Changed Dense Copper Spawns
+Changed Dense Coal Spawns
+Changed Dense Lapis Spawns
+Changed Platinum Spawns
+Changed Ancient Forest Grass to Ancient Moss
+Changed Antimony Sparkle Effect Speed
+Changed Default for being teleported away from False Overworld portal to false
+
+Added Ancient Moss to the Dirt Tag
+Added Sieve
+Added Gem Sieve
+Added Sifter
+Added forge:siftables tag
+Added Block of Peridot
+Added Sulphur Ore
+Added Raw Sulphur
+Added Sulphur to Gunpowder recipe

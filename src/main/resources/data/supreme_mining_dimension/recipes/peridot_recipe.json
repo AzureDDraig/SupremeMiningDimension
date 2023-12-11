@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "0"
+  ],
+  "key": {
+    "0": {
+      "tag": "forge:storage_blocks/peridot"
+    }
+  },
+  "result": {
+    "item": "supreme_mining_dimension:peridot",
+    "count": 9
+  }
+}

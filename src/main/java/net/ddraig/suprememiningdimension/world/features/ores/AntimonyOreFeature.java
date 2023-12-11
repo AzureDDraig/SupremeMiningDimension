@@ -16,7 +16,7 @@ import java.util.Set;
 
 public class AntimonyOreFeature extends OreFeature {
 	private final Set<ResourceKey<Level>> generate_dimensions = Set.of(ResourceKey.create(Registries.DIMENSION, new ResourceLocation("supreme_mining_dimension:caverns")),
-			ResourceKey.create(Registries.DIMENSION, new ResourceLocation("supreme_mining_dimension:deep_caverns")));
+			ResourceKey.create(Registries.DIMENSION, new ResourceLocation("supreme_mining_dimension:deep_caverns")), ResourceKey.create(Registries.DIMENSION, new ResourceLocation("supreme_mining_dimension:strange_forests")));
 
 	public AntimonyOreFeature() {
 		super(OreConfiguration.CODEC);

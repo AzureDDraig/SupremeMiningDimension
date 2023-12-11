@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "supreme_mining_dimension:block/machine_bottom",
+    "up": "supreme_mining_dimension:block/machine_sifter_top",
+    "north": "supreme_mining_dimension:block/machine_sifter_side",
+    "east": "supreme_mining_dimension:block/machine_sifter_side",
+    "south": "supreme_mining_dimension:block/machine_sifter_side",
+    "west": "supreme_mining_dimension:block/machine_sifter_side",
+    "particle": "supreme_mining_dimension:block/machine_bottom"
+  },
+  "render_type": "solid"
+}

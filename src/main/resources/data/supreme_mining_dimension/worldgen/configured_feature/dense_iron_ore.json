@@ -1,7 +1,7 @@
 {
   "type": "supreme_mining_dimension:dense_iron_ore",
   "config": {
-    "size": 15,
+    "size": 8,
     "discard_chance_on_air_exposure": 0,
     "targets": [
       {

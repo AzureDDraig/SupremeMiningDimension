@@ -1,0 +1,13 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:suspicious_gravel",
+    "minecraft:sand",
+    "minecraft:red_sand",
+    "minecraft:suspicious_sand",
+    "supreme_mining_dimension:diamond_sand",
+    "supreme_mining_dimension:diamond_gravel",
+    "minecraft:gravel",
+    "supreme_mining_dimension:olivine_sand"
+  ]
+}

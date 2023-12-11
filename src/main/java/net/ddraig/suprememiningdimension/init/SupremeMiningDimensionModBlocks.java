@@ -54,6 +54,7 @@ import net.ddraig.suprememiningdimension.block.SyeniteBricksChiseledCrackedBlock
 import net.ddraig.suprememiningdimension.block.SyeniteBricksChiseledBlock;
 import net.ddraig.suprememiningdimension.block.SyeniteBricksBlock;
 import net.ddraig.suprememiningdimension.block.SyeniteBlock;
+import net.ddraig.suprememiningdimension.block.SulphurOreBlock;
 import net.ddraig.suprememiningdimension.block.StrangeForestsRuinedPortalBlock;
 import net.ddraig.suprememiningdimension.block.StrangeForestsPortalBlock;
 import net.ddraig.suprememiningdimension.block.SphaleriteOreBlock;
@@ -154,6 +155,7 @@ import net.ddraig.suprememiningdimension.block.MushroomStalkBlackBluePaleBlock;
 import net.ddraig.suprememiningdimension.block.MushroomStalkBlackBlueGlowingBlock;
 import net.ddraig.suprememiningdimension.block.MushroomStalkBlackBlueBlock;
 import net.ddraig.suprememiningdimension.block.MushroomStalkBlackBlock;
+import net.ddraig.suprememiningdimension.block.MachinesifterBlock;
 import net.ddraig.suprememiningdimension.block.LightObsidianBricksBlock;
 import net.ddraig.suprememiningdimension.block.LeadOreBlock;
 import net.ddraig.suprememiningdimension.block.LeadBlockBlock;
@@ -286,6 +288,7 @@ import net.ddraig.suprememiningdimension.block.BlueshroomCapPaleGlowingBlock;
 import net.ddraig.suprememiningdimension.block.BlueshroomCapPaleBlock;
 import net.ddraig.suprememiningdimension.block.BlueshroomCapGlowingBlock;
 import net.ddraig.suprememiningdimension.block.BlueshroomCapBlock;
+import net.ddraig.suprememiningdimension.block.BlockOfPeridotBlock;
 import net.ddraig.suprememiningdimension.block.BlightwoodWoodBlock;
 import net.ddraig.suprememiningdimension.block.BlightwoodStairsBlock;
 import net.ddraig.suprememiningdimension.block.BlightwoodSlabBlock;
@@ -615,4 +618,7 @@ public class SupremeMiningDimensionModBlocks {
 	public static final RegistryObject<Block> SYENITE_TILES_CRACKED_SLAB = REGISTRY.register("syenite_tiles_cracked_slab", () -> new SyeniteTilesCrackedSlabBlock());
 	public static final RegistryObject<Block> SYENITE_TILES_CRACKED_STAIRS = REGISTRY.register("syenite_tiles_cracked_stairs", () -> new SyeniteTilesCrackedStairsBlock());
 	public static final RegistryObject<Block> SYENITE_TILES_CRACKED_WALL = REGISTRY.register("syenite_tiles_cracked_wall", () -> new SyeniteTilesCrackedWallBlock());
+	public static final RegistryObject<Block> MACHINESIFTER = REGISTRY.register("machinesifter", () -> new MachinesifterBlock());
+	public static final RegistryObject<Block> BLOCK_OF_PERIDOT = REGISTRY.register("block_of_peridot", () -> new BlockOfPeridotBlock());
+	public static final RegistryObject<Block> SULPHUR_ORE = REGISTRY.register("sulphur_ore", () -> new SulphurOreBlock());
 }

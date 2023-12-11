@@ -12,6 +12,7 @@ import net.ddraig.suprememiningdimension.world.features.ores.ZincOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.TungstenOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.TinOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.SyeniteFeature;
+import net.ddraig.suprememiningdimension.world.features.ores.SulphurOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.SphaleriteOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.SilverOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.QuartzOreFeature;
@@ -89,4 +90,5 @@ public class SupremeMiningDimensionModFeatures {
 	public static final RegistryObject<Feature<?>> BIG_AS_SPRUCE_TREE_ON_PODZOL = REGISTRY.register("big_as_spruce_tree_on_podzol", BigAsSpruceTreeOnPodzolFeature::new);
 	public static final RegistryObject<Feature<?>> SPHALERITE_ROCKS = REGISTRY.register("sphalerite_rocks", SphaleriteRocksFeature::new);
 	public static final RegistryObject<Feature<?>> BENITOITE_GEODE = REGISTRY.register("benitoite_geode", BenitoiteGeodeFeature::new);
+	public static final RegistryObject<Feature<?>> SULPHUR_ORE = REGISTRY.register("sulphur_ore", SulphurOreFeature::new);
 }

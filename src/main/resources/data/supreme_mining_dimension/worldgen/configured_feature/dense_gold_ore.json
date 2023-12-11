@@ -1,7 +1,7 @@
 {
   "type": "supreme_mining_dimension:dense_gold_ore",
   "config": {
-    "size": 10,
+    "size": 7,
     "discard_chance_on_air_exposure": 0,
     "targets": [
       {
