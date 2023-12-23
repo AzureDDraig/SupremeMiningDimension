@@ -27,6 +27,7 @@
     "supreme_mining_dimension:shade_grass",
     "supreme_mining_dimension:shade_dirt",
     "minecraft:sandstone",
-    "minecraft:sand"
+    "minecraft:sand",
+    "minecraft:air"
   ]
 }

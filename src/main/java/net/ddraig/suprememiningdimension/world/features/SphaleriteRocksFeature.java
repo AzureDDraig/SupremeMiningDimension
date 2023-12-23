@@ -10,6 +10,8 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.registries.Registries;
 
+import net.ddraig.suprememiningdimension.procedures.ZincBoolProcedure;
+
 import java.util.Set;
 
 public class SphaleriteRocksFeature extends BlockBlobFeature {
@@ -22,6 +24,11 @@ public class SphaleriteRocksFeature extends BlockBlobFeature {
 	public boolean place(FeaturePlaceContext<BlockStateConfiguration> context) {
 		WorldGenLevel world = context.level();
 		if (!generateDimensions.contains(world.getLevel().dimension()))
+			return false;
+		int x = context.origin().getX();
+		int y = context.origin().getY();
+		int z = context.origin().getZ();
+		if (!ZincBoolProcedure.execute())
 			return false;
 		return super.place(context);
 	}

@@ -9,6 +9,8 @@ import net.minecraftforge.api.distmarker.Dist;
 import net.minecraft.client.renderer.entity.ThrownItemRenderer;
 
 import net.ddraig.suprememiningdimension.client.renderer.WitheredBlazeRenderer;
+import net.ddraig.suprememiningdimension.client.renderer.WarriorGuardRenderer;
+import net.ddraig.suprememiningdimension.client.renderer.WarriorArcherRenderer;
 import net.ddraig.suprememiningdimension.client.renderer.TunnelerBrotherRenderer;
 import net.ddraig.suprememiningdimension.client.renderer.ShroombieRenderer;
 import net.ddraig.suprememiningdimension.client.renderer.ShadowCreeperRenderer;
@@ -22,16 +24,18 @@ import net.ddraig.suprememiningdimension.client.renderer.BlazingWitherMasterRend
 public class SupremeMiningDimensionModEntityRenderers {
 	@SubscribeEvent
 	public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-		event.registerEntityRenderer(SupremeMiningDimensionModEntities.CHICKSHROOM.get(), ChickshroomRenderer::new);
-		event.registerEntityRenderer(SupremeMiningDimensionModEntities.DUCK.get(), DuckRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.TUNNELER_BROTHER.get(), TunnelerBrotherRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.QUARRIER_BROTHER.get(), QuarrierBrotherRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.PROSPECTOR_BROTHER.get(), ProspectorBrotherRenderer::new);
-		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WITHERED_BLAZE.get(), WitheredBlazeRenderer::new);
-		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WITHERING_FIREBALL.get(), ThrownItemRenderer::new);
+		event.registerEntityRenderer(SupremeMiningDimensionModEntities.DUCK.get(), DuckRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.BLAZING_WITHER_MASTER.get(), BlazingWitherMasterRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.SHROOMBIE.get(), ShroombieRenderer::new);
+		event.registerEntityRenderer(SupremeMiningDimensionModEntities.CHICKSHROOM.get(), ChickshroomRenderer::new);
+		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WITHERED_BLAZE.get(), WitheredBlazeRenderer::new);
+		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WITHERING_FIREBALL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.SHADOW_CREEPER.get(), ShadowCreeperRenderer::new);
+		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WARRIOR_GUARD.get(), WarriorGuardRenderer::new);
+		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WARRIOR_ARCHER.get(), WarriorArcherRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WEAK_WITHERED_FIREBALL.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.EXPLOSIVE_THROWN.get(), ThrownItemRenderer::new);
 		event.registerEntityRenderer(SupremeMiningDimensionModEntities.WEAK_WITHERING_FIREBALL.get(), ThrownItemRenderer::new);

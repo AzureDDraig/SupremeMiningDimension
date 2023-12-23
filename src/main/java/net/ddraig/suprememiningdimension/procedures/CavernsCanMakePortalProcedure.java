@@ -1,9 +1,9 @@
 package net.ddraig.suprememiningdimension.procedures;
 
-import net.ddraig.suprememiningdimension.configuration.BiomesConfiguration;
+import net.ddraig.suprememiningdimension.configuration.SMDDimensionsConfiguration;
 
 public class CavernsCanMakePortalProcedure {
 	public static boolean execute() {
-		return BiomesConfiguration.CAVERNS.get();
+		return SMDDimensionsConfiguration.CAVERNS.get();
 	}
 }

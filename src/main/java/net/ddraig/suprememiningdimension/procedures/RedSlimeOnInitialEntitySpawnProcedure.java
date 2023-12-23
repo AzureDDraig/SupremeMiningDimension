@@ -8,7 +8,7 @@ public class RedSlimeOnInitialEntitySpawnProcedure {
 	public static void execute(Entity entity) {
 		if (entity == null)
 			return;
-		entity.getPersistentData().putDouble("maxHeartsSaved", (Mth.nextInt(RandomSource.create(), 1, 4)));
+		entity.getPersistentData().putDouble("maxHeartsSaved", 1);
 		entity.getPersistentData().putDouble("Size", (Mth.nextInt(RandomSource.create(), 1, 4)));
 	}
 }

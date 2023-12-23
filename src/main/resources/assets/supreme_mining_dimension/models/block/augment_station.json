@@ -1,0 +1,9 @@
+{
+  "parent": "supreme_mining_dimension:custom/augment_station",
+  "textures": {
+    "all": "supreme_mining_dimension:block/augement_station",
+    "particle": "supreme_mining_dimension:block/augement_station",
+    "0": "supreme_mining_dimension:block/augement_station"
+  },
+  "render_type": "solid"
+}

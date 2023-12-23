@@ -32,7 +32,7 @@
       "outer_layer_provider": {
         "type": "minecraft:simple_state_provider",
         "state": {
-          "Name": "supreme_mining_dimension:shade_stone"
+          "Name": "supreme_mining_dimension:ignimbrite"
         }
       },
       "inner_placements": [

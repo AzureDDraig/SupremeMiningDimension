@@ -73,6 +73,9 @@ public class SupremeMiningDimensionModVariables {
 			clone.FirstVisitFalseOverworld = original.FirstVisitFalseOverworld;
 			clone.FirstVisitStrangeForests = original.FirstVisitStrangeForests;
 			clone.FirstJoin = original.FirstJoin;
+			clone.PlayerVoidID = original.PlayerVoidID;
+			clone.PlayerVoidFirstJoin = original.PlayerVoidFirstJoin;
+			clone.PlayerOldVoidID = original.PlayerOldVoidID;
 			if (!event.isWasDeath()) {
 			}
 		}
@@ -116,6 +119,9 @@ public class SupremeMiningDimensionModVariables {
 		public boolean FirstVisitFalseOverworld = true;
 		public boolean FirstVisitStrangeForests = true;
 		public boolean FirstJoin = true;
+		public double PlayerVoidID = 0;
+		public boolean PlayerVoidFirstJoin = true;
+		public double PlayerOldVoidID = 0;
 
 		public void syncPlayerVariables(Entity entity) {
 			if (entity instanceof ServerPlayer serverPlayer)
@@ -131,6 +137,9 @@ public class SupremeMiningDimensionModVariables {
 			nbt.putBoolean("FirstVisitFalseOverworld", FirstVisitFalseOverworld);
 			nbt.putBoolean("FirstVisitStrangeForests", FirstVisitStrangeForests);
 			nbt.putBoolean("FirstJoin", FirstJoin);
+			nbt.putDouble("PlayerVoidID", PlayerVoidID);
+			nbt.putBoolean("PlayerVoidFirstJoin", PlayerVoidFirstJoin);
+			nbt.putDouble("PlayerOldVoidID", PlayerOldVoidID);
 			return nbt;
 		}
 
@@ -143,6 +152,9 @@ public class SupremeMiningDimensionModVariables {
 			FirstVisitFalseOverworld = nbt.getBoolean("FirstVisitFalseOverworld");
 			FirstVisitStrangeForests = nbt.getBoolean("FirstVisitStrangeForests");
 			FirstJoin = nbt.getBoolean("FirstJoin");
+			PlayerVoidID = nbt.getDouble("PlayerVoidID");
+			PlayerVoidFirstJoin = nbt.getBoolean("PlayerVoidFirstJoin");
+			PlayerOldVoidID = nbt.getDouble("PlayerOldVoidID");
 		}
 	}
 
@@ -174,6 +186,9 @@ public class SupremeMiningDimensionModVariables {
 					variables.FirstVisitFalseOverworld = message.data.FirstVisitFalseOverworld;
 					variables.FirstVisitStrangeForests = message.data.FirstVisitStrangeForests;
 					variables.FirstJoin = message.data.FirstJoin;
+					variables.PlayerVoidID = message.data.PlayerVoidID;
+					variables.PlayerVoidFirstJoin = message.data.PlayerVoidFirstJoin;
+					variables.PlayerOldVoidID = message.data.PlayerOldVoidID;
 				}
 			});
 			context.setPacketHandled(true);

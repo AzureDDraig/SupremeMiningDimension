@@ -1,9 +1,9 @@
 package net.ddraig.suprememiningdimension.procedures;
 
-import net.ddraig.suprememiningdimension.configuration.BiomesConfiguration;
+import net.ddraig.suprememiningdimension.configuration.SMDOresConfiguration;
 
 public class DiamondSandGenBoolProcedure {
 	public static boolean execute() {
-		return BiomesConfiguration.DIAMOND_SAND_ENABLED.get();
+		return SMDOresConfiguration.DIAMOND_SAND_ORE.get();
 	}
 }

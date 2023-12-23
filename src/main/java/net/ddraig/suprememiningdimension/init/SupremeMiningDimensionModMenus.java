@@ -9,9 +9,11 @@ import net.minecraftforge.common.extensions.IForgeMenuType;
 import net.minecraft.world.inventory.MenuType;
 
 import net.ddraig.suprememiningdimension.world.inventory.SifterGUIMenu;
+import net.ddraig.suprememiningdimension.world.inventory.AugmentStationGUIMenu;
 import net.ddraig.suprememiningdimension.SupremeMiningDimensionMod;
 
 public class SupremeMiningDimensionModMenus {
 	public static final DeferredRegister<MenuType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.MENU_TYPES, SupremeMiningDimensionMod.MODID);
 	public static final RegistryObject<MenuType<SifterGUIMenu>> SIFTER_GUI = REGISTRY.register("sifter_gui", () -> IForgeMenuType.create(SifterGUIMenu::new));
+	public static final RegistryObject<MenuType<AugmentStationGUIMenu>> AUGMENT_STATION_GUI = REGISTRY.register("augment_station_gui", () -> IForgeMenuType.create(AugmentStationGUIMenu::new));
 }

@@ -2,6 +2,7 @@
   "replace": false,
   "values": [
     "supreme_mining_dimension:light_obsidian_bricks",
+    "supreme_mining_dimension:heated_magma_block",
     "supreme_mining_dimension:dense_diamond_ore",
     "supreme_mining_dimension:dense_iron_ore",
     "supreme_mining_dimension:dense_redstone_ore",
@@ -27,17 +28,18 @@
     "supreme_mining_dimension:aluminum_block",
     "supreme_mining_dimension:zinc_ore",
     "supreme_mining_dimension:zinc_block",
-    "supreme_mining_dimension:amber_solid",
     "supreme_mining_dimension:antimony_ore",
     "supreme_mining_dimension:antimony_block",
     "supreme_mining_dimension:cobalt_ore",
     "supreme_mining_dimension:cobalt_block",
     "supreme_mining_dimension:sphalerite_ore",
+    "supreme_mining_dimension:amber_solid",
+    "supreme_mining_dimension:machinesifter",
+    "supreme_mining_dimension:block_of_peridot",
     "supreme_mining_dimension:benitoite_crystal_large",
     "supreme_mining_dimension:shade_cobblestone",
     "supreme_mining_dimension:shade_stone",
     "supreme_mining_dimension:benitoite_crystal_budding",
-    "supreme_mining_dimension:heated_magma_block",
     "supreme_mining_dimension:gabbro",
     "supreme_mining_dimension:cobbled_gabbro",
     "supreme_mining_dimension:gabbro_bricks",
@@ -157,8 +159,6 @@
     "supreme_mining_dimension:syenite_tiles_cracked",
     "supreme_mining_dimension:syenite_tiles_cracked_slab",
     "supreme_mining_dimension:syenite_tiles_cracked_stairs",
-    "supreme_mining_dimension:syenite_tiles_cracked_wall",
-    "supreme_mining_dimension:machinesifter",
-    "supreme_mining_dimension:block_of_peridot"
+    "supreme_mining_dimension:syenite_tiles_cracked_wall"
   ]
 }

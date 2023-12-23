@@ -17,7 +17,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.core.BlockPos;
 
 import net.ddraig.suprememiningdimension.network.SupremeMiningDimensionModVariables;
-import net.ddraig.suprememiningdimension.configuration.BiomesConfiguration;
+import net.ddraig.suprememiningdimension.configuration.SMDDimensionsConfiguration;
 
 public class FalseOverworldDimensionPlayerEntersDimensionProcedure {
 	public static void execute(LevelAccessor world, Entity entity) {
@@ -33,67 +33,65 @@ public class FalseOverworldDimensionPlayerEntersDimensionProcedure {
 		double yy = 0;
 		double nx = 0;
 		double nz = 0;
-		if (BiomesConfiguration.FALSE_OW_NICE_PLACE.get()) {
+		if (SMDDimensionsConfiguration.NICE_FALSE_OW.get()) {
 			x = entity.getX();
 			z = entity.getZ();
 			y2 = world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) x, (int) z);
 			y1 = entity.getY();
 			if ((entity.getCapability(SupremeMiningDimensionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SupremeMiningDimensionModVariables.PlayerVariables())).FirstVisitFalseOverworld) {
-				if (world.canSeeSkyFromBelowWater(new BlockPos((int)x, (int)y2, (int)z))) {
+				if (world.canSeeSkyFromBelowWater(BlockPos.containing(x, y2, z))) {
 					if (world instanceof ServerLevel _serverworld) {
 						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("supreme_mining_dimension", "airey"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos((int)x, (int)y1, (int)z), new BlockPos((int)x, (int)y1, (int)z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-						}
-						}
-					}
-					if (world.canSeeSkyFromBelowWater(new BlockPos((int)x, (int)y2, (int)z))) {
-						if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("supreme_mining_dimension", "airey"));
-						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos((int)x, (int)y1, (int)z), new BlockPos((int)x, (int)y1, (int)z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
-						}
-					}
-					{
-						Entity _ent = entity;
-						_ent.teleportTo((int)x, ((int)y2 + 2), (int)z);
-						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport((int)x, ((int)y2 + 2), (int)z, _ent.getYRot(), _ent.getXRot());
-					}
-				}
-			} else if (entity.getY() <= 45) {
-				if (world.canSeeSkyFromBelowWater(new BlockPos((int)x, (int)y2, (int)z))) {
-					if (world instanceof ServerLevel _serverworld) {
-						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("supreme_mining_dimension", "airey"));
-						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos((int)x, (int)y1, (int)z), new BlockPos((int)x, (int)y1, (int)z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+							template.placeInWorld(_serverworld, BlockPos.containing(x, y1, z), BlockPos.containing(x, y1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+									_serverworld.random, 3);
 						}
 					}
 					if (world instanceof ServerLevel _serverworld) {
 						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("supreme_mining_dimension", "litsurfaceport"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos((int)x, (int)y2, (int)z), new BlockPos((int)x, (int)y2, (int)z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+							template.placeInWorld(_serverworld, BlockPos.containing(x, y2, z), BlockPos.containing(x, y2, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+									_serverworld.random, 3);
 						}
 					}
 					{
 						Entity _ent = entity;
-						_ent.teleportTo((int)x, ((int)y2 + 2), (int)z);
+						_ent.teleportTo(x, (y2 + 2), z);
 						if (_ent instanceof ServerPlayer _serverPlayer)
-							_serverPlayer.connection.teleport((int)x, ((int)y2 + 2), (int)z, _ent.getYRot(), _ent.getXRot());
+							_serverPlayer.connection.teleport(x, (y2 + 2), z, _ent.getYRot(), _ent.getXRot());
+					}
+				}
+			} else if (entity.getY() <= 45) {
+				if (world.canSeeSkyFromBelowWater(BlockPos.containing(x, y2, z))) {
+					if (world instanceof ServerLevel _serverworld) {
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("supreme_mining_dimension", "airey"));
+						if (template != null) {
+							template.placeInWorld(_serverworld, BlockPos.containing(x, y1, z), BlockPos.containing(x, y1, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+									_serverworld.random, 3);
+						}
+					}
+					if (world instanceof ServerLevel _serverworld) {
+						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("supreme_mining_dimension", "litsurfaceport"));
+						if (template != null) {
+							template.placeInWorld(_serverworld, BlockPos.containing(x, y2, z), BlockPos.containing(x, y2, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+									_serverworld.random, 3);
+						}
+					}
+					{
+						Entity _ent = entity;
+						_ent.teleportTo(x, (y2 + 2), z);
+						if (_ent instanceof ServerPlayer _serverPlayer)
+							_serverPlayer.connection.teleport(x, (y2 + 2), z, _ent.getYRot(), _ent.getXRot());
 					}
 				}
 			}
 		}
-		if (BiomesConfiguration.FALSE_OW_AWAY_FROM_PORTAL.get()
-				&& (entity.getCapability(SupremeMiningDimensionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SupremeMiningDimensionModVariables.PlayerVariables())).FirstVisitFalseOverworld) {
+		if (SMDDimensionsConfiguration.FALSE_OW_AWAY.get() && (entity.getCapability(SupremeMiningDimensionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SupremeMiningDimensionModVariables.PlayerVariables())).FirstVisitFalseOverworld) {
 			nz = Mth.nextInt(RandomSource.create(), 1, 2);
 			nx = Mth.nextInt(RandomSource.create(), 1, 2);
-			portalcords = "The portal is at X: " + Math.round(x) + " Y: " + Math.round(y2) + " Z: " + Math.round(z);
-			xx = Mth.nextInt(RandomSource.create(), (int) (double) BiomesConfiguration.FALSE_OW_MIN_DISTANCE.get(), (int) (double) BiomesConfiguration.FALSE_OW_MAX_DISTANCE.get());
-			zz = Mth.nextInt(RandomSource.create(), (int) (double) BiomesConfiguration.FALSE_OW_MIN_DISTANCE.get(), (int) (double) BiomesConfiguration.FALSE_OW_MAX_DISTANCE.get());
+			xx = Mth.nextInt(RandomSource.create(), (int) (double) SMDDimensionsConfiguration.FALSE_OW_MIN.get(), (int) (double) SMDDimensionsConfiguration.FALSE_OW_MAX.get());
+			zz = Mth.nextInt(RandomSource.create(), (int) (double) SMDDimensionsConfiguration.FALSE_OW_MIN.get(), (int) (double) SMDDimensionsConfiguration.FALSE_OW_MAX.get());
 			yy = world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) xx, (int) zz);
-				if (entity instanceof Player _player && !_player.level().isClientSide())
-				_player.displayClientMessage(Component.literal(portalcords), (false));
 			if (1 == nx) {
 				xx = xx * (-1);
 			}
@@ -114,5 +112,8 @@ public class FalseOverworldDimensionPlayerEntersDimensionProcedure {
 				capability.syncPlayerVariables(entity);
 			});
 		}
+		portalcords = "The portal is at X: " + Math.round(x) + " Y: " + Math.round(y2) + " Z: " + Math.round(z) + " (You may have to dig down)";
+		if (entity instanceof Player _player && !_player.level().isClientSide())
+			_player.displayClientMessage(Component.literal(portalcords), false);
 	}
 }

@@ -17,6 +17,8 @@ import net.ddraig.suprememiningdimension.entity.WitheringFireballEntity;
 import net.ddraig.suprememiningdimension.entity.WitheredBlazeEntity;
 import net.ddraig.suprememiningdimension.entity.WeakWitheringFireballEntity;
 import net.ddraig.suprememiningdimension.entity.WeakWitheredFireballEntity;
+import net.ddraig.suprememiningdimension.entity.WarriorGuardEntity;
+import net.ddraig.suprememiningdimension.entity.WarriorArcherEntity;
 import net.ddraig.suprememiningdimension.entity.TunnelerBrotherEntity;
 import net.ddraig.suprememiningdimension.entity.ShroombieEntity;
 import net.ddraig.suprememiningdimension.entity.ShadowCreeperEntity;
@@ -31,14 +33,6 @@ import net.ddraig.suprememiningdimension.SupremeMiningDimensionMod;
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD)
 public class SupremeMiningDimensionModEntities {
 	public static final DeferredRegister<EntityType<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, SupremeMiningDimensionMod.MODID);
-	public static final RegistryObject<EntityType<ChickshroomEntity>> CHICKSHROOM = register("chickshroom",
-			EntityType.Builder.<ChickshroomEntity>of(ChickshroomEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChickshroomEntity::new)
-
-					.sized(0.4f, 0.7f));
-	public static final RegistryObject<EntityType<DuckEntity>> DUCK = register("duck",
-			EntityType.Builder.<DuckEntity>of(DuckEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DuckEntity::new)
-
-					.sized(0.4f, 0.7f));
 	public static final RegistryObject<EntityType<TunnelerBrotherEntity>> TUNNELER_BROTHER = register("tunneler_brother", EntityType.Builder.<TunnelerBrotherEntity>of(TunnelerBrotherEntity::new, MobCategory.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(TunnelerBrotherEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<QuarrierBrotherEntity>> QUARRIER_BROTHER = register("quarrier_brother",
@@ -49,20 +43,36 @@ public class SupremeMiningDimensionModEntities {
 			EntityType.Builder.<ProspectorBrotherEntity>of(ProspectorBrotherEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ProspectorBrotherEntity::new)
 
 					.sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<WitheredBlazeEntity>> WITHERED_BLAZE = register("withered_blaze", EntityType.Builder.<WitheredBlazeEntity>of(WitheredBlazeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
-			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WitheredBlazeEntity::new).fireImmune().sized(0.6f, 1.8f));
-	public static final RegistryObject<EntityType<WitheringFireballEntity>> WITHERING_FIREBALL = register("projectile_withering_fireball", EntityType.Builder.<WitheringFireballEntity>of(WitheringFireballEntity::new, MobCategory.MISC)
-			.setCustomClientFactory(WitheringFireballEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
+	public static final RegistryObject<EntityType<DuckEntity>> DUCK = register("duck",
+			EntityType.Builder.<DuckEntity>of(DuckEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(DuckEntity::new)
+
+					.sized(0.4f, 0.7f));
 	public static final RegistryObject<EntityType<BlazingWitherMasterEntity>> BLAZING_WITHER_MASTER = register("blazing_wither_master", EntityType.Builder.<BlazingWitherMasterEntity>of(BlazingWitherMasterEntity::new, MobCategory.MONSTER)
 			.setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(BlazingWitherMasterEntity::new).fireImmune().sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<ShroombieEntity>> SHROOMBIE = register("shroombie",
 			EntityType.Builder.<ShroombieEntity>of(ShroombieEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ShroombieEntity::new)
 
 					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<ChickshroomEntity>> CHICKSHROOM = register("chickshroom",
+			EntityType.Builder.<ChickshroomEntity>of(ChickshroomEntity::new, MobCategory.CREATURE).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ChickshroomEntity::new)
+
+					.sized(0.4f, 0.7f));
+	public static final RegistryObject<EntityType<WitheredBlazeEntity>> WITHERED_BLAZE = register("withered_blaze", EntityType.Builder.<WitheredBlazeEntity>of(WitheredBlazeEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true)
+			.setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WitheredBlazeEntity::new).fireImmune().sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<WitheringFireballEntity>> WITHERING_FIREBALL = register("projectile_withering_fireball", EntityType.Builder.<WitheringFireballEntity>of(WitheringFireballEntity::new, MobCategory.MISC)
+			.setCustomClientFactory(WitheringFireballEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<ShadowCreeperEntity>> SHADOW_CREEPER = register("shadow_creeper",
 			EntityType.Builder.<ShadowCreeperEntity>of(ShadowCreeperEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(ShadowCreeperEntity::new)
 
 					.sized(0.6f, 1f));
+	public static final RegistryObject<EntityType<WarriorGuardEntity>> WARRIOR_GUARD = register("warrior_guard",
+			EntityType.Builder.<WarriorGuardEntity>of(WarriorGuardEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WarriorGuardEntity::new)
+
+					.sized(0.6f, 1.8f));
+	public static final RegistryObject<EntityType<WarriorArcherEntity>> WARRIOR_ARCHER = register("warrior_archer",
+			EntityType.Builder.<WarriorArcherEntity>of(WarriorArcherEntity::new, MobCategory.MONSTER).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(3).setCustomClientFactory(WarriorArcherEntity::new)
+
+					.sized(0.6f, 1.8f));
 	public static final RegistryObject<EntityType<WeakWitheredFireballEntity>> WEAK_WITHERED_FIREBALL = register("projectile_weak_withered_fireball", EntityType.Builder.<WeakWitheredFireballEntity>of(WeakWitheredFireballEntity::new, MobCategory.MISC)
 			.setCustomClientFactory(WeakWitheredFireballEntity::new).setShouldReceiveVelocityUpdates(true).setTrackingRange(64).setUpdateInterval(1).sized(0.5f, 0.5f));
 	public static final RegistryObject<EntityType<ExplosiveThrownEntity>> EXPLOSIVE_THROWN = register("projectile_explosive_thrown", EntityType.Builder.<ExplosiveThrownEntity>of(ExplosiveThrownEntity::new, MobCategory.MISC)
@@ -78,28 +88,32 @@ public class SupremeMiningDimensionModEntities {
 	@SubscribeEvent
 	public static void init(FMLCommonSetupEvent event) {
 		event.enqueueWork(() -> {
-			ChickshroomEntity.init();
-			DuckEntity.init();
 			TunnelerBrotherEntity.init();
 			QuarrierBrotherEntity.init();
 			ProspectorBrotherEntity.init();
-			WitheredBlazeEntity.init();
+			DuckEntity.init();
 			BlazingWitherMasterEntity.init();
 			ShroombieEntity.init();
+			ChickshroomEntity.init();
+			WitheredBlazeEntity.init();
 			ShadowCreeperEntity.init();
+			WarriorGuardEntity.init();
+			WarriorArcherEntity.init();
 		});
 	}
 
 	@SubscribeEvent
 	public static void registerAttributes(EntityAttributeCreationEvent event) {
-		event.put(CHICKSHROOM.get(), ChickshroomEntity.createAttributes().build());
-		event.put(DUCK.get(), DuckEntity.createAttributes().build());
 		event.put(TUNNELER_BROTHER.get(), TunnelerBrotherEntity.createAttributes().build());
 		event.put(QUARRIER_BROTHER.get(), QuarrierBrotherEntity.createAttributes().build());
 		event.put(PROSPECTOR_BROTHER.get(), ProspectorBrotherEntity.createAttributes().build());
-		event.put(WITHERED_BLAZE.get(), WitheredBlazeEntity.createAttributes().build());
+		event.put(DUCK.get(), DuckEntity.createAttributes().build());
 		event.put(BLAZING_WITHER_MASTER.get(), BlazingWitherMasterEntity.createAttributes().build());
 		event.put(SHROOMBIE.get(), ShroombieEntity.createAttributes().build());
+		event.put(CHICKSHROOM.get(), ChickshroomEntity.createAttributes().build());
+		event.put(WITHERED_BLAZE.get(), WitheredBlazeEntity.createAttributes().build());
 		event.put(SHADOW_CREEPER.get(), ShadowCreeperEntity.createAttributes().build());
+		event.put(WARRIOR_GUARD.get(), WarriorGuardEntity.createAttributes().build());
+		event.put(WARRIOR_ARCHER.get(), WarriorArcherEntity.createAttributes().build());
 	}
 }

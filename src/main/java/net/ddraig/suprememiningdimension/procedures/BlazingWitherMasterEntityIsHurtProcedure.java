@@ -17,7 +17,7 @@ import net.minecraft.world.effect.MobEffectInstance;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.core.BlockPos;
 
-import net.ddraig.suprememiningdimension.configuration.BiomesConfiguration;
+import net.ddraig.suprememiningdimension.configuration.SMDBossesConfiguration;
 import net.ddraig.suprememiningdimension.SupremeMiningDimensionMod;
 
 public class BlazingWitherMasterEntityIsHurtProcedure {
@@ -28,31 +28,30 @@ public class BlazingWitherMasterEntityIsHurtProcedure {
 		double xx = 0;
 		double yy = 0;
 		double zz = 0;
-		if (0.4 >= (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) / (double) BiomesConfiguration.MAX_HEALTH.get()) {
-			if (BiomesConfiguration.GLOW_WHEN_ABOUT_TO_HEAL.get()) {
-				if (entity instanceof LivingEntity _entity)
-					_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, (int) ((double) BiomesConfiguration.HEAL_DELAY_SECONDS.get() * 20), 1, (false), (false)));
+		if (0.4 >= (entity instanceof LivingEntity _livEnt ? _livEnt.getHealth() : -1) / (double) SMDBossesConfiguration.MAX_HEALTH.get()) {
+			if (SMDBossesConfiguration.GLOW_WHEN_HEALING.get()) {
+				if (entity instanceof LivingEntity _entity && !_entity.level().isClientSide())
+					_entity.addEffect(new MobEffectInstance(MobEffects.GLOWING, (int) ((double) SMDBossesConfiguration.HEAL_DELAY_SECONDS.get() * 20), 1, false, false));
 			}
-			SupremeMiningDimensionMod.queueServerWork((int) ((double) BiomesConfiguration.HEAL_DELAY_SECONDS.get() * 20), () -> {
+			SupremeMiningDimensionMod.queueServerWork((int) ((double) SMDBossesConfiguration.HEAL_DELAY_SECONDS.get() * 20), () -> {
 				if (entity instanceof LivingEntity _entity)
-					_entity.setHealth((float) (double) BiomesConfiguration.MAX_HEALTH.get());
+					_entity.setHealth((float) (double) SMDBossesConfiguration.MAX_HEALTH.get());
 			});
 			if (entity instanceof Mob _entity)
 				_entity.getNavigation().moveTo(x, y, z, 1);
 		}
 		if (Math.random() < 0.7) {
 			entity.getPersistentData().putDouble("counter1", (entity.getPersistentData().getDouble("counter1") + 1));
-			if (entity.getPersistentData().getDouble("counter1") % (double) BiomesConfiguration.NUMBER_HITS_HEAVY_ATTACKS.get() == 0) {
+			if (entity.getPersistentData().getDouble("counter1") % (double) SMDBossesConfiguration.HITS_BEFORE_HEAVY_ATTACK.get() == 0) {
 				xx = entity.getX();
 				yy = entity.getY();
 				zz = entity.getZ();
 				if (world instanceof ServerLevel _level) {
 					LightningBolt entityToSpawn = EntityType.LIGHTNING_BOLT.create(_level);
-					entityToSpawn.moveTo(Vec3.atBottomCenterOf(new BlockPos((int)xx, (int)yy, (int)zz)));
-					entityToSpawn.setVisualOnly(false);
+					entityToSpawn.moveTo(Vec3.atBottomCenterOf(BlockPos.containing(xx, yy, zz)));;
 					_level.addFreshEntity(entityToSpawn);
 				}
-				if (BiomesConfiguration.FIREBALL_SIZE_INCREASE.get()) {
+				if (SMDBossesConfiguration.FIREBALL_SIZE_INCREASE.get()) {
 					{
 						Entity _shootFrom = entity;
 						Level projectileLevel = _shootFrom.level();

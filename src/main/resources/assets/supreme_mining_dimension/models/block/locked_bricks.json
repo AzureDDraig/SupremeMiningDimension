@@ -1,0 +1,8 @@
+{
+  "parent": "block/cube_all",
+  "textures": {
+    "all": "supreme_mining_dimension:block/bricks_locked_base",
+    "particle": "supreme_mining_dimension:block/bricks_locked_base"
+  },
+  "render_type": "solid"
+}

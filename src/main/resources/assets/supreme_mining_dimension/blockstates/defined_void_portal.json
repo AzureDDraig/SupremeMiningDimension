@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "axis=z": {
+      "model": "supreme_mining_dimension:block/defined_void_portal_ew"
+    },
+    "axis=x": {
+      "model": "supreme_mining_dimension:block/defined_void_portal_ns"
+    }
+  }
+}

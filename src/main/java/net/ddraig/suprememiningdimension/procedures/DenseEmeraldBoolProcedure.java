@@ -1,9 +1,9 @@
 package net.ddraig.suprememiningdimension.procedures;
 
-import net.ddraig.suprememiningdimension.configuration.BiomesConfiguration;
+import net.ddraig.suprememiningdimension.configuration.SMDOresConfiguration;
 
 public class DenseEmeraldBoolProcedure {
 	public static boolean execute() {
-		return BiomesConfiguration.DENSE_EMERALD_ENABLED.get() && BiomesConfiguration.DENSE_ORES_ENABLED.get();
+		return SMDOresConfiguration.DENSE_EMERALD_ORE.get() && SMDOresConfiguration.DENSE_ORES_ENABLED.get();
 	}
 }

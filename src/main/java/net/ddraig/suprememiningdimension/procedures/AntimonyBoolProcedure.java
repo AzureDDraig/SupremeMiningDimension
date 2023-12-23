@@ -1,9 +1,9 @@
 package net.ddraig.suprememiningdimension.procedures;
 
-import net.ddraig.suprememiningdimension.configuration.BiomesConfiguration;
+import net.ddraig.suprememiningdimension.configuration.SMDOresConfiguration;
 
 public class AntimonyBoolProcedure {
 	public static boolean execute() {
-		return BiomesConfiguration.ANTIMONY_ENABLED.get();
+		return SMDOresConfiguration.ANTIMONY_ORE.get();
 	}
 }
