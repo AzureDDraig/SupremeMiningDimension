@@ -13,7 +13,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.core.BlockPos;
 
 import net.ddraig.suprememiningdimension.network.SupremeMiningDimensionModVariables;
-import net.ddraig.suprememiningdimension.configuration.BiomesConfiguration;
+import net.ddraig.suprememiningdimension.configuration.SMDDimensionsConfiguration;
 import net.ddraig.suprememiningdimension.block.CavernsPortalBlock;
 
 public class CavernsPlayerEntersDimensionProcedure {
@@ -22,7 +22,7 @@ public class CavernsPlayerEntersDimensionProcedure {
 			return;
 		double x = 0;
 		double z = 0;
-		if (BiomesConfiguration.CAVERNS_NICE_PLACE.get()) {
+		if (SMDDimensionsConfiguration.NICE_CAVERNS.get()) {
 			if (120 <= entity.getY()) {
 				if (true == (entity.getCapability(SupremeMiningDimensionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SupremeMiningDimensionModVariables.PlayerVariables())).FirstVisitCaverns) {
 					x = entity.getX();
@@ -30,11 +30,12 @@ public class CavernsPlayerEntersDimensionProcedure {
 					if (world instanceof ServerLevel _serverworld) {
 						StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("supreme_mining_dimension", "goldport"));
 						if (template != null) {
-							template.placeInWorld(_serverworld, new BlockPos((int)x, 64, (int)z), new BlockPos((int)x, 64, (int)z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+							template.placeInWorld(_serverworld, BlockPos.containing(x, 64, z), BlockPos.containing(x, 64, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false),
+									_serverworld.random, 3);
 						}
 					}
 					if (world instanceof Level _level)
-						CavernsPortalBlock.portalSpawn(_level, new BlockPos((int)x, 63, (int)z));
+						CavernsPortalBlock.portalSpawn(_level, BlockPos.containing(x, 63, z));
 					{
 						Entity _ent = entity;
 						_ent.teleportTo(x, 66, z);
@@ -56,17 +57,17 @@ public class CavernsPlayerEntersDimensionProcedure {
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("supreme_mining_dimension", "airey"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos((int)x, 124, (int)z), new BlockPos((int)x, 124, (int)z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+					template.placeInWorld(_serverworld, BlockPos.containing(x, 124, z), BlockPos.containing(x, 124, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 			if (world instanceof ServerLevel _serverworld) {
 				StructureTemplate template = _serverworld.getStructureManager().getOrCreate(new ResourceLocation("supreme_mining_dimension", "goldport"));
 				if (template != null) {
-					template.placeInWorld(_serverworld, new BlockPos((int)x, 124, (int)z), new BlockPos((int)x, 124, (int)z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
+					template.placeInWorld(_serverworld, BlockPos.containing(x, 124, z), BlockPos.containing(x, 124, z), new StructurePlaceSettings().setRotation(Rotation.NONE).setMirror(Mirror.NONE).setIgnoreEntities(false), _serverworld.random, 3);
 				}
 			}
 			if (world instanceof Level _level)
-				CavernsPortalBlock.portalSpawn(_level, new BlockPos((int)x, 64, (int)z));
+				CavernsPortalBlock.portalSpawn(_level, BlockPos.containing(x, 64, z));
 			{
 				boolean _setval = false;
 				entity.getCapability(SupremeMiningDimensionModVariables.PLAYER_VARIABLES_CAPABILITY, null).ifPresent(capability -> {

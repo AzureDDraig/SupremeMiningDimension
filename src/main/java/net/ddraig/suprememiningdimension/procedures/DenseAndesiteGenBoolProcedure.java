@@ -1,9 +1,9 @@
 package net.ddraig.suprememiningdimension.procedures;
 
-import net.ddraig.suprememiningdimension.configuration.BiomesConfiguration;
+import net.ddraig.suprememiningdimension.configuration.SMDOresConfiguration;
 
 public class DenseAndesiteGenBoolProcedure {
 	public static boolean execute() {
-		return BiomesConfiguration.DENSE_ANDESITE_ENABLED.get() && BiomesConfiguration.DENSE_ORES_ENABLED.get();
+		return SMDOresConfiguration.DENSE_ANDESITE.get() && SMDOresConfiguration.DENSE_ORES_ENABLED.get();
 	}
 }

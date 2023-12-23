@@ -1,0 +1,8 @@
+{
+  "type": "forge:add_features",
+  "biomes": {
+    "type": "forge:any"
+  },
+  "features": "supreme_mining_dimension:benitoite_geode_sf_variant",
+  "step": "underground_structures"
+}

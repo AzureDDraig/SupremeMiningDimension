@@ -1,9 +1,9 @@
 package net.ddraig.suprememiningdimension.procedures;
 
-import net.ddraig.suprememiningdimension.configuration.BiomesConfiguration;
+import net.ddraig.suprememiningdimension.configuration.SMDDimensionsConfiguration;
 
 public class FalseOverworldDimensionCanMakePortalProcedure {
 	public static boolean execute() {
-		return BiomesConfiguration.FALSE_OVERWORLD.get();
+		return SMDDimensionsConfiguration.FALSE_OW.get();
 	}
 }

@@ -9,7 +9,7 @@ import net.minecraft.core.BlockPos;
 
 import net.ddraig.suprememiningdimension.network.SupremeMiningDimensionModVariables;
 import net.ddraig.suprememiningdimension.init.SupremeMiningDimensionModBlocks;
-import net.ddraig.suprememiningdimension.configuration.BiomesConfiguration;
+import net.ddraig.suprememiningdimension.configuration.SMDDimensionsConfiguration;
 import net.ddraig.suprememiningdimension.block.StrangeForestsPortalBlock;
 
 public class StrangeForestsPlayerEntersDimensionProcedure {
@@ -19,7 +19,7 @@ public class StrangeForestsPlayerEntersDimensionProcedure {
 		double xx = 0;
 		double yy = 0;
 		double zz = 0;
-		if (BiomesConfiguration.STRANGE_FOREST_NICE_PLACE.get()) {
+		if (SMDDimensionsConfiguration.NICE_STRANGE_FORESTS.get()) {
 			if ((entity.getCapability(SupremeMiningDimensionModVariables.PLAYER_VARIABLES_CAPABILITY, null).orElse(new SupremeMiningDimensionModVariables.PlayerVariables())).FirstVisitStrangeForests) {
 				{
 					boolean _setval = false;
@@ -31,30 +31,29 @@ public class StrangeForestsPlayerEntersDimensionProcedure {
 				xx = entity.getX();
 				zz = entity.getZ();
 				yy = world.getHeight(Heightmap.Types.MOTION_BLOCKING_NO_LEAVES, (int) xx, (int) zz);
-				if (world.canSeeSkyFromBelowWater(new BlockPos((int)xx, (int)yy, (int)zz))) {
+				if (world.canSeeSkyFromBelowWater(BlockPos.containing(xx, yy, zz))) {
 					{
 						Entity _ent = entity;
 						_ent.teleportTo(xx, yy, zz);
 						if (_ent instanceof ServerPlayer _serverPlayer)
 							_serverPlayer.connection.teleport(xx, yy, zz, _ent.getYRot(), _ent.getXRot());
 					}
-						world.setBlock(new BlockPos((int)(xx - 0), (int)(yy - 1), (int)zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
-						world.setBlock(new BlockPos((int)(xx - 1), (int)(yy - 1), (int)zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
-						world.setBlock(new BlockPos((int)(xx - 2), (int)(yy - 0), (int)zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
-						world.setBlock(new BlockPos((int)(xx + 1), (int)(yy - 0), (int)zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
-						world.setBlock(new BlockPos((int)(xx - 2), (int)(yy + 1), (int)zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
-						world.setBlock(new BlockPos((int)(xx + 1), (int)(yy + 1), (int)zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
-						world.setBlock(new BlockPos((int)(xx - 2), (int)(yy + 2), (int)zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
-						world.setBlock(new BlockPos((int)(xx + 1), (int)(yy + 2), (int)zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
-						world.setBlock(new BlockPos((int)(xx - 0), (int)(yy + 3), (int)zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
-						world.setBlock(new BlockPos((int)(xx - 1), (int)(yy - 3), (int)zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
-						world.setBlock(new BlockPos((int)(xx - 2), (int)(yy - 3), (int)zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
-						world.setBlock(new BlockPos((int)(xx + 1), (int)(yy + 3), (int)zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
-						world.setBlock(new BlockPos((int)(xx + 1), (int)(yy - 1), (int)zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
-						world.setBlock(new BlockPos((int)(xx - 2), (int)(yy - 1), (int)zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
-
+					world.setBlock(BlockPos.containing(xx - 0, yy - 1, zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(xx - 1, yy - 1, zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(xx - 2, yy - 0, zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(xx + 1, yy - 0, zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(xx - 2, yy + 1, zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(xx + 1, yy + 1, zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(xx - 2, yy + 2, zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(xx + 1, yy + 2, zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(xx - 0, yy + 3, zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(xx - 1, yy - 3, zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(xx - 2, yy - 3, zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(xx + 1, yy + 3, zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(xx + 1, yy - 1, zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
+					world.setBlock(BlockPos.containing(xx - 2, yy - 1, zz), SupremeMiningDimensionModBlocks.ETCHED_WOOD.get().defaultBlockState(), 3);
 					if (world instanceof Level _level)
-						StrangeForestsPortalBlock.portalSpawn(_level, new BlockPos((int)xx, (int)yy, (int)zz));
+						StrangeForestsPortalBlock.portalSpawn(_level, BlockPos.containing(xx, yy, zz));
 				}
 			}
 		}

@@ -1,9 +1,9 @@
 package net.ddraig.suprememiningdimension.procedures;
 
-import net.ddraig.suprememiningdimension.configuration.BiomesConfiguration;
+import net.ddraig.suprememiningdimension.configuration.SMDOresConfiguration;
 
 public class SilverBoolProcedure {
 	public static boolean execute() {
-		return BiomesConfiguration.SILVER_ENABLED.get();
+		return SMDOresConfiguration.SILVER_ORE.get();
 	}
 }

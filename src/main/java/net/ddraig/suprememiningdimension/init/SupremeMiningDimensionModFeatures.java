@@ -9,6 +9,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraft.world.level.levelgen.feature.Feature;
 
 import net.ddraig.suprememiningdimension.world.features.ores.ZincOreFeature;
+import net.ddraig.suprememiningdimension.world.features.ores.UraniumOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.TungstenOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.TinOreFeature;
 import net.ddraig.suprememiningdimension.world.features.ores.SyeniteFeature;
@@ -46,12 +47,14 @@ import net.ddraig.suprememiningdimension.world.features.EnderCabin2Feature;
 import net.ddraig.suprememiningdimension.world.features.EnderCabin1Feature;
 import net.ddraig.suprememiningdimension.world.features.BigAsSpruceTreeOnPodzolFeature;
 import net.ddraig.suprememiningdimension.world.features.BigAsSpruceTreeFeature;
+import net.ddraig.suprememiningdimension.world.features.BenitoiteGeodeSFVariantFeature;
 import net.ddraig.suprememiningdimension.world.features.BenitoiteGeodeFeature;
 import net.ddraig.suprememiningdimension.SupremeMiningDimensionMod;
 
 @Mod.EventBusSubscriber
 public class SupremeMiningDimensionModFeatures {
 	public static final DeferredRegister<Feature<?>> REGISTRY = DeferredRegister.create(ForgeRegistries.FEATURES, SupremeMiningDimensionMod.MODID);
+	public static final RegistryObject<Feature<?>> HEATED_MAGMA_BLOCK = REGISTRY.register("heated_magma_block", HeatedMagmaBlockFeature::new);
 	public static final RegistryObject<Feature<?>> DENSE_DIAMOND_ORE = REGISTRY.register("dense_diamond_ore", DenseDiamondOreFeature::new);
 	public static final RegistryObject<Feature<?>> DENSE_IRON_ORE = REGISTRY.register("dense_iron_ore", DenseIronOreFeature::new);
 	public static final RegistryObject<Feature<?>> DENSE_REDSTONE_ORE = REGISTRY.register("dense_redstone_ore", DenseRedstoneOreFeature::new);
@@ -70,14 +73,14 @@ public class SupremeMiningDimensionModFeatures {
 	public static final RegistryObject<Feature<?>> PLATINUM_ORE = REGISTRY.register("platinum_ore", PlatinumOreFeature::new);
 	public static final RegistryObject<Feature<?>> ALUMINUM_ORE = REGISTRY.register("aluminum_ore", AluminumOreFeature::new);
 	public static final RegistryObject<Feature<?>> ZINC_ORE = REGISTRY.register("zinc_ore", ZincOreFeature::new);
-	public static final RegistryObject<Feature<?>> AMBER_SOLID = REGISTRY.register("amber_solid", AmberSolidFeature::new);
+	public static final RegistryObject<Feature<?>> SULPHUR_ORE = REGISTRY.register("sulphur_ore", SulphurOreFeature::new);
 	public static final RegistryObject<Feature<?>> ANTIMONY_ORE = REGISTRY.register("antimony_ore", AntimonyOreFeature::new);
 	public static final RegistryObject<Feature<?>> COBALT_ORE = REGISTRY.register("cobalt_ore", CobaltOreFeature::new);
 	public static final RegistryObject<Feature<?>> SPHALERITE_ORE = REGISTRY.register("sphalerite_ore", SphaleriteOreFeature::new);
 	public static final RegistryObject<Feature<?>> DIAMOND_SAND = REGISTRY.register("diamond_sand", DiamondSandFeature::new);
 	public static final RegistryObject<Feature<?>> DIAMOND_GRAVEL = REGISTRY.register("diamond_gravel", DiamondGravelFeature::new);
+	public static final RegistryObject<Feature<?>> AMBER_SOLID = REGISTRY.register("amber_solid", AmberSolidFeature::new);
 	public static final RegistryObject<Feature<?>> ANCIENT_MOSS = REGISTRY.register("ancient_moss", AncientMossFeature::new);
-	public static final RegistryObject<Feature<?>> HEATED_MAGMA_BLOCK = REGISTRY.register("heated_magma_block", HeatedMagmaBlockFeature::new);
 	public static final RegistryObject<Feature<?>> GABBRO = REGISTRY.register("gabbro", GabbroFeature::new);
 	public static final RegistryObject<Feature<?>> IGNIMBRITE = REGISTRY.register("ignimbrite", IgnimbriteFeature::new);
 	public static final RegistryObject<Feature<?>> SYENITE = REGISTRY.register("syenite", SyeniteFeature::new);
@@ -90,5 +93,6 @@ public class SupremeMiningDimensionModFeatures {
 	public static final RegistryObject<Feature<?>> BIG_AS_SPRUCE_TREE_ON_PODZOL = REGISTRY.register("big_as_spruce_tree_on_podzol", BigAsSpruceTreeOnPodzolFeature::new);
 	public static final RegistryObject<Feature<?>> SPHALERITE_ROCKS = REGISTRY.register("sphalerite_rocks", SphaleriteRocksFeature::new);
 	public static final RegistryObject<Feature<?>> BENITOITE_GEODE = REGISTRY.register("benitoite_geode", BenitoiteGeodeFeature::new);
-	public static final RegistryObject<Feature<?>> SULPHUR_ORE = REGISTRY.register("sulphur_ore", SulphurOreFeature::new);
+	public static final RegistryObject<Feature<?>> BENITOITE_GEODE_SF_VARIANT = REGISTRY.register("benitoite_geode_sf_variant", BenitoiteGeodeSFVariantFeature::new);
+	public static final RegistryObject<Feature<?>> URANIUM_ORE = REGISTRY.register("uranium_ore", UraniumOreFeature::new);
 }

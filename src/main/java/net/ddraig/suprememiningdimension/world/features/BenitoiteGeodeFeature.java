@@ -13,8 +13,7 @@ import net.minecraft.core.registries.Registries;
 import java.util.Set;
 
 public class BenitoiteGeodeFeature extends GeodeFeature {
-	private final Set<ResourceKey<Level>> generateDimensions = Set.of(ResourceKey.create(Registries.DIMENSION, new ResourceLocation("supreme_mining_dimension:deep_caverns")),
-			ResourceKey.create(Registries.DIMENSION, new ResourceLocation("supreme_mining_dimension:strange_forests")));
+	private final Set<ResourceKey<Level>> generateDimensions = Set.of(ResourceKey.create(Registries.DIMENSION, new ResourceLocation("supreme_mining_dimension:deep_caverns")));
 
 	public BenitoiteGeodeFeature() {
 		super(GeodeConfiguration.CODEC);

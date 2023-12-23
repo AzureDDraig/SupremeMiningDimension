@@ -1,9 +1,9 @@
 package net.ddraig.suprememiningdimension.procedures;
 
-import net.ddraig.suprememiningdimension.configuration.BiomesConfiguration;
+import net.ddraig.suprememiningdimension.configuration.SMDOresConfiguration;
 
 public class CobaltOreGenBoolProcedure {
 	public static boolean execute() {
-		return BiomesConfiguration.COBALT_ENABLED.get();
+		return SMDOresConfiguration.COBALT_ORE.get();
 	}
 }

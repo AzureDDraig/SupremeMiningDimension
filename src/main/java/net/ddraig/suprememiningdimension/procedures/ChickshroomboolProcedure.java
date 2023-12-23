@@ -1,9 +1,9 @@
 package net.ddraig.suprememiningdimension.procedures;
 
-import net.ddraig.suprememiningdimension.configuration.BiomesConfiguration;
+import net.ddraig.suprememiningdimension.configuration.SMDMobsConfiguration;
 
 public class ChickshroomboolProcedure {
 	public static boolean execute() {
-		return BiomesConfiguration.CHICKSHROOM_ALLOWED.get();
+		return SMDMobsConfiguration.CHICKSHROOM_ENABLED.get();
 	}
 }

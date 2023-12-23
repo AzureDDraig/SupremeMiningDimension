@@ -213,3 +213,50 @@ Added Block of Peridot
 Added Sulphur Ore
 Added Raw Sulphur
 Added Sulphur to Gunpowder recipe
+
+1.4.3.5
+Added unbreakable locked bricks - same variants as keys
+Added Keys-Diamond/Lapis/Ruby/Topaz/Emerald/Amethyst/Iron
+Added Guard
+Added Archer Guard
+Added Spawn Eggs for Guard and Archer Guard
+Added description to Amber Bricks, Iron Reinforced Obsidian, Gold Reinforced Obsidian, Light Obsidian Bricks, Heated Magma, Etched Wood about use
+Added Loot Tables for Iron Dungeon
+Added Flame Resistance Augment 
+Added Advanced Respiration Augment
+Added Conductive Strike Augment
+Added Augment Station
+Added Conductive Effect
+
+Added Black and White Mushroom Caps
+Added Tags:
+forge:augments
+forge:mushroom_stalks/*
+black
+black_glowing
+blue
+blue_glowing
+cyan
+cyan_glowing
+green
+green_glowing
+purple
+purple_glowing
+red
+red_glowing
+orange
+orange_glowing
+white
+white_glowing
+yellow
+yellow_glowing
+
+Fixed Blast Furnace Recipes
+Changed False Overworld to always send message on where the portal is.
+Reordered Creative Tab
+Changed Benitoite Geode Spawning in Strange Forests
+Changed Benitoite Geode Outer Layer in Deep Caverns
+Changed Sphalerite to only spawn if Zinc is allowed to spawn
+Updated Flame Resistance Augment
+Fixed Flame Resistance Augment damaging wrong armor
+Updated Config Generation - Now generates 5 config files, Dimensions/Mobs/Bosses/Structures (and special blocks)/Ores
